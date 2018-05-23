@@ -10,7 +10,6 @@ test:
 build:
   stage: build
   script: 
-    - echo "Building the app"
     - npm -v
 
 deploy_development:
