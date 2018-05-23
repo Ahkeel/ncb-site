@@ -19,6 +19,7 @@ deploy_development:
     - echo "Deploy to development server"
     - mkdir public
     - ls -la
+    - pwd
   environment:
     name: development
     url: http://ui.ncb.cloud
