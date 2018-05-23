@@ -1,5 +1,22 @@
-before_script:
-  - echo "Hello World"
-  
-job1:
-  script: "echo Deploy?"
+stages:
+  - test
+  - build
+  - deploy
+
+test:
+  stage: test
+  script: echo "Running tests"
+
+build:
+  stage: build
+  script: echo "Building the app"
+
+deploy_staging:
+  stage: deploy
+  script:
+    - echo "Deploy to development server"
+  environment:
+    name: development
+    url: http://ui.ncb.cloud
+  only:
+  - master
