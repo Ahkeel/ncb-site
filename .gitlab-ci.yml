@@ -1,2 +1,5 @@
 before_script:
   - echo "Hello World"
+  
+job1:
+  script: - echo "Deploy?"
