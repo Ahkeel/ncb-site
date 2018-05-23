@@ -11,7 +11,7 @@ build:
   stage: build
   script: 
     - node -v && npm -v
-    - echo npm install
+    - npm install
     - gulp html
     - gulp css
 
