@@ -1,25 +1,27 @@
 stages:
-  - test
+  # - test
   - build
   - deploy
 
-test:
-  stage: test
-  script: echo "Running tests"
+# test:
+#   stage: test
+#   script: echo "Running tests"
 
 build:
   stage: build
   script: 
-    - echo "Building App"
-    - npm -v
+    - node -v && npm -v
+    - echo npm install
+    - gulp html
+    - gulp css
 
 deploy_development:
   stage: deploy
   script:
     - echo "Deploy to development server"
-    - mkdir public
     - ls -la
     - pwd
+    - whoami
   environment:
     name: development
     url: http://ui.ncb.cloud
