@@ -9,9 +9,11 @@ test:
 
 build:
   stage: build
-  script: echo "Building the app"
+  script: 
+    - echo "Building the app"
+    - npm -v
 
-deploy_staging:
+deploy_development:
   stage: deploy
   script:
     - echo "Deploy to development server"
