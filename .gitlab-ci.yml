@@ -17,6 +17,7 @@ deploy_development:
   stage: deploy
   script:
     - echo "Deploy to development server"
+    - ls -la
   environment:
     name: development
     url: http://ui.ncb.cloud
