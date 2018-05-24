@@ -14,7 +14,8 @@ build:
   stage: build
   script: 
     - echo $CI_JOB_ID
-    - echo CI_COMMIT_SHA
+    - echo $CI_COMMIT_SHA
+    - echo $CI_PIPELINE_ID
     - node -v && npm -v
     - npm install
     - gulp html
