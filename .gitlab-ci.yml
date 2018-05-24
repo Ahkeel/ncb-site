@@ -14,6 +14,7 @@ build:
     - npm install
     - gulp html
     - gulp css
+    - ls -la
 
 deploy_development:
   stage: deploy
