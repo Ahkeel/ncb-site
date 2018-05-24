@@ -14,13 +14,14 @@ build:
   stage: build
   script: 
     - echo $CI_JOB_ID
+    - echo CI_COMMIT_SHA
     - node -v && npm -v
     - npm install
     - gulp html
     - gulp css
     - ls -la
     - zip -r dist.zip build/
-    - cp dist.zip build/
+    - cp dist.zip build/builds/dist-$CI_JOB_ID.zip
 
 deploy_development:
   stage: deploy
