@@ -19,7 +19,7 @@ build:
     - gulp css
     - ls -la
     - zip -r dist.zip build/
-    - mkdir build/builds/
+    # - mkdir build/builds/
     - mv dist.zip build/builds/dist-$CI_PIPELINE_ID.zip
 
 deploy_development:
