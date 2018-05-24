@@ -1,8 +1,8 @@
 var gulp = require('gulp');
 var ejs = require('gulp-ejs');
 var scss = require('gulp-scss');
+var sass = require('gulp-sass');
 var css = require('gulp-css');
-var livereload = require('gulp-livereload');
 var browserSync = require('browser-sync').create();
 
 
@@ -13,9 +13,9 @@ gulp.task('html', function(){
 });
 
 gulp.task('css', function(){
-  return gulp.src('src/sass/*.css')
-    .pipe(css())
-    .pipe(gulp.dest('build/css'))
+  return gulp.src('src/sass/style.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('build/css/'))
 });
 
 gulp.task('watch', function(){
