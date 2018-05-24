@@ -22,7 +22,7 @@ build:
     - gulp css
     - ls -la
     - zip -r dist.zip build/
-    - cp dist.zip build/builds/dist-$CI_JOB_ID.zip
+    - mv -p dist.zip build/builds/dist-$CI_JOB_ID.zip
 
 deploy_development:
   stage: deploy
