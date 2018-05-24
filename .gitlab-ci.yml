@@ -6,6 +6,9 @@ stages:
 # test:
 #   stage: test
 #   script: echo "Running tests"
+cache:
+  paths:
+  - build
 
 build:
   stage: build
@@ -15,9 +18,6 @@ build:
     - gulp html
     - gulp css
     - ls -la
-  cache:
-    paths:
-    - build
 
 deploy_development:
   stage: deploy
