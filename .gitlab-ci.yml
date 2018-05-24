@@ -26,7 +26,7 @@ deploy_development:
     - ls -la
     - pwd
     - whoami
-    - rsync -r -v build oraneedwards@ui.ncb.cloud:/home/oraneedwards/private_html
+    - rsync -r -v build oraneedwards@ui.ncb.cloud:/home/oraneedwards
   environment:
     name: development
     url: http://ui.ncb.cloud
