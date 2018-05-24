@@ -20,7 +20,7 @@ build:
     - ls -la
     - zip -r dist.zip build/
     - mkdir build/builds/
-    - mv -p dist.zip build/builds/dist-$CI_PIPELINE_ID.zip
+    - mv dist.zip build/builds/dist-$CI_PIPELINE_ID.zip
 
 deploy_development:
   stage: deploy
