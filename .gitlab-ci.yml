@@ -15,6 +15,9 @@ build:
     - gulp html
     - gulp css
     - ls -la
+  cache:
+    paths:
+    - build
 
 deploy_development:
   stage: deploy
