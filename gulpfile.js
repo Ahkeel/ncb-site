@@ -38,11 +38,12 @@ gulp.task('watch', function(){
   gulp.watch('src/*.html', ['html']); 
 })
 
-gulp.task('serve', ['html', 'css'], function() {
+gulp.task('serve', ['html', 'sass', 'css', 'js', 'img'], function() {
 
     browserSync.init({
         server: "./build"
     });
+    
 
     gulp.watch("src/**/*.html", ['html']);
     gulp.watch("src/sass/*.css", ['sass']);
