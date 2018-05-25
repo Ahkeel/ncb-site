@@ -1,14 +1,86 @@
-<html>
-<head>
-	<title><%= title %></title>
-<style>
+<div class="top-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="/images/jncb-logo.png" id="logo"  alt="ncb logo"/>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <input type="text" class="search" placeholder="Search" />
+            </div>
+            <div class=" col-sm-4 col-md-2">
+                <div class="welcome-message">Hello, Kori Solomon</div>
+            </div>
+            <div class="col-sm-4 col-md-1">
+                <div class="notification">
+                    <i class="fas fa-envelope"></i>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-2">
+                <div class="logout">
+                    <i class="fas fa-sign-out-alt"></i> Logout</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom-banner">
+    <div class="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <nav class="navbar navbar-expand-lg ">
+                   
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                        </button>
 
-html{
-	background-color: blue;
-}
-</style>
-</head>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Home
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="beneficiary.html">Manage Beneficiaries</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Pay Bills
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="transfer.html">Transfer</a>
+                                </li>
+                            </ul>
 
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2 col-md-1">
+                    <img src="images/dashboard.png" style="height: 68px;margin-top: -4px;" />
+                </div>
+                <div class="col-sm-10 col-md-11">
+                    <h6 class="page-title-sub-heading"><%= title %></h6>
+                    <h2 class="page-title-heading"><%= page_title %></h1>
+                </div>
 
-<body>
+            </div>
+
+        </div>
+    </div>
+</div>
 

@@ -1,4 +1,437 @@
-<%- include('partials/header.html', {title: "Dashboard"}); %>
-		<h2>this is a CI/CD test </h2>
-	</body>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<%- include('partials/links.html'); %>
+</head>
+<body>
+	<%- include('partials/header.html', {title: "Accounts", page_title: "Account Dashboard"}) %>
+	
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div id="accordion" role="tablist">
+                        <div class="card">
+                            <div class="card-header accordion-active shadow" role="tab" id="headingOne">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <div class="float-left"> Bank Accounts</div>
+                                        <div class="float-right btn btn-primary">Collapse Accounts
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </a>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="bank-cards shadow">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="account-data-label float-left">Saving A/C Number</div>
+                                                <div class="account-data text-right float-left">303****290</div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="account-data-label">Balance</div>
+                                                <div class="account-data text-right">$290,000,000</div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="account-data-label">Balance At</div>
+                                                <div class="account-data text-right">May 08, 2018</div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <button class="float-right btn btn-primary-custom">Details</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="bank-cards shadow">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="account-data-label float-left">Saving A/C Number</div>
+                                                <div class="account-data float-left">303****290</div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="account-data-label">Balance</div>
+                                                <div class="account-data">$290,000,000</div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="account-data-label">Balance At</div>
+                                                <div class="account-data">May 08, 2018</div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <button class="float-right btn btn-primary-custom">Details</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="bank-cards shadow">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="account-data-label float-left">Saving A/C Number</div>
+                                                <div class="account-data float-left">303****290</div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="account-data-label">Balance</div>
+                                                <div class="account-data">$290,000,000</div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="account-data-label">Balance At</div>
+                                                <div class="account-data">May 08, 2018</div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <button class="float-right btn btn-primary-custom">Details</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="bank-cards shadow">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="account-data-label float-left">Saving A/C Number</div>
+                                                <div class="account-data float-left">303****290</div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="account-data-label">Balance</div>
+                                                <div class="account-data">$290,000,000</div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="account-data-label">Balance At</div>
+                                                <div class="account-data">May 08, 2018</div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <button class="float-right btn btn-primary-custom">Details</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="bank-cards shadow">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="account-data-label float-left">Saving A/C Number</div>
+                                                <div class="account-data float-left">303****290</div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="account-data-label">Balance</div>
+                                                <div class="account-data">$290,000,00</div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="account-data-label">Balance At</div>
+                                                <div class="account-data">May 08, 2018</div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <button class="float-right btn btn-primary-custom">Details</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header shadow" role="tab" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <div class="float-left"> Credit Card Accounts</div>
+                                        <div class="float-right btn btn-primary">View Accounts
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="bank-cards shadow">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="account-data-label float-left">Saving A/C Number</div>
+                                                <div class="account-data float-left">303****290</div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="account-data-label">Balance</div>
+                                                <div class="account-data">$290,000,000</div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="account-data-label">Balance At</div>
+                                                <div class="account-data">May 08, 2018</div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <button class="float-right btn btn-primary-custom">Details</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header shadow" role="tab" id="headingThree">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        NCB Insurance Accounts
+                                        <div class="float-right btn btn-primary">View Accounts
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="bank-cards shadow">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="account-data-label float-left">Saving A/C Number</div>
+                                                <div class="account-data float-left">303****290</div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="account-data-label">Balance</div>
+                                                <div class="account-data">$290,000,000</div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="account-data-label">Balance At</div>
+                                                <div class="account-data">May 08, 2018</div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <button class="float-right btn btn-primary-custom">Details</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="weather shadow">
+                        <div class="weather-info">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <b>Jamaica</b>
+                                    <h3>30 C</h3>
+                                    <div class="weather-info-date">Thursday, 8:25 AM</div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <img src="images/weather-icon.png" style="width:84px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="welcome">
+                            Good morning,
+                            <br>
+                            <b>Kori</b>
+                        </div>
+                    </div>
+                    <div class="custom-panel shadow">
+                        <div class="panel-header">
+                            Quick Links
+                        </div>
+                        <div class="panel-body">
+                            <ul class="nav flex-column quick-links">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Transfer Money <i class="fas fa-chevron-right"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Transfer Activity <i class="fas fa-chevron-right"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Automatic Transfers <i class="fas fa-chevron-right"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Add External Transfers <i class="fas fa-chevron-right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="custom-panel shadow">
+                        <div class="panel-header">
+                            Recent Transaction History
+                        </div>
+                        <div class="panel-body">
+
+                            <table class="table table-hover table-responsive">
+                                <tr>
+                                    <th>Payee Name</th>
+                                    <th>Date</th>
+                                    <th>Amount Paid (JMD)</th>
+                                </tr>
+                                <tr>
+
+                                    <td>
+                                        JPS Electrical Bill
+                                    </td>
+                                    <td>
+                                        September 27,2018
+                                    </td>
+                                    <td>
+                                        $000.00
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>
+                                        JPS Electrical Bill
+                                    </td>
+                                    <td>
+                                        September 27,2018
+                                    </td>
+                                    <td>
+                                        $000.00
+                                    </td>
+                                </tr>
+                            </table>
+                            <button type="button" class="float-right btn btn-primary">Pay Bills</button>
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="custom-panel shadow">
+                        <div class="panel-header">
+                            Foriegn Exchange Rates
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-hover table-responsive">
+                                <tr>
+                                    <th>Currency</th>
+                                    <th>Sell</th>
+                                    <th>Buy</th>
+                                    <th>Buy</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fas fa-square-full"></i> USD
+                                    </td>
+                                    <td>
+                                        000.00
+                                    </td>
+                                    <td>
+                                        000.00
+                                    </td>
+                                    <td>
+                                        000.00
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fas fa-square-full"></i> GBP
+                                    </td>
+                                    <td>
+                                        000.00
+                                    </td>
+                                    <td>
+                                        000.00
+                                    </td>
+                                    <td>
+                                        000.00
+                                    </td>
+                                </tr>
+                            </table>
+                            <button type="button" class="float-right btn btn-primary">See more FX Rates</button>
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="promotion border-radius">
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-1">
+                        <img src="images/light.png" />
+                    </div>
+                    <div class="col-lg-7">
+                        <h3 class="color-white promo-heading">How Can We Help You?</h3>
+                        <div class="promo-caption color-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat.</div>
+                    </div>
+                    
+                </div>
+
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="custom-slide">
+                            <img src="images/slide.jpg" />
+                            <div class="slide-title">choose a credit card</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="custom-slide">
+                            <img src="images/slide.jpg" />
+                            <div class="slide-title">buy a home</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="custom-slide">
+                            <img src="images/slide.jpg" />
+                            <div class="slide-title">buy a home</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="custom-slide">
+                            <img src="images/slide.jpg" />
+                            <div class="slide-title">buy a home</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="contact-info border-radius">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img class="footer-icons float-left" src="/images/footer-icons/location-icon.png">
+                        <div class="float-left">
+                            <div class="contact-info-title">Branches & ABM</div>
+                            <div class="contact-info-desc">Find a Location Near You</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="footer-icons float-left" src="/images/footer-icons/customer-care-icon.png">
+                        <div class="float-left">
+                            <div class="contact-info-title">Customer Care</div>
+                            <div class="contact-info-desc">1-888-622-3477</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="footer-icons float-left" src="/images/footer-icons/telephone-icon.png">
+                        <div class="float-left">
+                            <div class="contact-info-title">Branch Services</div>
+                            <div class="contact-info-desc">1-876-929-4622</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="footer-icons float-left" src="images/footer-icons/telephone-icon.png">
+                        <div class="float-left">
+                            <div class="contact-info-title">United Kingdom</div>
+                            <div class="contact-info-desc">0-800-03202973</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%- include('partials/footer.html') %>
+    </div>	
+
+	<%- include('partials/scripts.html'); %>
+</body>
 </html>
