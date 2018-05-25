@@ -16,7 +16,10 @@ build:
     - node -v && npm -v
     - npm install
     - gulp html
+    - gulp sass
     - gulp css
+    - gulp img
+    - gulp js
     - ls -la
     - zip -r dist.zip build/
     # - mkdir build/builds/
