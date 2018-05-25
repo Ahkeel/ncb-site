@@ -7,7 +7,7 @@
 	<%- include('partials/links.html'); %>
 </head>
 <body>
-	<%- include('partials/header.html', {title: "Accounts", page_title: "Account Dashboard"}) %>
+	<%- include('partials/header.html', {title: "Accounts", page_title: "Account Dashboard", page_icon: "images/dashboard.png"}) %>
 	
     <div class="content">
         <div class="container">
@@ -395,38 +395,7 @@
                 </div>
             </div>
 
-            <div class="contact-info border-radius">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <img class="footer-icons float-left" src="/images/footer-icons/location-icon.png">
-                        <div class="float-left">
-                            <div class="contact-info-title">Branches & ABM</div>
-                            <div class="contact-info-desc">Find a Location Near You</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <img class="footer-icons float-left" src="/images/footer-icons/customer-care-icon.png">
-                        <div class="float-left">
-                            <div class="contact-info-title">Customer Care</div>
-                            <div class="contact-info-desc">1-888-622-3477</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <img class="footer-icons float-left" src="/images/footer-icons/telephone-icon.png">
-                        <div class="float-left">
-                            <div class="contact-info-title">Branch Services</div>
-                            <div class="contact-info-desc">1-876-929-4622</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <img class="footer-icons float-left" src="images/footer-icons/telephone-icon.png">
-                        <div class="float-left">
-                            <div class="contact-info-title">United Kingdom</div>
-                            <div class="contact-info-desc">0-800-03202973</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <%- include('partials/contact.html') %>
         </div>
 
         <%- include('partials/footer.html') %>
