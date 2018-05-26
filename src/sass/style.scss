@@ -22,6 +22,7 @@ table
 #logo
 {
   padding:5px;
+  width: 100%;
 }
 
 .fas {
@@ -40,9 +41,9 @@ table
 }
 
 .shadow {
-  -webkit-box-shadow: 0px 1px 5px 1px #cccccc;
-  -moz-box-shadow: 0px 1px 5px 1px #cccccc;
-  box-shadow: 0px 1px 5px 1px #cccccc; }
+  -webkit-box-shadow: 0px 1px 5px 1px $card-shadow;
+  -moz-box-shadow: 0px 1px 5px 1px $card-shadow;
+  box-shadow: 0px 1px 5px 1px $card-shadow; }
 
 .welcome-message, .notification, .logout
 {
@@ -154,6 +155,7 @@ table
 }
 .bank-cards
 {
+
   background-color: #fff;
   padding: 10px 20px 10px 20px;
   -webkit-border-radius: 4px;
@@ -161,22 +163,21 @@ table
   border-radius: 4px;
   width: 100%;
   margin-bottom: 10px;
-  border-bottom: 1px solid #e1e1e1;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
-  border:1px solid #f4f4f4;
 }
+
 
 .bank-cards:hover
 {
-  -webkit-box-shadow: 15px 28px 64px 5px rgba(204,204,204,1);
-  -moz-box-shadow: 15px 28px 64px 5px rgba(204,204,204,1);
-  box-shadow: 15px 28px 64px 5px rgba(204,204,204,1);
+  // -webkit-box-shadow: 15px 28px 64px 5px $card-shadow;
+  // -moz-box-shadow: 15px 28px 64px 5px $card-shadow;
+  box-shadow: 10px 10px 10px 2px $card-shadow;
   position: relative;
-  border:1px solid #00539b;
-  margin-left:-7px;
+  // border:1px solid #00539b;
+  // margin-left:-7px;
 }
 
 .account-data-label
