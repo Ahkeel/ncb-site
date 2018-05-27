@@ -1,13 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Dashboard</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<%- include('partials/links.html'); %>
-</head>
-<body>
-	<%- include('partials/header.html', {title: "Accounts", page_title: "Account Dashboard", page_icon: "images/dashboard.png"}) %>
+<%
+    let bankAccounts = [
+        {
+            type: 'Savings',
+            number: '303***290',
+            balance: '$506,000',
+            balanceAt: 'May 08, 2018'
+        },
+        {
+            type: 'Savings',
+            number: '404***290',
+            balance: '$290,000,000',
+            balanceAt: 'May 08, 2018'
+        },
+        {
+            type: 'Chequing',
+            number: '303***290',
+            balance: '$1,000,000',
+            balanceAt: 'May 08, 2018'
+        },
+]; 
+%>
+    <%- include('partials/header.html', {title: "Dashboard", page_title: "Account Summary", page_icon: "images/dashboard.png"}) %>
 	
     <div class="content">
         <div class="container">
@@ -28,111 +41,10 @@
 
                             <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                                 <div class="card-body">
-                                    <div class="bank-cards shadow">
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                                <div class="account-data-label float-left">Saving A/C Number</div>
-                                                <div class="account-data text-right float-left">303****290</div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="account-data-label">Balance</div>
-                                                <div class="account-data text-right">$290,000,000</div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="account-data-label">Balance At</div>
-                                                <div class="account-data text-right">May 08, 2018</div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <button class="float-right btn btn-primary-custom">Details</button>
-                                            </div>
-                                        </div>
 
-                                    </div>
-                                    <div class="bank-cards shadow">
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                                <div class="account-data-label float-left">Saving A/C Number</div>
-                                                <div class="account-data float-left">303****290</div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="account-data-label">Balance</div>
-                                                <div class="account-data">$290,000,000</div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="account-data-label">Balance At</div>
-                                                <div class="account-data">May 08, 2018</div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <button class="float-right btn btn-primary-custom">Details</button>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="bank-cards shadow">
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                                <div class="account-data-label float-left">Saving A/C Number</div>
-                                                <div class="account-data float-left">303****290</div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="account-data-label">Balance</div>
-                                                <div class="account-data">$290,000,000</div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="account-data-label">Balance At</div>
-                                                <div class="account-data">May 08, 2018</div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <button class="float-right btn btn-primary-custom">Details</button>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="bank-cards shadow">
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                                <div class="account-data-label float-left">Saving A/C Number</div>
-                                                <div class="account-data float-left">303****290</div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="account-data-label">Balance</div>
-                                                <div class="account-data">$290,000,000</div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="account-data-label">Balance At</div>
-                                                <div class="account-data">May 08, 2018</div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <button class="float-right btn btn-primary-custom">Details</button>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="bank-cards shadow">
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                                <div class="account-data-label float-left">Saving A/C Number</div>
-                                                <div class="account-data float-left">303****290</div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="account-data-label">Balance</div>
-                                                <div class="account-data">$290,000,00</div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="account-data-label">Balance At</div>
-                                                <div class="account-data">May 08, 2018</div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <button class="float-right btn btn-primary-custom">Details</button>
-                                            </div>
-                                        </div>
-
-                                    </div>
+                                    <% bankAccounts.forEach(function(account){ %>
+                                        <%- include('components/accountCard.html', {account: account}); %>
+                                    <% }); %>
                                 </div>
                             </div>
                         </div>
