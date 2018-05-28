@@ -1,5 +1,5 @@
 # Retail Internet Banking - RIB #
-This is a demo site for updated design to launch "insert date here".
+This is a demo site for the redesign of RIB.
 
 ### Prerequisites ###
 * [NodeJS](http://nodejs.org/)
@@ -14,4 +14,4 @@ This is a demo site for updated design to launch "insert date here".
 * `gulp js` copies vendor `.js` files to build directory.
 * `gulp serve` or `gulp` launches a live reload browser that watches for changes in the project files and propagates these changes real time.
 
-_Edit this file when necessary to configure the project build cycle._
+_Edit the `gulpfile.js` file when necessary to configure the project build cycle._
