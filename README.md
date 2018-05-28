@@ -15,3 +15,6 @@ This is a demo site for the redesign of RIB.
 * `gulp serve` or `gulp` launches a live reload browser that watches for changes in the project files and propagates these changes real time.
 
 _Edit the `gulpfile.js` file when necessary to configure the project build cycle._
+
+### Demo ###
+[Retail Internet Banking](http://ui.ncb.cloud/)
