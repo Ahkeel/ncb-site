@@ -1,0 +1,91 @@
+    <%- include('partials/header.html', {title: "Transfers", page_title: "Other Bank Transfer", page_icon: "images/transfers-icon.png"}) %>
+    
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="transfer">
+                        <div id="mobile-drop-down" class="border-radius">
+                            <span class="float-left">Select Option</span>
+                            <i class="fas fa-chevron-down float-right"></i>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <%- include('components/transferTabs.html', {active: "other"}) %>
+
+                        <div class="shadow custom-tab-content">
+                            <div class="tab-bar">
+                                <h5>Step 3 of 3 Transfer Setup</h3>
+                                <h6>Transfer money to another NCB account or another bank within Jamaica</h6>
+                            </div>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="alert alert-success">
+                                                [0000] Payment Successfully Completed. [000] Request ID is : 0000
+                                            </div>
+
+                                            <div>
+                                                <table class="table table-striped">
+                                                    <tr>
+                                                        <th>
+                                                            Account:
+                                                        </th>
+                                                        <td>
+                                                            JMD 00000
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            From:
+                                                        </th>
+                                                        <td>
+                                                            JMD 00000
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            Funds Transfer Date:
+                                                        </th>
+                                                        <td>
+                                                            5/14/18
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            Transaction Reference Number :
+                                                        </th>
+                                                        <td>
+                                                            00000
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                            <th>
+                                                                Transaction Remarks :
+                                                            </th>
+                                                            <td>
+                                                                00000
+                                                            </td>
+                                                        </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <%- include('partials/contact.html') %>
+        </div>
+
+        <%- include('partials/footer.html') %>
+    </div>
+
+    <%- include('partials/scripts.html'); %>
+</body>
+</html>

@@ -1,0 +1,96 @@
+    <%- include('partials/header.html', {title: "Transfers", page_title: "NCB Third Party", page_icon: "images/transfers-icon.png"}) %>
+    
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="transfer">
+                        <div id="mobile-drop-down" class="border-radius">
+                            <span class="float-left">Select Option</span>
+                            <i class="fas fa-chevron-down float-right"></i>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <%- include('components/transferTabs.html', {active: "third"}) %>
+
+                        <div class="shadow custom-tab-content">
+                            <div class="tab-bar">
+                                <h5>Step 1 of 3 Transfer Setup</h3>
+                                <h6>Transfer money to another NCB account or another bank within Jamaica</h6>
+                            </div>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <label>From</label>
+                                            <select class="custom-select">
+                                                <option selected="">Select Account</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <label>Transfer Date</label>
+                                            <br>
+                                            <input type="radio" value="Immedidate" name="immediate" /> Immediate
+                                            <br>    
+                                            <input type="radio" value="following" name="following" /> On following day
+                                            <input type="text" class="form-control" placeholder="May 01,2018" aria-label="TRANSFER DATE" aria-describedby="basic-addon2">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <label>To</label>
+                                            <select class="custom-select">
+                                                <option selected="">Select Account</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <label>Transaction Remarks (optional)</label>
+                                            <textarea></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label>Currency</label>
+                                                    <select class="custom-select">
+                                                        <option selected="">JMD</option>
+                                                        <option value="1">USD</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label>Amount</label>
+                                                    <select class="custom-select">
+                                                        <option selected="">$0.00</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <a href="transfers-third-party-step2.html" class="btn btn-primary-custom btn-block">Next Step</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <%- include('partials/contact.html') %>
+        </div>
+
+        <%- include('partials/footer.html') %>
+    </div>
+
+    <%- include('partials/scripts.html'); %>
+</body>
+</html>

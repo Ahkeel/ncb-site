@@ -1,0 +1,88 @@
+    <%- include('partials/header.html', {title: "Transfers", page_title: "Other Bank Transfer", page_icon: "images/transfers-icon.png"}) %>
+    
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="transfer">
+                        <div id="mobile-drop-down" class="border-radius">
+                            <span class="float-left">Select Option</span>
+                            <i class="fas fa-chevron-down float-right"></i>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <%- include('components/transferTabs.html', {active: "other"}) %>
+
+                        <div class="shadow custom-tab-content">
+                            <div class="tab-bar">
+                                <h5>Step 2 of 3 Transfer Setup</h3>
+                                    <h6>Transfer money to another NCB account or another bank within Jamaica</h6>
+                            </div>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="confirm-heading">FROM</div>
+                                            <div class="confirm-info">
+                                                <div>Savings Account (...5678)</div>
+                                                <div>
+                                                    <i>Available : $0,000,000</i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="confirm-heading">CURRENCY</div>
+                                            <div class="confirm-info">
+                                                <div>JMD</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="confirm-heading">TRANSFER DATE</div>
+                                            <div class="confirm-info">
+                                                <div class="confirm-info">Jan 30, 2016</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="confirm-heading">TO</div>
+                                            <div class="confirm-info">
+                                                <div>Chequing Account (..5678)</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="confirm-heading">AMOUNT</div>
+                                            <div class="confirm-info">
+                                                <div>$0,000,000</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="confirm-heading">NOTES (OPTIONAL)</div>
+                                            <div class="confirm-info">
+                                                <div>To cover bills</div>
+                                            </div>
+                                        </div>
+                                    </div>
+ 
+                                        <div class="float-right">
+                                            <a href="transfers-other-bank-step1.html" class="btn btn-default-custom btn-sm">Edit</a>
+                                            <a href="transfers-other-bank-step3.html" class="btn btn-primary btn-sm">Make Transfers</a>
+                                        </div>
+                                   <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <%- include('partials/contact.html') %>
+        </div>
+
+        <%- include('partials/footer.html') %>
+    </div>
+
+    <%- include('partials/scripts.html'); %>
+</body>
+</html>
