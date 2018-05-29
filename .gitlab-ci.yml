@@ -21,6 +21,7 @@ build:
     - gulp img
     - gulp js
     - ls -la
+    - rm -r build/builds/*
     - zip -r dist.zip build/
     # - mkdir build/builds/
     - mv dist.zip build/builds/dist-$CI_PIPELINE_ID.zip
