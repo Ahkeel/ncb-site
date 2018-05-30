@@ -1,0 +1,272 @@
+<%
+    let bankAccounts = [
+        {
+            type: 'Savings',
+            number: '303***290',
+            balance: '$506,000',
+            balanceAt: 'May 08, 2018'
+        },
+        {
+            type: 'Savings',
+            number: '404***290',
+            balance: '$290,000,000',
+            balanceAt: 'May 08, 2018'
+        },
+        {
+            type: 'Chequing',
+            number: '303***290',
+            balance: '$1,000,000',
+            balanceAt: 'May 08, 2018'
+        },
+]; 
+%>
+    <%- include('partials/header.html', {title: "Accounts", page_title: "Credit Card Details", page_icon: "images/dashboard.png"}) %>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="custom-panel shadow">
+                            <div class="panel-header">
+                                Demographic Details
+                            </div>
+                            <div class="panel-body custom-tab-content">
+                                <table class="table table-striped">
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <td>
+                                            Jane Dough
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Address
+                                        </th>
+                                        <td>
+                                            29 NCB
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Card Holder
+                                        </th>
+                                        <td>
+                                            0000000
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Card Type
+                                        </th>
+                                        <td>
+                                            Primary
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Account Status
+                                        </th>
+                                        <td>
+                                            Open Account
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Total Credit Limit
+                                        </th>
+                                        <td>
+                                            JMD $000,000,000
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="custom-panel shadow">
+                            <div class="panel-header">
+                                Statement Details
+                            </div>
+                            <div class="panel-body custom-tab-content">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>
+                                                    State Date:
+                                                </th>
+                                                <td>
+                                                    000,000,000
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Statement balance
+                                                </th>
+                                                <td>
+                                                    000,000,000
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Minimum Account Due
+                                                </th>
+                                                <td>
+                                                    000,000,000
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Payment Due Date
+                                                </th>
+                                                <td>
+                                                    April 26, 2018
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <table class="table table-striped">
+                                            <tr>
+                                                <th>
+                                                    State Date:
+                                                </th>
+                                                <td>
+                                                    000,000,000
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Statement balance
+                                                </th>
+                                                <td>
+                                                    000,000,000
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Minimum Account Due
+                                                </th>
+                                                <td>
+                                                    000,000,000
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Payment Due Date
+                                                </th>
+                                                <td>
+                                                    April 26, 2018
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card-body">
+                            <div class="panel-header">
+                                Transaction History
+                            </div>
+                            <a href="#">
+                                <div class="bank-cards shadow">
+                                    <div class="row">
+                                        <div class="col-md-1">
+                                            <div class="account-data-label float-left">SI Number</div>
+                                            <div class="account-data text-right float-left">78</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="account-data-label">Post Date</div>
+                                            <div class="account-data text-right">May 10,2018</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="account-data-label">Transaction Date</div>
+                                            <div class="account-data text-right">May 12, 2018</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="account-data-label">Description</div>
+                                            <div class="account-data text-right">Play store purchase</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="account-data-label">Debt</div>
+                                            <div class="account-data text-right">1,0000,000</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="col-md-1">
+                                            <div class="account-data-label">Credit</div>
+                                            <div class="account-data text-right">1,00000</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="account-data-label">Balance</div>
+                                            <div class="account-data text-right">1,0000</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="bank-cards shadow">
+                                    <div class="row">
+                                        <div class="col-md-1">
+                                            <div class="account-data-label float-left">SI Number</div>
+                                            <div class="account-data text-right float-left">78</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="account-data-label">Post Date</div>
+                                            <div class="account-data text-right">May 10,2018</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="account-data-label">Transaction Date</div>
+                                            <div class="account-data text-right">May 12, 2018</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="account-data-label">Description</div>
+                                            <div class="account-data text-right">Play store purchase</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="account-data-label">Debt</div>
+                                            <div class="account-data text-right">1,0000,000</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="col-md-1">
+                                            <div class="account-data-label">Credit</div>
+                                            <div class="account-data text-right">1,00000</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="account-data-label">Balance</div>
+                                            <div class="account-data text-right">1,0000</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <%- include('partials/contact.html') %>
+            </div>
+            <%- include('partials/footer.html') %>
+        </div>
+        <%- include('partials/scripts.html'); %>
+            </body>
+
+            </html>
