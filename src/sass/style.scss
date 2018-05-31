@@ -72,7 +72,7 @@ table {
 
 .bottom-banner {
   background-image: url('../images/newsbg.png');
-  height: 200px;
+  min-height: 200px;
   background-color: #00539b;
   width: 100%;
 }
@@ -195,7 +195,7 @@ table {
 }
 
 .panel-header {
-  background-image: url(../images/gradient.png);
+  background-image: linear-gradient(to top, #003059, #003867, #003f75, #004784, #004f93);
   padding: 20px;
   font-weight: 100;
   color: #fff;
@@ -302,7 +302,7 @@ table {
 }
 
 .contact-info {
-  background-image: url('../images/gradient.png');
+  background-color:#002b5c;
   width: 100%;
   padding: 18px;
   color: #fff;
@@ -412,7 +412,7 @@ table {
 
 .custom-tab-content {
   background-color: #fff;
-  border-bottom: 2px solid #002b5c;
+  border-bottom: 2px solid $secondary-color;
   .tab-content {
     padding: 20px;
   }
@@ -439,6 +439,34 @@ table {
   color: #fff;
   cursor: pointer;
   display: none;
+}
+
+.account-details
+{
+  background-image: linear-gradient(to bottom, #569ff0, #458ada, #3475c5, #2261af, #0a4d9a);
+  padding: $container-padding;
+  font-size: $account-info-font-size;
+  margin-bottom:$container-margin-bottom-space;
+}
+
+.account-details img
+{
+  width:100%;
+}
+
+.account-details-item
+{
+  margin-bottom: 15px;
+}
+.account-info
+{
+  color:$account-info-color;
+  font-weight: bold;
+}
+
+.account-charts
+{
+  border-left:1px solid #fff;
 }
 
 @media (max-width: 992px) {
