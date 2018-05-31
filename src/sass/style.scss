@@ -201,9 +201,7 @@ table {
 }
 
 
-.panel-header {
-  background-image: linear-gradient(to top, #003059, #003867, #003f75, #004784, #004f93);
-
+.panel-header,
 .panel-header-sm {
   background: linear-gradient(#00539B, #002A4E);
   padding: 20px;
@@ -219,7 +217,7 @@ table {
   padding: 7px 10px;
   font-size: 1em;
 }
-}
+
 
 .panel-body {
   background: #fff;
@@ -432,7 +430,7 @@ table {
   .tab-content {
     padding: 20px;
   }
-  select, input, textarea {
+  select, textarea , input:not([type=radio]) {
     width: 100%;
   }
   label {
