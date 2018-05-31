@@ -1,0 +1,46 @@
+    <%- include('partials/header.html', {title: "Bill Payments", page_title: "Add Payee", page_icon: "images/dashboard.png"}) %>
+    
+    <div class="content">
+        <div class="container">
+
+            <div class="custom-panel shadow">
+                <div class="panel-header">
+                    <div class="d-inline-block">Step 4 of 4 - Add Payee</div>
+                </div>
+                <div class="panel-body pb-5">
+                    <div class="alert alert-success" role="alert">
+                        [0000] Payee Successfully Added. [0000] Request ID is: 000000
+                    </div>
+                    <table class="table table-striped table-sm">
+                        <tr>
+                            <th>Name</th>
+                            <td>Jane Dough</td>
+                        </tr>
+                        <tr>
+                            <th>Nickname</th>
+                            <td>Jane Dough</td>
+                        </tr>
+                        <tr>
+                            <th>Category</th>
+                            <td>Something</td>
+                        </tr>
+                        <tr>
+                            <th>Tax Registration Number (TRN)</th>
+                            <td>000000000</td>
+                        </tr>
+                    </table>
+                    <div class="text-right">
+                        <a href="bill-payments-add-payee-step1.html" class="btn pl-5 pr-5 btn-sm btn-primary text-white">Add Another</a>
+                    </div>
+                </div>
+            </div>
+
+            <%- include('partials/contact.html') %>
+        </div>
+
+        <%- include('partials/footer.html') %>
+    </div>
+
+    <%- include('partials/scripts.html'); %>
+</body>
+</html>
