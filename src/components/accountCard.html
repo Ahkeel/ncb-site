@@ -1,22 +1,22 @@
 <a href="#">
 <div class="bank-cards shadow">
         <div class="row">
-            <div class="col-sm-3">
-                <div class="account-data-label float-left"><%= account.type %> A/C Number</div>
-                <div class="account-data text-right float-left"><%= account.number %></div>
+            <div class="col-sm-6 col-md">
+                <div class="account-data-label"><%= account.type %> A/C Number</div>
+                <div class="account-data text-sm-right"><%= account.number %></div>
                 <div class="clearfix"></div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-6 col-md">
                 <div class="account-data-label">Balance</div>
-                <div class="account-data text-right"><%= account.balance %></div>
+                <div class="account-data text-sm-right"><%= account.balance %></div>
                 <div class="clearfix"></div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-6 col-md">
                 <div class="account-data-label">Balance At</div>
-                <div class="account-data text-right"><%= account.balanceAt %></div>
+                <div class="account-data text-sm-right"><%= account.balanceAt %></div>
                 <div class="clearfix"></div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-6 col-md">
                 <button class="float-right btn btn-primary-custom">Details</button>
             </div>
         </div>
