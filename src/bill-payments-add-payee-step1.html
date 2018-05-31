@@ -1,0 +1,41 @@
+    <%- include('partials/header.html', {title: "Bill Payments", page_title: "Add Payee", page_icon: "images/dashboard.png"}) %>
+    
+    <div class="content">
+        <div class="container">
+
+            <div class="custom-panel shadow">
+                <div class="panel-header">
+                    <div class="d-inline-block">Step 1 of 4 - Add Payee</div>
+                    <div class="text-normal">To add a payee you first must select a payee from the available payees below.</div>
+                    <div class="text-normal">Select a category to see all payees available in that category. Selected ALL will return a list of all Payees availableto you.</div>
+                </div>
+                <div class="panel-body pb-5 pt-5">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label class="text-capitalize">Payee Business Category</label>
+                            <select class="form-control">
+                                <option>All Categories</option>
+                                <option>Something</option>
+                                <option>Something</option>
+                                <option>Something</option>
+                                <option>Something</option>
+                                <option>Something</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4 offset-sm-2">
+                            <label class="">&nbsp;</label>
+                            <a href="bill-payments-add-payee-step2.html" class="btn btn-block btn-sm btn-primary text-white">Next Step</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <%- include('partials/contact.html') %>
+        </div>
+
+        <%- include('partials/footer.html') %>
+    </div>
+
+    <%- include('partials/scripts.html'); %>
+</body>
+</html>
