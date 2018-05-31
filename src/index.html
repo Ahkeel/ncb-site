@@ -46,7 +46,6 @@
 
                             <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                                 <div class="card-body">
-
                                     <% bankAccounts.forEach(function(account){ %>
                                         <%- include('components/accountCard.html', {account: account}); %>
                                     <% }); %>
@@ -105,7 +104,7 @@
                                     <div class="bank-cards shadow">
                                         <div class="row">
                                             <div class="col-sm-3">
-                                                <div class="account-data-label float-left">Saving A/C Number</div>
+                                                <div class="account-data-label float-left text-uppercase text-sm text-muted">Saving A/C Number</div>
                                                 <div class="account-data float-left">303****290</div>
                                                 <div class="clearfix"></div>
                                             </div>
