@@ -24,109 +24,50 @@
 	
     <div class="content">
         <div class="container">
-            <div class="row">
+            <div class="row mb-3">
                 <div class="col-lg-8">
-                    <div id="accordion" role="tablist">
-                        <div class="card">
-                            <div class="card-header accordion-active shadow" role="tab" id="headingOne">
-                                <h5 class="mb-0">
-                                    <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                       <div class="row">
-                                           <div class="col">
-                                                Bank Accounts
-                                           </div>
-                                       
-                                        <div class="col-3 btn btn-primary"> Accounts
-                                            <i class="fa fa-chevron-down"></i>
-                                        </div>
-                                    </div>
-                                    </a>
-                                </h5>
-                            </div>
-
-                            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-                                <div class="card-body">
-                                    <% bankAccounts.forEach(function(account){ %>
-                                        <%- include('components/accountCard.html', {account: account}); %>
-                                    <% }); %>
-                                </div>
+                    <div id="accordion">
+                        <div class="card" data-toggle="collapse" href="#collapse-1" role="button" aria-expanded="false" aria-controls="collapse-1">
+                            <div class="card-header">
+                                Bank Accounts
+                                <button class="card-header-button btn btn-primary">View Account(s) <i class="fa fa-chevron-down"></i></button>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-header shadow" role="tab" id="headingTwo">
-                                <h5 class="mb-0">
-                                    <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <div class="float-left"> Credit Card Accounts</div>
-                                        <div class="float-right btn btn-primary">View Accounts
-                                            <i class="fas fa-chevron-down"></i>
-                                        </div>
-                                    </a>
-                                </h5>
-                            </div>
-                            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-                                <div class="card-body">
-                                    <div class="bank-cards shadow">
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                                <div class="account-data-label float-left">Saving A/C Number</div>
-                                                <div class="account-data float-left">303****290</div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="account-data-label">Balance</div>
-                                                <div class="account-data">$290,000,000</div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="account-data-label">Balance At</div>
-                                                <div class="account-data">May 08, 2018</div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <button class="float-right btn btn-primary-custom">Details</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+
+                        <div id="collapse-1" class="collapse show" data-parent="#accordion">
+                            <% bankAccounts.forEach(function(account){ %>
+                                <%- include('components/accountCard.html', {account: account}); %>
+                            <% }); %>
+                        </div>
+
+                        <div class="card" data-toggle="collapse" href="#collapse-2" role="button" aria-expanded="false" aria-controls="collapse-2">
+                            <div class="card-header">
+                                Credit Card Accounts
+                                <button class="card-header-button btn btn-primary">View Account(s) <i class="fa fa-chevron-down"></i></button>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-header shadow" role="tab" id="headingThree">
-                                <h5 class="mb-0">
-                                    <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        NCB Insurance Accounts
-                                        <div class="float-right btn btn-primary">View Accounts
-                                            <i class="fas fa-chevron-down"></i>
-                                        </div>
-                                    </a>
-                                </h5>
-                            </div>
-                            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-                                <div class="card-body">
-                                    <div class="bank-cards shadow">
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                                <div class="account-data-label float-left text-uppercase text-sm text-muted">Saving A/C Number</div>
-                                                <div class="account-data float-left">303****290</div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="account-data-label">Balance</div>
-                                                <div class="account-data">$290,000,000</div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="account-data-label">Balance At</div>
-                                                <div class="account-data">May 08, 2018</div>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <button class="float-right btn btn-primary-custom">Details</button>
-                                            </div>
-                                        </div>
 
-                                    </div>
-                                </div>
+                        <div id="collapse-2" class="collapse" data-parent="#accordion">
+                            <% bankAccounts.forEach(function(account){ %>
+                                <%- include('components/accountCard.html', {account: account}); %>
+                            <% }); %>
+                        </div>
+
+                        <div class="card" data-toggle="collapse" href="#collapse-3" role="button" aria-expanded="false" aria-controls="collapse-3">
+                            <div class="card-header">
+                                NCB Insurance Accounts
+                                <button class="card-header-button btn btn-primary">View Account(s) <i class="fa fa-chevron-down"></i></button>
                             </div>
+                        </div>
+
+                        <div id="collapse-3" class="collapse" data-parent="#accordion">
+                            <% bankAccounts.forEach(function(account){ %>
+                                <%- include('components/accountCard.html', {account: account}); %>
+                            <% }); %>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-4">
                     <div class="weather shadow">
                         <div class="weather-info">
@@ -148,122 +89,129 @@
                             <b>Kori</b>
                         </div>
                     </div>
-                    <div class="custom-panel shadow">
-                        <div class="panel-header">
+
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="images/links-icon.png" class="card-header-icon">
                             Quick Links
                         </div>
-                        <div class="panel-body">
-                            <ul class="nav flex-column quick-links">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="#">Transfer Money <i class="fas fa-chevron-right"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Transfer Activity <i class="fas fa-chevron-right"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Automatic Transfers <i class="fas fa-chevron-right"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Add External Transfers <i class="fas fa-chevron-right"></i></a>
-                                </li>
-                            </ul>
+                        <div class="card-body">
+                            <nav class="nav flex-column nav-action-links">
+                                <a class="nav-link active" href="#">Transfer Money <i class="fa fa-chevron-right"></i></a>
+                                <a class="nav-link" href="#">Transfer Activity <i class="fa fa-chevron-right"></i></a>
+                                <a class="nav-link" href="#">Automatic Transfers <i class="fa fa-chevron-right"></i></a>
+                                <a class="nav-link" href="#">Add External Transfers <i class="fa fa-chevron-right"></i></a>
+                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
-            <br>
-            <br>
+
             <div class="row">
-                <div class="col-lg-7">
-                    <div class="custom-panel shadow">
-                        <div class="panel-header">
+                <div class="col-lg-8">
+
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="images/history-icon.png" class="card-header-icon">
                             Recent Transaction History
                         </div>
-                        <div class="panel-body">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Payee Name</th>
+                                            <th>Date</th>
+                                            <th>Amount Paid (JMD)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
 
-                            <table class="table table-hover table-responsive">
-                                <tr>
-                                    <th>Payee Name</th>
-                                    <th>Date</th>
-                                    <th>Amount Paid (JMD)</th>
-                                </tr>
-                                <tr>
+                                            <td>
+                                                JPS Electrical Bill
+                                            </td>
+                                            <td>
+                                                September 27,2018
+                                            </td>
+                                            <td>
+                                                $000.00
+                                            </td>
+                                        </tr>
+                                        <tr>
 
-                                    <td>
-                                        JPS Electrical Bill
-                                    </td>
-                                    <td>
-                                        September 27,2018
-                                    </td>
-                                    <td>
-                                        $000.00
-                                    </td>
-                                </tr>
-                                <tr>
-
-                                    <td>
-                                        JPS Electrical Bill
-                                    </td>
-                                    <td>
-                                        September 27,2018
-                                    </td>
-                                    <td>
-                                        $000.00
-                                    </td>
-                                </tr>
-                            </table>
-                            <button type="button" class="float-right btn btn-primary">Pay Bills</button>
-                            <div class="clearfix"></div>
+                                            <td>
+                                                JPS Electrical Bill
+                                            </td>
+                                            <td>
+                                                September 27,2018
+                                            </td>
+                                            <td>
+                                                $000.00
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="text-right">
+                                <a href="#" class="btn btn-primary">Pay Bills</a>
+                            </div>
                         </div>
-
                     </div>
                 </div>
-                <div class="col-lg-5">
-                    <div class="custom-panel shadow">
-                        <div class="panel-header">
-                            Foriegn Exchange Rates
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="images/foreign-exchange-icon.png" class="card-header-icon">
+                            Foreign Exchange Rates
                         </div>
-                        <div class="panel-body">
-                            <table class="table table-hover table-responsive">
-                                <tr>
-                                    <th>Currency</th>
-                                    <th>Sell</th>
-                                    <th>Buy</th>
-                                    <th>Buy</th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <i class="fas fa-square-full"></i> USD
-                                    </td>
-                                    <td>
-                                        000.00
-                                    </td>
-                                    <td>
-                                        000.00
-                                    </td>
-                                    <td>
-                                        000.00
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <i class="fas fa-square-full"></i> GBP
-                                    </td>
-                                    <td>
-                                        000.00
-                                    </td>
-                                    <td>
-                                        000.00
-                                    </td>
-                                    <td>
-                                        000.00
-                                    </td>
-                                </tr>
-                            </table>
-                            <button type="button" class="float-right btn btn-primary">See more FX Rates</button>
-                            <div class="clearfix"></div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover table-responsive">
+                                    <thead>
+                                        <tr>
+                                            <th>Currency</th>
+                                            <th>Sell</th>
+                                            <th>Buy</th>
+                                            <th>Buy</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <i class="fas fa-square-full"></i> USD
+                                            </td>
+                                            <td>
+                                                000.00
+                                            </td>
+                                            <td>
+                                                000.00
+                                            </td>
+                                            <td>
+                                                000.00
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i class="fas fa-square-full"></i> GBP
+                                            </td>
+                                            <td>
+                                                000.00
+                                            </td>
+                                            <td>
+                                                000.00
+                                            </td>
+                                            <td>
+                                                000.00
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="text-right">
+                                <a href="#" class="btn btn-primary">See more FX Rates</a>
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>

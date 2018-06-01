@@ -1,8 +1,66 @@
-.gradient-panel {
-	background: linear-gradient(#00539B, #002A4E);
-	width: 100%;
-	padding: 18px;
-	color: #fff;
-	font-size: 0.8rem;
-	border-radius: 4px;
+.card {
+	border: $card-border-width;
+	background: $card-background-color;
+	margin-bottom: $card-margin-bottom;
+	box-shadow: $card-shadow;
+    border-radius: $card-border-radius;
+    .btn {
+    	border-width: 0;
+    }
+    .btn-border {
+    	border-width: 1px
+    }
+}
+
+.card-sm .card-body {
+    padding: $card-sm-card-body-padding;
+}
+
+.card-hover {
+	@include transition($card-hover-transition);
+	&:hover {
+		z-index: 9999;
+		box-shadow: $card-hover-shadow;
+	}
+}
+
+.card-header {
+	flex: 1 1 auto;
+    padding: $card-header-padding;
+    background: $card-header-background-color;
+    color: $card-header-text-color;
+    font-size: $card-header-font-size;
+    font-weight: $card-header-font-weight;
+    border-radius: $card-header-border-radius;
+}
+
+.card-header-icon {
+	height: $card-header-icon-height;
+	margin: $card-header-icon-margin;
+}
+
+.card-header-button {
+	float: right;
+	font-size: $card-header-button-font-size;
+	padding: $card-header-button-padding;
+	i {
+		margin: $card-header-button-icon-margin;
+	}
+}
+
+.nav-action-links {
+	.nav-link {
+		border-bottom: $nav-action-links-nav-link-border-bottom;
+		padding: $nav-action-links-nav-link-padding;
+		color: $text-brand-color;
+		i {
+			float: right;
+			position: relative;
+			top: 3px;
+		}
+
+		&:hover {
+			background: $nav-action-links-nav-link-hover-background-color;
+		}
+	}
 }

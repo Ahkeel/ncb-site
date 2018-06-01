@@ -1,0 +1,13 @@
+.btn-outline-brand {
+	color: $brand-color;
+	background-color: transparent;
+	background-image: none;
+	border-color: $brand-color;
+	&:hover,
+	&:active,
+	&:focus {
+		color: $white;
+		background-color: $brand-color;
+		border-color: $brand-color;
+	}
+}
