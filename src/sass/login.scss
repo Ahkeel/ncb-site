@@ -1,0 +1,30 @@
+.blurred-bg
+{
+    background-image: url('../images/');
+    width:100%;
+}
+
+.login
+{
+   
+}
+.img-width-100
+{
+    width:100%;
+}
+.pattern-bg
+{
+    background-image: url('../images/newsbg.png');
+}
+
+.login-container-height
+{
+    height:350px;
+}
+
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one 🙂       */
+    display: flex;
+    align-items: center;
+  }

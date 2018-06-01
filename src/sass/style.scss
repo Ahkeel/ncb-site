@@ -3,6 +3,7 @@
 @import "typography";
 @import "button";
 @import "component";
+@import "login";
 
 body {
   background-color: $page-background-color;
@@ -21,11 +22,10 @@ body {
 .fas {
   margin-right: 5px;
 }
-
-.color-white {
-  color: #fff;
+.text-hightlight
+{
+  color:$yellow-highlight;
 }
-
 .border-radius {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -97,10 +97,6 @@ body {
   padding-top: 40px;
 }
 
-.accordion-active {
-  background-image: url('../images/gradient.png');
-}
-
 .bank-cards {
   background-color: #fff;
   padding: 10px 20px 10px 20px;
@@ -114,13 +110,8 @@ body {
   -o-transition: 0.4s;
   transition: 0.4s;
   &:hover {
-    // -webkit-box-shadow: 15px 28px 64px 5px $card-shadow;
-    // -moz-box-shadow: 15px 28px 64px 5px $card-shadow;
     box-shadow: 10px 10px 10px 2px $card-shadow;
-    position: relative;
-    // border:1px solid #00539b;
-    // margin-left:-7px;
- 
+    position: relative; 
   }
 }
 
@@ -136,15 +127,6 @@ body {
   font-size: 15px;
 }
 
-.btn-primary-custom, .btn-custom-promo {
-  background-color: #fff;
-  color: #00539b;
-  border: 1px solid #00539b;
-  font-size: 13px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 7px;
-}
 
 .btn-default-custom {
   background-color: #fff;
@@ -231,7 +213,7 @@ body {
   background: #00539b;
 }
 
-.promotion {
+.promotiojn {
   margin-top: 40px;
   margin-bottom: 30px;
   background-image: url('../images/promo.png');
@@ -333,6 +315,7 @@ body {
 
 .tab-bar {
   background-color: #0a50a0;
+  background: linear-gradient(#00539B, #002A4E);
   padding: 20px;
   margin-top: 2px;
   color: #fff;
@@ -423,15 +406,6 @@ body {
   margin-bottom:$container-margin-bottom-space;
 }
 
-.account-details img
-{
-  width:100%;
-}
-
-.account-details-item
-{
-  margin-bottom: 15px;
-}
 .account-info
 {
   color:$account-info-color;
