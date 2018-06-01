@@ -1,6 +1,7 @@
 @import "variables";
 @import "typography";
 @import "component";
+@import "login";
 
 // body {
 // 	color: $primary-color;
@@ -373,6 +374,7 @@ table {
 
 .tab-bar {
   background-color: #0a50a0;
+  background: linear-gradient(#00539B, #002A4E);
   padding: 20px;
   margin-top: 2px;
   color: #fff;
