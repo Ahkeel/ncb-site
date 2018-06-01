@@ -1,0 +1,54 @@
+    <%- include('partials/header.html', {title: "Template Examples", page_title: "Cards", page_icon: ""}) %>
+	
+    <div class="content">
+        <div class="container">
+
+            <div class="mb-5">
+                <div class="card">
+                    <div class="card-body">
+                        This is a card with <code>.card-body</code>
+                    </div>
+                </div>
+
+                <div class="card card-hover">
+                    <div class="card-body">
+                        This card has <code>.card-hover</code>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        Example Header
+                    </div>
+                    <div class="card-body">
+                        This card has <code>.card-header</code>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/history-icon.png" class="card-header-icon">
+                        Example Header
+                        <button class="card-header-button btn btn-primary">Button</button>
+                    </div>
+                    <div class="card-body">
+                        This <code>.card-header</code> has <code>img.card-header-icon</code> and <code>button.card-header-button</code>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <p>See the bootstrap document to see how default card features.</p>
+
+                        <a href="https://getbootstrap.com/docs/4.0/components/card/">See Documentation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%- include('partials/footer.html') %>
+    </div>	
+
+	<%- include('partials/scripts.html'); %>
+</body>
+</html>
