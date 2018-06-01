@@ -9,15 +9,6 @@ body {
   font-family: $page-font;
 }
 
-// table {
-//   width: 100%;
-//   display: table;
-// }
-
-// .table-responsive {
-//   display: table;
-// }
-
 #logo {
   padding: 5px;
   width: 100%;
@@ -109,34 +100,6 @@ body {
 .accordion-active {
   background-image: url('../images/gradient.png');
 }
-
-// .card-header {
-//   &.accordion-active a {
-//     color: #fff;
-//   }
-//   .btn-primary {
-//     margin-top: -8px;
-//   }
-// }
-
-// .card {
-//   border: 0px;
-//   background: none;
-//   margin-bottom: 10px;
-// }
-
-// .card-header {
-//   background-color: #fff;
-//   padding: 25px;
-//   font-weight: 100;
-//   a {
-//     color: #33558b;
-//   }
-// }
-
-// .card-body {
-//   padding: 0.6rem 0 0 0;
-// }
 
 .bank-cards {
   background-color: #fff;
