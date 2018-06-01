@@ -1,0 +1,21 @@
+// Greeting Widget
+.greeting-widget {
+	border-radius: $greeting-widget-border-radius;
+	box-shadow: $greeting-widget-shadow;
+	background: $greeting-widget-background-color;
+}
+
+.greeting-widget-header {
+	background: $greeting-widget-header-background-color;
+	border-radius: $greeting-widget-header-border-radius;
+	padding: $greeting-widget-header-padding;
+}
+
+.greeting-widget-header-icon {
+	height: $greeting-widget-header-icon-height;
+	float: right;
+}
+
+.greeting-widget-body {
+	padding: $greeting-widget-body-padding;
+}

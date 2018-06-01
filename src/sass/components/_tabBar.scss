@@ -1,0 +1,30 @@
+// Tab bar
+.tab-bar {
+	// display: flex;
+	// flex-direction: row;
+	position: relative;
+}
+
+.tab-bar-item {
+	display: inline-block;
+	padding: 20px 30px;
+	background: white;
+	border-radius: 10px 0 0 0;
+    border: 1px solid black;
+}
+
+.tab-bar-item:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    // z-index: -1;
+    background: white;
+    transform-origin: top right;
+    -ms-transform: skew(30deg, 0deg);
+    -webkit-transform: skew(30deg, 0deg);
+    transform: skew(30deg, 0deg);
+}

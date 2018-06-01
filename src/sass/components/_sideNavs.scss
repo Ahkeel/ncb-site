@@ -1,0 +1,17 @@
+// Side Navigation
+.nav-action-links {
+	.nav-link {
+		border-bottom: $nav-action-links-nav-link-border-bottom;
+		padding: $nav-action-links-nav-link-padding;
+		color: $text-brand-color;
+		i {
+			float: right;
+			position: relative;
+			top: 3px;
+		}
+
+		&:hover {
+			background: $nav-action-links-nav-link-hover-background-color;
+		}
+	}
+}

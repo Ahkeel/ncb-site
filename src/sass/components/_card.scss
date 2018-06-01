@@ -1,0 +1,55 @@
+// Card
+.card {
+	border: $card-border-width;
+	background: $card-background-color;
+	margin-bottom: $card-margin-bottom;
+	box-shadow: $card-shadow;
+    border-radius: $card-border-radius;
+    .btn {
+    	border-width: 0;
+    }
+    .btn-border {
+    	border-width: 1px;
+    }
+}
+
+.card-sm .card-body {
+    padding: $card-sm-card-body-padding;
+}
+
+.card-hover {
+	@include transition($card-hover-transition);
+	&:hover {
+		z-index: 10;
+		box-shadow: $card-hover-shadow;
+	}
+}
+
+.card-header {
+	flex: 1 1 auto;
+    padding: $card-header-padding;
+    background: $card-header-background-color;
+    color: $card-header-text-color;
+    font-size: $card-header-font-size;
+    font-weight: $card-header-font-weight;
+    border-radius: $card-header-border-radius;
+    &.card-header-inv {
+    	color: $brand-color;
+    	background: $white;
+    	font-weight: $card-header-inv-font-weight;
+    }
+}
+
+.card-header-icon {
+	height: $card-header-icon-height;
+	margin: $card-header-icon-margin;
+}
+
+.card-header-button {
+	float: right;
+	font-size: $card-header-button-font-size;
+	padding: $card-header-button-padding;
+	i {
+		margin: $card-header-button-icon-margin;
+	}
+}
