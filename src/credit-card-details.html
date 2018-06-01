@@ -1,3 +1,25 @@
+<%
+    let bankAccounts = [
+        {
+            type: 'Savings',
+            number: '303***290',
+            balance: '$506,000',
+            balanceAt: 'May 08, 2018'
+        },
+        {
+            type: 'Savings',
+            number: '404***290',
+            balance: '$290,000,000',
+            balanceAt: 'May 08, 2018'
+        },
+        {
+            type: 'Chequing',
+            number: '303***290',
+            balance: '$1,000,000',
+            balanceAt: 'May 08, 2018'
+        },
+]; 
+%>
     <%- include('partials/header.html', {title: "Accounts", page_title: "Credit Card Details", page_icon: "images/dashboard.png"}) %>
         <div class="content">
             <div class="container">
@@ -24,26 +46,44 @@
                                     <img src="images/keycard.png">
                                 </div>
                                 <div class="col-sm-8">
-                                    <div class="account-charts">
+                                    <div class="account-charts pl-4">
                                         <div class="form-group">
-                                            <select class="form-control">
-                                                <option>Select Other Account</option>
+                                            <select class="form-control w-50 float-right">
+                                                <option>Last 6 Months</option>
                                             </select>
+                                            <div class="clearfix"></div>
                                         </div>
 
-                                        <div style="height:300px;"></div>
-                                        j
+                                        <div>
+                                            <canvas id="myChart"></canvas>
+                                        </div>
+                                        <div class="mb-2"></div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <h5 class="text-white">$0000,000,00</h5>
+                                                <div class="text-white">Account Balance</div>
+                                            </div>
+                                            <div class="col">
+                                                <h5 class="text-white">$0000,000,00</h5>
+                                                <div class="text-white">Account Balance</div>
+                                            </div>
+                                            <div class="col">
+                                                <h5 class="text-white">$0000,000,00</h5>
+                                                <div class="text-yellow">Account Balance</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="card-body">
-                            <div class="panel-header">
-                                Transaction History
+                            <div class="gradient-panel mb-3">
+                                <img src="images/history-icon.png" style="height: 50px;" class="float-left" /><h5>Transaction History</h4>
                             </div>
                             <a href="#">
                                 <div class="bank-cards shadow">
@@ -137,6 +177,60 @@
             <%- include('partials/footer.html') %>
         </div>
         <%- include('partials/scripts.html'); %>
-</body>
+            <script>
+                var ctx = document.getElementById('myChart').getContext('2d');
+                var myLineChart = new Chart(ctx, {
+                    type: 'line',
+                    scaleFontColor: 'white',
+                    data: {
+                        labels: ["January", "February", "March", "April", "May", "June", "July"],
+                        datasets: [{
+                            label: "My First dataset",
+                            backgroundColor: 'transparent',
+                            lineTension: 0,
+                            data: [0, 10, 5, 2, 20, 30, 45],
+                            borderColor: 'white',
+                            backgroundColor: 'transparent',
+                            borderDash: [5, 5],
+                            pointBorderColor: 'blue',
+                            pointBackgroundColor: 'blue',
+                            pointRadius: 5,
+                            pointStyle: 'Rounded'
+                        }]
+                    },
+                    options: {
+                        legend: {
+                            fontColor: 'white'
 
-</html>
+                        },
+                        bezierCurve: false,
+                        scales: {
+                            yAxes: [{
+                                gridLines: {
+                                    color: 'white',
+                                    lineWidth: 1
+                                },
+                                ticks: {
+                                    beginAtZero: true,
+                                    fontColor: 'white'
+                                },
+                            }],
+                            xAxes: [{
+                                gridLines: {
+                                    color: 'white',
+                                    lineWidth: 1
+                                },
+                                ticks: {
+                                    fontColor: 'white'
+                                },
+                            }]
+                        }
+                    }
+                });
+
+
+
+            </script>
+            </body>
+
+            </html>
