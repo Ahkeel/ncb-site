@@ -2,7 +2,10 @@
 @import "mixins";
 @import "typography";
 @import "button";
-@import "component";
+@import "components/card";
+@import "components/sideNavs";
+@import "components/greetingWidget";
+@import "components/tabBar";
 @import "login";
 
 body {
