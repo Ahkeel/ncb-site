@@ -1,12 +1,67 @@
-$primary-color: #333;
-$text-brand-color: #004785;
-$account-info-color:#0a386e;
-$secondary-color:#002b5c;
+// Colors
+$mine-shaft: #333333;
+$congress-blue: #004785;
+$deep-saphire: #0a386e;
+$midnight-blue: #002b5c;
+$wild-sand: #F4F4F4;
+$white: #FFFFFF;
+$athens-gray: #E9ECEF;
+$chambray: #33558B;
+$endeavour:  #00539B;
+$prussian-blue: #002A4E;
+$gray-extra-light: #B7B7B7;
+$yellow-highlight:#ffda19;
 
+$primary-color: $mine-shaft;
+$secondary-color: $midnight-blue;
+$account-info-color: $deep-saphire;
+$account-info-font-size:0.8rem;
+
+// Color assignments
+$brand-color: $congress-blue;
+$text-primary-color: $mine-shaft;
+$text-secondary-color: $midnight-blue;
+$text-brand-color: $congress-blue;
+$text-extra-light-color: $gray-extra-light;
+
+// Page defaults
+$page-background-color: $wild-sand;
+$page-font: 'Roboto', sans-serif;
+
+// Container
 $container-padding:20px;
 $container-margin-bottom-space:20px;
 
+// Card
+$card-border-width: 0px;
+$card-background-color: $white;
+$card-margin-bottom: 10px;
+$card-border-radius: 4px;
+$card-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1);
 
-$account-info-font-size:0.8rem;
+$card-sm-card-body-padding: 0.6rem 1rem;
 
-$card-shadow: rgba(0,0,0,0.1);
+$card-hover-transition: 0.4s;
+$card-hover-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.1);
+
+$card-header-background-color: linear-gradient($endeavour, $prussian-blue);
+$card-header-text-color: $white;
+$card-header-link-color: $chambray;
+$card-header-font-weight: 100;
+$card-header-font-size: 22px;
+$card-header-padding: 1rem;
+$card-header-border-radius: 4px !important;
+
+$card-header-icon-height: 45px;
+$card-header-icon-margin: 0 7px 0 0;
+
+$card-header-button-font-size: 13px;
+$card-header-button-padding: .6rem 1.5rem;
+$card-header-button-icon-margin: 0 0 0 10px;
+
+$nav-action-links-nav-link-padding: 16px 7px;
+$nav-action-links-nav-link-border-bottom: 1px solid #F1F1F1;
+$nav-action-links-nav-link-hover-background-color: #F1F1F1;
+
+
+

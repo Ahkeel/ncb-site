@@ -25,7 +25,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="account-details border-radius">
+                        <div class="account-details text-brand border-radius">
                             <div class="row">
                                 <div class="col-sm-4">
                                     <div class="form-group">
@@ -33,43 +33,67 @@
                                             <option>Select Other Account</option>
                                         </select>
                                     </div>
-                                    <div class="account-details-item">
-                                        <div class="account-info">Nickname</div>
-                                        <h5 class="color-white">Jonanthan Dough</h5>
+                                    <div>
+                                        <div class="font-weight-bold">Nickname</div>
+                                        <h5 class="text-white">Jonanthan Dough</h5>
                                     </div>
-                                    <div class="account-details-item">
-                                        <div class="account-info">Credit Card A/C Number</div>
-                                        <h5 class="color-white">303***290</h5>
+                                    <div>
+                                        <div class="font-weight-bold">Credit Card A/C Number</div>
+                                        <h5 class="text-white">303***290</h5>
                                     </div>
-                                    <div class="account-info">Account Status</div>
-                                    <h5 class="color-white">Open Account</h5>
-                                    <img src="images/keycard.png">
+                                    <div class="font-weight-bold">Account Status</div>
+                                    <h5 class="text-white">Open Account</h5>
+                                    <img src="images/keycard.png" class="w-100">
                                 </div>
                                 <div class="col-sm-8">
                                     <div class="account-charts pl-4">
                                         <div class="form-group">
-                                            <select class="form-control w-50 float-right">
+                                            <select class="form-control w-25 float-right">
                                                 <option>Last 6 Months</option>
                                             </select>
                                             <div class="clearfix"></div>
                                         </div>
-
-                                        <div>
-                                            <canvas id="myChart"></canvas>
+                                        <div class="row w-75">
+                                            <div class="col-3">
+                                                <div class="card">
+                                                    <div class="card-body p-1">
+                                                        <i class="fas fa-caret-up fa-lg text-success"></i> Incoming
+                                                    </div>
+                                                </div>
+                                                <div class="text-white">$000,000,000</div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="card">
+                                                    <div class="card-body p-1">
+                                                        <i class="fas fa-caret-down fa-lg text-danger"></i> Outcoming
+                                                    </div>
+                                                </div>
+                                                <div class="text-white">$000,000,000</div>
+                                            </div>
                                         </div>
-                                        <div class="mb-2"></div>
+                                        <div class="mb-3"></div>
+                                        <div>
+                                            <canvas id="myChart" height="100"></canvas>
+                                        </div>
+                                        <div class="mb-4"></div>
                                         <div class="row">
                                             <div class="col">
-                                                <h5 class="text-white">$0000,000,00</h5>
+                                                <h5 class="text-white font-weight-light">$0000,000,00
+                                                    <span class="text-xs">JMD</span>
+                                                </h5>
                                                 <div class="text-white">Account Balance</div>
                                             </div>
                                             <div class="col">
-                                                <h5 class="text-white">$0000,000,00</h5>
-                                                <div class="text-white">Account Balance</div>
+                                                <h5 class="text-white font-weight-light">$0000,000,00
+                                                    <span class="text-xs">JMD</span>
+                                                </h5>
+                                                <div class="text-hightlight">Spent Today</div>
                                             </div>
                                             <div class="col">
-                                                <h5 class="text-white">$0000,000,00</h5>
-                                                <div class="text-yellow">Account Balance</div>
+                                                <h5 class="text-white font-weight-light">$0000,000,00
+                                                    <span class="text-xs">JMD</span>
+                                                </h5>
+                                                <div class="text-hightlight">Spent This Month</div>
                                             </div>
                                         </div>
                                     </div>
@@ -78,96 +102,97 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="card-body">
-                            <div class="gradient-panel mb-3">
-                                <img src="images/history-icon.png" style="height: 50px;" class="float-left" /><h5>Transaction History</h4>
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="images/history-icon.png" class="card-header-icon"> Transaction History
+                                <select class="form-control float-right w-25">
+                                    <option>Filter</option>
+                                </select>
+                                <div class="clearfix"></div>
                             </div>
-                            <a href="#">
-                                <div class="bank-cards shadow">
-                                    <div class="row">
-                                        <div class="col-md-1">
-                                            <div class="account-data-label float-left">SI Number</div>
-                                            <div class="account-data text-right float-left">78</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="account-data-label">Post Date</div>
-                                            <div class="account-data text-right">May 10,2018</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="account-data-label">Transaction Date</div>
-                                            <div class="account-data text-right">May 12, 2018</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="account-data-label">Description</div>
-                                            <div class="account-data text-right">Play store purchase</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="account-data-label">Debt</div>
-                                            <div class="account-data text-right">1,0000,000</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div class="col-md-1">
-                                            <div class="account-data-label">Credit</div>
-                                            <div class="account-data text-right">1,00000</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="account-data-label">Balance</div>
-                                            <div class="account-data text-right">1,0000</div>
-                                            <div class="clearfix"></div>
-                                        </div>
+                        </div>
+
+                        <div class="card card-hover card-sm">
+                            <div class="card-body text-brand text-md-right">
+                                <div class="row">
+                                    <div class="col-sm-4 col-md mb-xs-3">
+                                        <div class="text-extra-light text-xs">SI Nummber</div>
+                                        78
                                     </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="bank-cards shadow">
-                                    <div class="row">
-                                        <div class="col-md-1">
-                                            <div class="account-data-label float-left">SI Number</div>
-                                            <div class="account-data text-right float-left">78</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="account-data-label">Post Date</div>
-                                            <div class="account-data text-right">May 10,2018</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="account-data-label">Transaction Date</div>
-                                            <div class="account-data text-right">May 12, 2018</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="account-data-label">Description</div>
-                                            <div class="account-data text-right">Play store purchase</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="account-data-label">Debt</div>
-                                            <div class="account-data text-right">1,0000,000</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div class="col-md-1">
-                                            <div class="account-data-label">Credit</div>
-                                            <div class="account-data text-right">1,00000</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="account-data-label">Balance</div>
-                                            <div class="account-data text-right">1,0000</div>
-                                            <div class="clearfix"></div>
-                                        </div>
+
+                                    <div class="col-sm-4 col-md mb-xs-3">
+                                        <div class="text-extra-light text-xs">Post Date</div>
+                                        May 12, 2018
+                                    </div>
+                                    <div class="col-sm-4 col-md mb-xs-3">
+                                        <div class="text-extra-light text-xs">Transaction Date</div>
+                                        May 12, 2018
+                                    </div>
+
+                                    <div class="col-sm-4 col-md-2 mb-xs-3">
+                                        <div class="text-extra-light text-xs">Description</div>
+                                        Play store purchase
+                                    </div>
+
+                                    <div class="col-sm-4 col-md mb-xs-3">
+                                        <div class="text-extra-light text-xs">Debt</div>
+                                        1,000,000
+                                    </div>
+
+                                    <div class="col-sm-4 col-md mb-xs-3">
+                                        <div class="text-extra-light text-xs">Credit</div>
+                                        1,00000
+                                    </div>
+                                    <div class=" col-sm-4 col-md mb-xs-3">
+                                        <div class="text-extra-light text-xs">Balance</div>
+                                        1,00000
                                     </div>
 
                                 </div>
-                            </a>
+                            </div>
+                        </div>
+
+                        <div class="card card-hover card-sm">
+                            <div class="card-body text-brand text-md-right">
+                                <div class="row">
+                                    <div class="col-sm-4 col-md mb-sm-3">
+                                        <div class="text-extra-light text-xs">SI Nummber</div>
+                                        78
+                                    </div>
+
+                                    <div class="col-sm-4 col-md mb-xs-3">
+                                        <div class="text-extra-light text-xs">Post Date</div>
+                                        May 12, 2018
+                                    </div>
+                                    <div class="col-sm-4 col-md mb-xs-3">
+                                        <div class="text-extra-light text-xs">Transaction Date</div>
+                                        May 12, 2018
+                                    </div>
+
+                                    <div class="col-sm-4 col-md-2 mb-xs-3">
+                                        <div class="text-extra-light text-xs">Description</div>
+                                        Play store purchase
+                                    </div>
+
+                                    <div class="col-sm-4 col-md mb-xs-3">
+                                        <div class="text-extra-light text-xs">Debt</div>
+                                        1,000,000
+                                    </div>
+
+                                    <div class="col-sm-4 col-md mb-xs-3">
+                                        <div class="text-extra-light text-xs">Credit</div>
+                                        1,00000
+                                    </div>
+                                    <div class=" col-sm-4 col-md mb-xs-3">
+                                        <div class="text-extra-light text-xs">Balance</div>
+                                        1,00000
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -200,15 +225,14 @@
                     },
                     options: {
                         legend: {
-                            fontColor: 'white'
-
+                            display: false
                         },
                         bezierCurve: false,
+                        scaleShowHorizontalLines: false,
                         scales: {
                             yAxes: [{
-                                gridLines: {
-                                    color: 'white',
-                                    lineWidth: 1
+                                gridLines:{
+                                    display : false
                                 },
                                 ticks: {
                                     beginAtZero: true,
@@ -218,7 +242,6 @@
                             xAxes: [{
                                 gridLines: {
                                     color: 'white',
-                                    lineWidth: 1
                                 },
                                 ticks: {
                                     fontColor: 'white'
