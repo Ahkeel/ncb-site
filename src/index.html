@@ -20,15 +20,15 @@
         },
 ]; 
 %>
-    <%- include('partials/header.html', {title: "Dashboard", page_title: "Account Summary", page_icon: "images/dashboard.png"}) %>
+    <%- include('partials/header.html', {title: "Accounts", page_title: "Account Summary", page_icon: "images/dashboard.png"}) %>
 	
     <div class="content">
         <div class="container">
             <div class="row mb-3">
                 <div class="col-lg-8">
                     <div id="accordion">
-                        <div class="card" data-toggle="collapse" href="#collapse-1" role="button" aria-expanded="false" aria-controls="collapse-1">
-                            <div class="card-header">
+                        <div class="card" data-toggle="collapse" href="#collapse-1" role="button" aria-expanded="true" aria-controls="collapse-1">
+                            <div class="card-header card-header-inv">
                                 Bank Accounts
                                 <button class="card-header-button btn btn-primary">View Account(s) <i class="fa fa-chevron-down"></i></button>
                             </div>
@@ -41,7 +41,7 @@
                         </div>
 
                         <div class="card" data-toggle="collapse" href="#collapse-2" role="button" aria-expanded="false" aria-controls="collapse-2">
-                            <div class="card-header">
+                            <div class="card-header card-header-inv">
                                 Credit Card Accounts
                                 <button class="card-header-button btn btn-primary">View Account(s) <i class="fa fa-chevron-down"></i></button>
                             </div>
@@ -54,7 +54,7 @@
                         </div>
 
                         <div class="card" data-toggle="collapse" href="#collapse-3" role="button" aria-expanded="false" aria-controls="collapse-3">
-                            <div class="card-header">
+                            <div class="card-header card-header-inv">
                                 NCB Insurance Accounts
                                 <button class="card-header-button btn btn-primary">View Account(s) <i class="fa fa-chevron-down"></i></button>
                             </div>
@@ -69,24 +69,16 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="weather shadow">
-                        <div class="weather-info">
-                            <div class="row">
-                                <div class="col-lg-8">
-                                    <b>Jamaica</b>
-                                    <h3>30 C</h3>
-                                    <div class="weather-info-date">Thursday, 8:25 AM</div>
-                                </div>
-
-                                <div class="col-lg-4">
-                                    <img src="images/weather-icon.png" style="width:84px;">
-                                </div>
-                            </div>
+                    <div class="greeting-widget mb-3">
+                        <div class="greeting-widget-header">
+                            <img src="images/weather-icon.png" class="greeting-widget-header-icon">
+                            <div class="text-sm font-weight-bold text-uppercase">Jamaica</div>
+                            <div class="text-xl font-weight-light">30 C</div>
+                            <div class="text-sm">Thursday, 8:25 PM</div>
                         </div>
-                        <div class="welcome">
-                            Good morning,
-                            <br>
-                            <b>Kori</b>
+                        <div class="greeting-widget-body text-lg text-brand">
+                            Good morning,<br>
+                            <span class="font-weight-bold">Kori!</span>
                         </div>
                     </div>
 

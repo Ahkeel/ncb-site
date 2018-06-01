@@ -10,6 +10,17 @@ $chambray: #33558B;
 $endeavour:  #00539B;
 $prussian-blue: #002A4E;
 $gray-extra-light: #B7B7B7;
+$gray-light: #F1F1F1;
+$gray: #E3E3E3;
+
+// Text
+$font-size-xs: 11px;
+$font-size-sm: 13px;
+$font-size-default: 15px;
+$font-size-md: 18px;
+$font-size-lg: 22px;
+$font-size-xl: 28px;
+$font-size-xxl: 35px;
 
 $primary-color: $mine-shaft;
 $secondary-color: $midnight-blue;
@@ -28,14 +39,14 @@ $page-background-color: $wild-sand;
 $page-font: 'Roboto', sans-serif;
 
 // Container
-$container-padding:20px;
-$container-margin-bottom-space:20px;
+$container-padding: 20px;
+$container-margin-bottom-space: 20px;
 
 // Card
 $card-border-width: 0px;
 $card-background-color: $white;
 $card-margin-bottom: 10px;
-$card-border-radius: 4px;
+$card-border-radius: 5px;
 $card-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1);
 
 $card-sm-card-body-padding: 0.6rem 1rem;
@@ -50,6 +61,7 @@ $card-header-font-weight: 100;
 $card-header-font-size: 22px;
 $card-header-padding: 1rem;
 $card-header-border-radius: 4px !important;
+$card-header-inv-font-weight: 400;
 
 $card-header-icon-height: 45px;
 $card-header-icon-margin: 0 7px 0 0;
@@ -58,9 +70,19 @@ $card-header-button-font-size: 13px;
 $card-header-button-padding: .6rem 1.5rem;
 $card-header-button-icon-margin: 0 0 0 10px;
 
+// Side navigation
 $nav-action-links-nav-link-padding: 16px 7px;
-$nav-action-links-nav-link-border-bottom: 1px solid #F1F1F1;
-$nav-action-links-nav-link-hover-background-color: #F1F1F1;
+$nav-action-links-nav-link-border-bottom: 1px solid $gray-light;
+$nav-action-links-nav-link-hover-background-color: $gray-light;
 
+// Greeting widget
+$greeting-widget-border-radius: 15px;
+$greeting-widget-shadow: $card-shadow;
+$greeting-widget-background-color: $white;
 
+$greeting-widget-header-background-color: $gray;
+$greeting-widget-header-border-radius: 15px 15px 0 0;
+$greeting-widget-header-padding: 13px 50px;
+$greeting-widget-header-icon-height: 80px;
 
+$greeting-widget-body-padding: 13px 50px;
