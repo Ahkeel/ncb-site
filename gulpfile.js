@@ -50,6 +50,7 @@ gulp.task('serve', ['html', 'sass', 'css', 'js', 'img'], function() {
     gulp.watch("src/js/*.js", ['js']);
     gulp.watch("src/images/**/*", ['img']);
     gulp.watch("src/**/*.html").on('change', browserSync.reload);
+    gulp.watch("src/sass/*.scss").on('change', browserSync.reload);
 });
 
 gulp.task('default', ['serve']);
