@@ -1,3 +1,20 @@
+    <%
+    let utilityBills = [
+        {
+            name: 'Electricity bill',
+            account_number: '30300234',
+        },
+        {
+            name: 'Water bill',
+            account_number: '40421321312290',
+        },
+        {
+            name: 'Phone bill',
+            account_number: '303546564290',
+        },
+    ]; 
+%>
+
     <%- include('partials/header.html', {title: "Bill Payments", page_title: "Pay Bills", page_icon: "images/bill-payments-icon.png"}) %>
     
     <div class="content">
@@ -5,147 +22,58 @@
             <div class="row">
                 <div class="col-lg-8">
 
-                    <div class="gradient-panel">
-                        <div class="row">
-                            <div class="col">
-                                <h4 class="mb-0">Uility Bills</h4>
-                            </div>
-                            <div class="col-6">
-                                <a href="bill-payments-add-payee-step1.html" class="float-right btn btn-light btn-sm">
-                                    <i class="fa fa-plus-circle"></i>
-                                    Add Bill Payee
-                                </a>
-                            </div>
+                    <div class="card">
+                        <div class="card-header">
+                            Utility Bills
+                            <a href="/bill-payments-add-payee-step1.html" class="card-header-button btn btn-light"><i class="fa fa-plus-circle"></i> Add Bill Payee</a>
                         </div>
                     </div>
 
-                    <div class="alert alert-primary mt-3" role="alert">
+                    <div class="alert alert-primary" role="alert">
                         <span class="text-sm font-weight-bold">Please specify the payment amount in USD for payments from USD Accounts/Credit Cards</span>
                     </div>
 
-                    <div class="custom-panel shadow">
-                        <div class="panel-header-sm font-weight-bold">
-                            <div class="d-inline-block mr-4"><input type="checkbox"></div>
-                            <div class="d-inline-block">Electricity Bill</div>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <label class="text-uppercase text-sm text-muted">Billing Account Number</label>
-                                    <div>0000000000</div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <label class="text-uppercase text-sm text-muted">Pay from Account</label>
-                                    <select class="form-control">
-                                        <option>Select Account</option>
-                                        <option>Savings 234****324 - $3,500.00</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm-4">
-                                    <label class="text-uppercase text-sm text-muted">Amount</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="custom-panel shadow">
-                        <div class="panel-header-sm font-weight-bold">
-                            <div class="d-inline-block mr-4"><input type="checkbox"></div>
-                            <div class="d-inline-block">Electricity Bill</div>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <label class="text-uppercase text-sm text-muted">Billing Account Number</label>
-                                    0000000000
-                                </div>
-                                <div class="col-sm-4">
-                                    <label class="text-uppercase text-sm text-muted">Pay from Account</label>
-                                    <select class="form-control">
-                                        <option>Select Account</option>
-                                        <option>Savings 234****324 - $3,500.00</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm-4">
-                                    <label class="text-uppercase text-sm text-muted">Amount</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="custom-panel shadow">
-                        <div class="panel-header-sm font-weight-bold">
-                            <div class="d-inline-block mr-4"><input type="checkbox"></div>
-                            <div class="d-inline-block">Electricity Bill</div>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <label class="text-uppercase text-sm text-muted">Billing Account Number</label>
-                                    0000000000
-                                </div>
-                                <div class="col-sm-4">
-                                    <label class="text-uppercase text-sm text-muted">Pay from Account</label>
-                                    <select class="form-control">
-                                        <option>Select Account</option>
-                                        <option>Savings 234****324 - $3,500.00</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm-4">
-                                    <label class="text-uppercase text-sm text-muted">Amount</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <% utilityBills.forEach(function(bill){ %>
+                        <%- include('components/utilityBill.html', {bill: bill}); %>
+                    <% }); %>
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="custom-panel shadow">
-                        <div class="panel-header">
-                            Payment Summary
-                        </div>
-                        <div class="panel-body">
-                            <table class="table table-striped table-sm">
-                                <thead>
-                                    <tr class="text-brand">
-                                        <th>Utility Bill</th>
-                                        <th class="text-right">Payment</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th>Electricity Bill</th>
-                                        <td class="text-right">$ 00,000.00</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Electricity Bill</th>
-                                        <td class="text-right">$ 00,000.00</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Electricity Bill</th>
-                                        <td class="text-right">$ 00,000.00</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Electricity Bill</th>
-                                        <td class="text-right">$ 00,000.00</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Electricity Bill</th>
-                                        <td class="text-right">$ 00,000.00</td>
-                                    </tr>
-                                </tbody>
-                                <table class="table table-sm">
-                                    <tr>
-                                        <th class="text-brand">Total Payment</th>
-                                        <th class="text-right bg-grey">$ 00,000.00 JMD</th>
-                                    </tr>
+                    <div class="card">
+                        <div class="card-header">Payment History</div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-sm">
+                                    <thead>
+                                        <tr class="text-brand text-md">
+                                            <th>Utility Bill</th>
+                                            <th class="text-right">Payment</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="font-weight-bold">Electricity bill</td>
+                                            <td class="text-right">$ 12,000.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Water bill</th>
+                                            <td class="text-right">$ 15,000.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Phone bill</th>
+                                            <td class="text-right">$ 6,000.00</td>
+                                        </tr>
+                                    </tbody>
+                                    <table class="table table-sm">
+                                        <tr>
+                                            <th class="text-brand">Total Payment</th>
+                                            <td class="text-right bg-dark text-white">$ 33,000.00 JMD</td>
+                                        </tr>
+                                    </table>
                                 </table>
-                            </table>
+                            </div>
 
-                            <a href="#" class="btn btn-warning btn-block font-weight-bold btn-sm">Go to next Step</a>
+                            <a href="#" class="btn btn-warning btn-block font-weight-bold">Go to next Step</a>
                         </div>
                     </div>
                 </div>

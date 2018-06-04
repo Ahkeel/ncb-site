@@ -2,6 +2,7 @@
 @import "mixins";
 @import "typography";
 @import "button";
+@import "checkbox";
 @import "components/card";
 @import "components/sideNavs";
 @import "components/greetingWidget";
@@ -16,6 +17,10 @@ body {
 #logo {
   padding: 5px;
   width: 100%;
+}
+
+.test {
+  border: 1px solid red;
 }
 
 .bg-grey {
@@ -316,16 +321,16 @@ body {
   // }
 }
 
-.tab-bar {
-  background-color: #0a50a0;
-  background: linear-gradient(#00539B, #002A4E);
-  padding: 20px;
-  margin-top: 2px;
-  color: #fff;
-  .nav-tabs {
-    border: 0px;
-  }
-}
+// .tab-bar {
+//   background-color: #0a50a0;
+//   background: linear-gradient(#00539B, #002A4E);
+//   padding: 20px;
+//   margin-top: 2px;
+//   color: #fff;
+//   .nav-tabs {
+//     border: 0px;
+//   }
+// }
 
 .transfer {
   .nav-tabs .nav-item {

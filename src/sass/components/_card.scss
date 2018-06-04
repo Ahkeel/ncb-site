@@ -40,6 +40,11 @@
     }
 }
 
+.card-header-sm {
+    padding: $card-header-sm-padding;
+    font-size: $card-header-sm-font-size;
+}
+
 .card-header-icon {
 	height: $card-header-icon-height;
 	margin: $card-header-icon-margin;
