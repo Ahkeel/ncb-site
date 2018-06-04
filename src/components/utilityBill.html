@@ -1,0 +1,29 @@
+<div class="card">
+    <div class="card-header card-header-sm">
+        <label class="checkbox">
+            <input type="checkbox">
+            <span class="checkbox-checkmark"></span>
+            <%= bill.name %>
+        </label>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col">
+                <label class="text-uppercase text-sm text-muted">Billing Account Number</label>
+                <%= bill.account_number %>
+            </div>
+            <div class="col">
+                <label class="text-uppercase text-sm text-muted">Pay from Account</label>
+                <select class="form-control">
+                    <option>Select Account</option>
+                    <option>Savings 234****324 - $3,500.00</option>
+                    <option>Savings 234****324 - $3,500.00</option>
+                </select>
+            </div>
+            <div class="col-sm">
+                <label class="text-uppercase text-sm text-muted">Amount</label>
+                <input type="text" class="form-control">
+            </div>
+        </div> 
+    </div>
+</div>
