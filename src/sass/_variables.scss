@@ -27,6 +27,7 @@ $font-size-xxl: 35px;
 
 $primary-color: $mine-shaft;
 $secondary-color: $midnight-blue;
+$account-info-color: $deep-saphire;
 $account-info-font-size:0.8rem;
 
 // Color assignments
@@ -92,3 +93,6 @@ $greeting-widget-header-padding: 13px 50px;
 $greeting-widget-header-icon-height: 80px;
 
 $greeting-widget-body-padding: 13px 50px;
+
+// Sticky nav
+$sticky-nav-fixed-max-width: 300px;
