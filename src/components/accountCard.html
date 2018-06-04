@@ -1,18 +1,28 @@
-<div class="card card-sm card-hover">
-    <div class="card-body text-brand text-right">
-        <div class="row">
-            <div class="col-sm">
-                <div class="text-extra-light text-xs"><%= account.type %> A/C Number</div><%= account.number %>
+
+  <div class="card card-sm card-hover">
+      <div class="card-body text-brand text-sm-right">
+          <div class="row">
+            <div class = "col-sm">
+              <div class = "row">
+                <div class="col">
+                    <div class="text-extra-light text-xs" id="a-c-number"><%= account.type %> A/C Number</div><%= account.number %>
+                </div>
+                <div class="col">
+                    <div class="text-extra-light text-xs" id="balance">Balance</div><%= account.balance %>
+                </div>
+              </div>
             </div>
-            <div class="col-sm">
-                <div class="text-extra-light text-xs">Balance</div><%= account.balance %>
+            <div class ="col-sm">
+              <div class = "row">
+                  <div class="col">
+                      <div class="text-extra-light text-xs" id="balance-at">Balance At</div><%= account.balanceAt %>
+                  </div>
+                  <div class="col text-right">
+                      <button class="btn btn-outline-brand btn-border" id="detail_button">Details</button>
+                  </div>
+              </div>
             </div>
-            <div class="col-sm">
-                <div class="text-extra-light text-xs">Balance At</div><%= account.balanceAt %>
-            </div>
-            <div class="col-sm">
-                <button class="btn btn-outline-brand btn-border">Details</button>
-            </div>
-        </div>
-    </div>
-</div>
+          </div>
+      </div>
+  </div>
+</a>
