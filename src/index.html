@@ -18,14 +18,14 @@
             balance: '$1,000,000',
             balanceAt: 'May 08, 2018'
         },
-]; 
+];
 %>
     <%- include('partials/header.html', {title: "Accounts", page_title: "Account Summary", page_icon: "images/dashboard.png"}) %>
-	
+
     <div class="content">
         <div class="container">
             <div class="row mb-3">
-                <div class="col-lg-8">
+                <div class="col-lg-8" id="second-item">
                     <div id="accordion">
                         <div class="card" data-toggle="collapse" href="#collapse-1" role="button" aria-expanded="true" aria-controls="collapse-1">
                             <div class="card-header card-header-inv">
@@ -69,12 +69,12 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="greeting-widget mb-3">
+                    <div class="greeting-widget mb-3" id="first-item">
                         <div class="greeting-widget-header">
                             <img src="images/weather-icon.png" class="greeting-widget-header-icon">
-                            <div class="text-sm font-weight-bold text-uppercase">Jamaica</div>
-                            <div class="text-xl font-weight-light">30 C</div>
-                            <div class="text-sm">Thursday, 8:25 PM</div>
+                            <div class="text-sm font-weight-bold text-uppercase" id="user_location"></div>
+                            <div class="text-xl font-weight-light" id= "temperature"></div>
+                            <div class="text-sm" id="date_time"></div>
                         </div>
                         <div class="greeting-widget-body text-lg text-brand">
                             Good morning,<br>
@@ -82,7 +82,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" id="third-item">
                         <div class="card-header">
                             <img src="images/links-icon.png" class="card-header-icon">
                             Quick Links
@@ -101,7 +101,7 @@
 
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="card">
+                    <div class="card" id="forth-item">
                         <div class="card-header">
                             <img src="images/history-icon.png" class="card-header-icon">
                             Recent Transaction History
@@ -218,7 +218,7 @@
                             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                             ut aliquip ex ea commodo consequat.</div>
                     </div>
-                    
+
                 </div>
 
                 <div class="owl-carousel owl-theme">
@@ -254,7 +254,7 @@
         </div>
 
         <%- include('partials/footer.html') %>
-    </div>	
+    </div>
 
 	<%- include('partials/scripts.html'); %>
 </body>
