@@ -120,33 +120,21 @@ body {
   }
 }
 
-.account-data-label {
-  color: #b7b7b7;
-  font-size: 11px;
-  text-align: right;
+.accordion-custom
+{
+  background-color: transparent;
+  box-shadow: none;
 }
 
-.account-data {
-  color: #003064;
-  font-weight: 100;
-  font-size: 15px;
+#accordion .card-header
+{
+  cursor: pointer;
 }
 
-
-.btn-default-custom {
-  background-color: #fff;
-  border: 1px solid #e1e1e1;
-  color: #9c9c9c;
+.accordion-active {
+  background-image: url(../images/gradient.png);
+  color:#fff;
 }
-
-.btn-custom-promo {
-  border: 1px solid #fff;
-  &.active {
-    color: #fff;
-    background: none;
-  }
-}
-
 
 .panel-header,
 .panel-header-sm {
@@ -191,28 +179,6 @@ body {
   border-radius: 30px;
 }
 
-.welcome, .weather-info {
-  padding: 20px 50px 20px 50px;
-}
-
-.welcome {
-  color: #083161;
-  font-size: 1.6rem;
-}
-
-.weather-info {
-  background-color: #e3e3e3;
-  -webkit-border-top-left-radius: 30px;
-  -webkit-border-top-right-radius: 30px;
-  -moz-border-radius-topleft: 30px;
-  -moz-border-radius-topright: 30px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-}
-
-.weather-info-date {
-  font-size: 0.8rem;
-}
 
 .btn-primary {
   background: #00539b;
@@ -223,10 +189,6 @@ body {
   margin-bottom: 30px;
   background-image: url('../images/promo.png');
   padding: 40px 40px 20px 40px;
-}
-
-.promo-heading {
-  font-weight: 100;
 }
 
 .promo-caption {
