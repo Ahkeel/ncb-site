@@ -33,15 +33,15 @@
         $(document).ready(function () {
             $('#accordion .card-header').click(function (e) {
                var cardValue =$(this);
-               if(cardValue.hasClass(".card-header-inv"))
+               if(cardValue.hasClass(".card-header-inverse"))
                {
-                    $("#accordion .card-header").addClass("card-header-inv");
+                    $("#accordion .card-header").addClass("card-header-inverse");
                }
                else
                {
-                    cardValue.removeClass("card-header-inv");
+                    cardValue.removeClass("card-header-inverse");
                }
-              $(".card[aria-expanded=true] .card-header").addClass("card-header-inv");
+              $(".card[aria-expanded=true] .card-header").addClass("card-header-inverse");
             });          
         });
     });
