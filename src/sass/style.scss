@@ -2,8 +2,11 @@
 @import "mixins";
 @import "typography";
 @import "button";
+@import "checkbox";
 @import "components/card";
 @import "components/sideNavs";
+@import "components/sideNavs";
+@import "components/stickyNav";
 @import "components/greetingWidget";
 @import "components/tabBar";
 @import "login";
@@ -18,6 +21,10 @@ body {
   width: 80%;
 }
 
+.test {
+  border: 1px solid red;
+}
+
 .bg-grey {
   background: #e9ecef;
 }
@@ -26,6 +33,9 @@ body {
 {
   width:auto !important;
 }
+
+
+
 
 .fas {
   margin-right: 5px;
@@ -46,13 +56,29 @@ body {
   box-shadow: 0px 1px 5px 1px $card-shadow;
 }
 
+.welcome-message, .notification, .logout {
+  margin-top: 10px;
+}
+
 .welcome-message {
   font-size: 0.9rem;
+  text-align: right;
+}
+
+.notification {
+  text-align: center;
 }
 
 .top-banner {
   background-color: #fff;
   padding: 20px;
+}
+
+
+  .search i {
+    position: absolute;
+    left: 35px;
+    top: 18px;
 }
 
 .search input {
@@ -61,12 +87,6 @@ body {
   width: 100%;
   border: 1px solid #828080;
   padding-left: 20px;
-}
-
-  .search i {
-    position: absolute;
-    left: 35px;
-    top: 18px;
 }
 
 .bottom-banner {
@@ -116,24 +136,13 @@ body {
   transition: 0.4s;
   &:hover {
     box-shadow: 10px 10px 10px 2px $card-shadow;
-    position: relative; 
+    position: relative;
   }
 }
 
-.accordion-custom
-{
-  background-color: transparent;
-  box-shadow: none;
-}
-
-#accordion .card-header
+.card-header-hover:hover
 {
   cursor: pointer;
-}
-
-.accordion-active {
-  background-image: url(../images/gradient.png);
-  color:#fff;
 }
 
 .panel-header,
@@ -171,15 +180,6 @@ body {
   float: right;
 }
 
-.weather {
-  background: #fff;
-  margin-bottom: 20px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-}
-
-
 .btn-primary {
   background: #00539b;
 }
@@ -189,6 +189,10 @@ body {
   margin-bottom: 30px;
   background-image: url('../images/promo.png');
   padding: 40px 40px 20px 40px;
+}
+
+.promo-heading {
+  font-weight: 100;
 }
 
 .promo-caption {
@@ -226,7 +230,9 @@ body {
 
 .contact-info {
   background-color:#002b5c;
+  width: 100%;
   padding: 18px;
+  color: #fff;
   font-size: 0.8rem;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -238,6 +244,13 @@ body {
   margin-top: -3px;
 }
 
+.contact-info-title {
+  font-weight: bold;
+}
+
+.contact-info-desc {
+  font-weight: 100;
+}
 
 .footer {
   background-color: #383737;
@@ -271,16 +284,16 @@ body {
   // }
 }
 
-.tab-bar {
-  background-color: #0a50a0;
-  background: linear-gradient(#00539B, #002A4E);
-  padding: 20px;
-  margin-top: 2px;
-  color: #fff;
-  .nav-tabs {
-    border: 0px;
-  }
-}
+// .tab-bar {
+//   background-color: #0a50a0;
+//   background: linear-gradient(#00539B, #002A4E);
+//   padding: 20px;
+//   margin-top: 2px;
+//   color: #fff;
+//   .nav-tabs {
+//     border: 0px;
+//   }
+// }
 
 .transfer {
   .nav-tabs .nav-item {
@@ -358,9 +371,17 @@ body {
 
 .account-details
 {
-  background-image: linear-gradient(#569FF0,#064895);
+  background-image: linear-gradient(to bottom, #569ff0, #458ada, #3475c5, #2261af, #0a4d9a);
+  padding: $container-padding;
   font-size: $account-info-font-size;
+  margin-bottom:$container-margin-bottom-space;
 }
+
+// .account-info
+// {
+//   color:$account-info-color;
+//   font-weight: bold;
+// }
 
 .account-charts
 {
@@ -368,7 +389,7 @@ body {
 }
 
 @media (max-width: 992px) {
-  #mobile-drop-down { 
+  #mobile-drop-down {
     display: block;
   }
   .menu nav {
@@ -395,5 +416,15 @@ body {
         color: #003064;
       }
     }
+  }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+  #dashboard-accounts {
+    order:2;
+  }
+  .hide-mobile {
+    display: none;
   }
 }

@@ -5,12 +5,19 @@
 	transition: $time;
 }
 
-@mixin flex-display() {
+@mixin flex-display {
 	display: -webkit-box;          /* OLD - iOS 6-, Safari 3.1-6 */
 	display: -moz-box;             /* OLD - Firefox 19- (buggy but mostly works) */
 	display: -ms-flexbox;          /* TWEENER - IE 10 */
 	display: -webkit-flex;         /* NEW - Chrome */
 	display: flex;                 /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+@mixin user-select($input) {
+	-webkit-user-select: $input;
+    -moz-user-select: $input;
+    -ms-user-select: $input;
+    user-select: $input;
 }
 
 @mixin flex( $ratio ) {

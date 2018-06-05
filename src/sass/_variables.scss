@@ -27,6 +27,7 @@ $font-size-xxl: 35px;
 
 $primary-color: $mine-shaft;
 $secondary-color: $midnight-blue;
+$account-info-color: $deep-saphire;
 $account-info-font-size:0.8rem;
 
 // Color assignments
@@ -63,7 +64,11 @@ $card-header-font-weight: 100;
 $card-header-font-size: 22px;
 $card-header-padding: 1rem;
 $card-header-border-radius: 5px !important;
+
 $card-header-inv-font-weight: 400;
+
+$card-header-sm-padding: 7px 10px;
+$card-header-sm-font-size: 1em;
 
 $card-header-icon-height: 45px;
 $card-header-icon-margin: 0 7px 0 0;
@@ -88,3 +93,6 @@ $greeting-widget-header-padding: 13px 50px;
 $greeting-widget-header-icon-height: 80px;
 
 $greeting-widget-body-padding: 13px 50px;
+
+// Sticky nav
+$sticky-nav-fixed-max-width: 300px;
