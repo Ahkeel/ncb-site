@@ -399,11 +399,11 @@ body {
 
 }
 
-@media only screen and (min-width: 320px) and (max-width: 991px){
-  .col-lg-8{
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+  #dashboard-accounts {
     order:2;
   }
-  #hidden{
+  .hide-mobile {
     display: none;
   }
 }

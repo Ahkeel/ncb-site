@@ -5,8 +5,9 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
     crossorigin="anonymous"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js" />  -->
+ 
 <script src="../js/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 
 <script>
     $(document).ready(function () {
@@ -28,20 +29,65 @@
             }
 
         });
-
-        $(document).ready(function () {
-            $('#accordion .card-header').click(function (e) {
-               var cardValue =$(this);
-               if(cardValue.hasClass(".card-header-inverse"))
-               {
-                    $("#accordion .card-header").addClass("card-header-inverse");
-               }
-               else
-               {
-                    cardValue.removeClass("card-header-inverse");
-               }
-              $(".card[aria-expanded=true] .card-header").addClass("card-header-inverse");
-            });
+        $('#accordion .card-header').click(function (e) {
+            var cardValue =$(this);
+            if(cardValue.hasClass(".card-header-inverse")) {
+                $("#accordion .card-header").addClass("card-header-inverse");
+            } else {
+                cardValue.removeClass("card-header-inverse");
+            }
+            $(".card[aria-expanded=true] .card-header").addClass("card-header-inverse");
         });
+
+        if ($( "#myChart" ).length) {
+            var ctx = $('#myChart')[0].getContext('2d');
+            var myLineChart = new Chart(ctx, {
+                type: 'line',
+                scaleFontColor: 'white',
+                data: {
+                    labels: ["January", "February", "March", "April", "May", "June", "July"],
+                    datasets: [{
+                        label: "My First dataset",
+                        backgroundColor: 'transparent',
+                        lineTension: 0,
+                        data: [0, 10, 5, 2, 20, 30, 45],
+                        borderColor: 'white',
+                        backgroundColor: 'transparent',
+                        borderDash: [5, 5],
+                        pointBorderColor: 'blue',
+                        pointBackgroundColor: 'blue',
+                        pointRadius: 5,
+                        pointStyle: 'Rounded'
+                    }]
+                },
+                options: {
+                    legend: {
+                        display: false
+                    },
+                    bezierCurve: false,
+                    scaleShowHorizontalLines: false,
+                    scales: {
+                        yAxes: [{
+                            gridLines: {
+                                display: false
+                            },
+                            ticks: {
+                                beginAtZero: true,
+                                fontColor: 'white'
+                            },
+                        }],
+                        xAxes: [{
+                            gridLines: {
+                                color: 'white',
+                            },
+                            ticks: {
+                                fontColor: 'white'
+                            },
+                        }]
+                    }
+                }
+            });
+            
+        }
     });
-</script>
+ </script>
