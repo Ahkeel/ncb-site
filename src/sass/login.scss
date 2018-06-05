@@ -1,17 +1,18 @@
+
+html,
+body {
+    height: 100%;
+    /* important to vertically align the container */
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/login-bg.png');
+}
 .blurred-bg
 {
-    background-image: url('../images/');
+   
     width:100%;
 }
 
-.login
-{
-   
-}
-.img-width-100
-{
-    width:100%;
-}
 .pattern-bg
 {
     background-image: url('../images/newsbg.png');
@@ -19,7 +20,7 @@
 
 .login-container-height
 {
-    height:350px;
+    min-height:350px;
 }
 
 .vertical-center {
@@ -28,3 +29,33 @@
     display: flex;
     align-items: center;
   }
+
+  .form-bg
+  {
+     background-color: $form-bg-color;
+  }
+
+.login-padding
+{
+    padding:30px 80px;
+}
+
+  .text-blue
+  {
+      color:$prussian-blue !important;
+  }
+
+  .text-blue a
+  {
+      color:$prussian-blue !important;
+  }
+
+  .nav-pipe a:after
+  {
+    padding-left:6px;
+    content: "|";
+  }
+
+  .nav-pipe li:last-child:after a {
+    content: "";
+}
