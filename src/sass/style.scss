@@ -15,11 +15,16 @@ body {
 
 #logo {
   padding: 5px;
-  width: 100%;
+  width: 80%;
 }
 
 .bg-grey {
   background: #e9ecef;
+}
+
+.w-auto
+{
+  width:auto !important;
 }
 
 .fas {
@@ -41,17 +46,8 @@ body {
   box-shadow: 0px 1px 5px 1px $card-shadow;
 }
 
-.welcome-message, .notification, .logout {
-  margin-top: 10px;
-}
-
 .welcome-message {
   font-size: 0.9rem;
-  text-align: right;
-}
-
-.notification {
-  text-align: center;
 }
 
 .top-banner {
@@ -59,12 +55,18 @@ body {
   padding: 20px;
 }
 
-.search {
+.search input {
   border-radius: 40px;
   height: 42px;
   width: 100%;
   border: 1px solid #828080;
   padding-left: 20px;
+}
+
+  .search i {
+    position: absolute;
+    left: 35px;
+    top: 18px;
 }
 
 .bottom-banner {
@@ -118,33 +120,21 @@ body {
   }
 }
 
-.account-data-label {
-  color: #b7b7b7;
-  font-size: 11px;
-  text-align: right;
+.accordion-custom
+{
+  background-color: transparent;
+  box-shadow: none;
 }
 
-.account-data {
-  color: #003064;
-  font-weight: 100;
-  font-size: 15px;
+#accordion .card-header
+{
+  cursor: pointer;
 }
 
-
-.btn-default-custom {
-  background-color: #fff;
-  border: 1px solid #e1e1e1;
-  color: #9c9c9c;
+.accordion-active {
+  background-image: url(../images/gradient.png);
+  color:#fff;
 }
-
-.btn-custom-promo {
-  border: 1px solid #fff;
-  &.active {
-    color: #fff;
-    background: none;
-  }
-}
-
 
 .panel-header,
 .panel-header-sm {
@@ -189,28 +179,6 @@ body {
   border-radius: 30px;
 }
 
-.welcome, .weather-info {
-  padding: 20px 50px 20px 50px;
-}
-
-.welcome {
-  color: #083161;
-  font-size: 1.6rem;
-}
-
-.weather-info {
-  background-color: #e3e3e3;
-  -webkit-border-top-left-radius: 30px;
-  -webkit-border-top-right-radius: 30px;
-  -moz-border-radius-topleft: 30px;
-  -moz-border-radius-topright: 30px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-}
-
-.weather-info-date {
-  font-size: 0.8rem;
-}
 
 .btn-primary {
   background: #00539b;
@@ -221,10 +189,6 @@ body {
   margin-bottom: 30px;
   background-image: url('../images/promo.png');
   padding: 40px 40px 20px 40px;
-}
-
-.promo-heading {
-  font-weight: 100;
 }
 
 .promo-caption {
@@ -262,9 +226,7 @@ body {
 
 .contact-info {
   background-color:#002b5c;
-  width: 100%;
   padding: 18px;
-  color: #fff;
   font-size: 0.8rem;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -276,13 +238,6 @@ body {
   margin-top: -3px;
 }
 
-.contact-info-title {
-  font-weight: bold;
-}
-
-.contact-info-desc {
-  font-weight: 100;
-}
 
 .footer {
   background-color: #383737;
@@ -403,16 +358,8 @@ body {
 
 .account-details
 {
-  background-image: linear-gradient(to bottom, #569ff0, #458ada, #3475c5, #2261af, #0a4d9a);
-  padding: $container-padding;
+  background-image: linear-gradient(#569FF0,#064895);
   font-size: $account-info-font-size;
-  margin-bottom:$container-margin-bottom-space;
-}
-
-.account-info
-{
-  color:$account-info-color;
-  font-weight: bold;
 }
 
 .account-charts
@@ -421,7 +368,7 @@ body {
 }
 
 @media (max-width: 992px) {
-  #mobile-drop-down {
+  #mobile-drop-down { 
     display: block;
   }
   .menu nav {

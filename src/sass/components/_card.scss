@@ -33,11 +33,12 @@
     font-size: $card-header-font-size;
     font-weight: $card-header-font-weight;
     border-radius: $card-header-border-radius;
-    &.card-header-inv {
-    	color: $brand-color;
-    	background: $white;
-    	font-weight: $card-header-inv-font-weight;
-    }
+}
+
+.card-header-inverse {
+    color: $brand-color;
+    background: $white;
+    font-weight: $card-header-inv-font-weight;
 }
 
 .card-header-icon {
