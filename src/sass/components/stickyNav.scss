@@ -1,0 +1,14 @@
+.sticky-nav-wrapper {
+    position: relative;
+}
+
+.sticky-nav {
+    position: relative;
+    
+    &.sticky-nav-fixed {
+        position: fixed;
+        top: 0;
+        max-width: $sticky-nav-fixed-max-width;
+        z-index: 1;
+    }
+}
