@@ -8,8 +8,9 @@
     crossorigin="anonymous"></script>
  
 <script src="../js/owl.carousel.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js" />  
-<script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+<script type="text/javascript">
     $(document).ready(function () {
         $('.owl-carousel').owlCarousel({
             loop: true,
@@ -30,19 +31,17 @@
 
         });
 
-        $(document).ready(function () {
-            $('#accordion .card-header').click(function (e) {
-               var cardValue =$(this);
-               if(cardValue.hasClass(".card-header-inverse"))
-               {
-                    $("#accordion .card-header").addClass("card-header-inverse");
-               }
-               else
-               {
-                    cardValue.removeClass("card-header-inverse");
-               }
-              $(".card[aria-expanded=true] .card-header").addClass("card-header-inverse");
-            });          
+        $('#accordion .card-header').click(function (e) {
+           var cardValue =$(this);
+           if(cardValue.hasClass(".card-header-inverse"))
+           {
+                $("#accordion .card-header").addClass("card-header-inverse");
+           }
+           else
+           {
+                cardValue.removeClass("card-header-inverse");
+           }
+          $(".card[aria-expanded=true] .card-header").addClass("card-header-inverse");
         });
     });
 </script>
