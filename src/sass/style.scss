@@ -35,6 +35,8 @@ body {
 }
 
 
+
+
 .fas {
   margin-right: 5px;
 }
@@ -72,13 +74,6 @@ body {
   padding: 20px;
 }
 
-.search input {
-  border-radius: 40px;
-  height: 42px;
-  width: 100%;
-  border: 1px solid #828080;
-  padding-left: 20px;
-}
 
   .search i {
     position: absolute;
@@ -86,6 +81,13 @@ body {
     top: 18px;
 }
 
+.search input {
+  border-radius: 40px;
+  height: 42px;
+  width: 100%;
+  border: 1px solid #828080;
+  padding-left: 20px;
+}
 
 .bottom-banner {
   background-image: url('../images/newsbg.png');
@@ -177,24 +179,6 @@ body {
 .nav-link .fas.fa-chevron-right {
   float: right;
 }
-
-.weather {
-  background: #fff;
-  margin-bottom: 20px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-}
-
-.welcome, .weather-info {
-  padding: 20px 50px 20px 50px;
-}
-
-.welcome {
-  color: #083161;
-  font-size: 1.6rem;
-}
-
 
 .btn-primary {
   background: #00539b;
