@@ -71,24 +71,28 @@
                                     </div>
                                 </div>
 
-                <div class="col-lg-4">
-                    <div class="greeting-widget mb-3" id="first-item">
-                        <div class="greeting-widget-header">
-                            <img src="images/weather-icon.png" class="greeting-widget-header-icon">
-                            <div class="text-sm font-weight-bold text-uppercase" id="user_location"></div>
-                            <div class="text-xl font-weight-light" id= "temperature"></div>
-                            <div class="text-sm" id="date_time"></div>
-                        </div>
-                        <div class="greeting-widget-body text-lg text-brand">
-                            Good morning,<br>
-                            <span class="font-weight-bold">Kori!</span>
+                                <div id="collapse-3" class="collapse" data-parent="#accordion">
+                                    <% bankAccounts.forEach(function(account){ %>
+                                        <%- include('components/accountCard.html', {account: account}); %>
+                                            <% }); %>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="card" id="third-item">
-                        <div class="card-header">
-                            <img src="images/links-icon.png" class="card-header-icon">
-                            Quick Links
+                    <div class="col-lg-4">
+                        <div class="greeting-widget mb-3">
+                            <div class="greeting-widget-header">
+                                <img src="" class="greeting-widget-header-icon" id="weather-icon">
+                                <div class="text-sm font-weight-bold text-uppercase" id="user_location"></div>
+                                <div class="text-xl font-weight-light" id="temperature"></div>
+                                <div class="text-sm" id="date_time"></div>
+                            </div>
+                            <div class="greeting-widget-body text-lg text-brand">
+                                Good morning,
+                                <br>
+                                <span class="font-weight-bold">Kori!</span>
+                            </div>
                         </div>
 
                         <div class="card">
@@ -272,5 +276,4 @@
         <%- include('partials/scripts.html') %>
 
         </body>
-
-        </html>
+  </html>

@@ -116,7 +116,7 @@ body {
   transition: 0.4s;
   &:hover {
     box-shadow: 10px 10px 10px 2px $card-shadow;
-    position: relative; 
+    position: relative;
   }
 }
 
@@ -368,7 +368,7 @@ body {
 }
 
 @media (max-width: 992px) {
-  #mobile-drop-down { 
+  #mobile-drop-down {
     display: block;
   }
   .menu nav {
@@ -396,4 +396,14 @@ body {
       }
     }
   }
+
 }
+
+// @media only screen and (min-width: 320px) and (max-width: 991px){
+//   #first-item{
+//     order:1;
+//   }
+//   #third-item{
+//     display: none;
+//   }
+// }

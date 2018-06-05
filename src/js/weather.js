@@ -19,6 +19,7 @@ $(document).ready(function()
       function get_http_request(base_url,latitude,longitude, api_key){
         var xhttp = new XMLHttpRequest();
         var url_request = base_url+'lat='+latitude+'&lon='+longitude+'&units=metric'+'&APPID='+api_key;
+        var base_icon_url="http://openweathermap.org/img/w/";
         xhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
             // document.getElementById("user_location").innerHTML = this.responseText;
@@ -26,6 +27,11 @@ $(document).ready(function()
             let response=JSON.parse(xhttp.responseText);
             let user_location=response.name;
             let temp = response.main.temp;
+            let icon_code = response.weather[0].icon;
+            base_icon_url = base_icon_url+icon_code+".png";
+
+            var icon = document.getElementById('weather-icon');
+            icon.src = base_icon_url;
 
             let location_div = document.getElementById('user_location');
             location_div.innerHTML= user_location;
