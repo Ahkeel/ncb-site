@@ -160,8 +160,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        
                     </div>
                 </div>
 
@@ -170,8 +168,60 @@
             <%- include('partials/footer.html') %>
         </div>
         <%- include('partials/scripts.html'); %>
-        
-           
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+            <script>
+                if ($("#myChart").length) {
+                    var ctx = $('#myChart')[0].getContext('2d');
+                    var myLineChart = new Chart(ctx, {
+                        type: 'line',
+                        scaleFontColor: 'white',
+                        data: {
+                            labels: ["January", "February", "March", "April", "May", "June", "July"],
+                            datasets: [{
+                                backgroundColor: 'transparent',
+                                lineTension: 0,
+                                data: [0, 10, 5, 2, 20, 30, 45],
+                                borderColor: 'white',
+                                backgroundColor: 'transparent',
+                                borderDash: [5, 5],
+                                pointBorderColor: 'blue',
+                                pointBackgroundColor: 'blue',
+                                pointRadius: 5,
+                                pointStyle: 'Rounded'
+                            }]
+                        },
+                        options: {
+                            legend: {
+                                display: false
+                            },
+                            bezierCurve: false,
+                            scaleShowHorizontalLines: false,
+                            scales: {
+                                yAxes: [{
+                                    gridLines: {
+                                        display: false
+                                    },
+                                    ticks: {
+                                        beginAtZero: true,
+                                        fontColor: 'white'
+                                    },
+                                }],
+                                xAxes: [{
+                                    gridLines: {
+                                        color: 'white',
+                                    },
+                                    ticks: {
+                                        fontColor: 'white'
+                                    },
+                                }]
+                            }
+                        }
+                    });
+
+                }
+
+            </script>
+
             </body>
 
             </html>
