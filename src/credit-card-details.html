@@ -25,12 +25,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="account-details text-brand border-radius mb-5 p-4">
+                        <div class="light-blue-gradient text-brand text-sm border-radius mb-5 p-4">
                             <div class="row">
                                 <div class="col-sm-4">
                                     <div class="form-group">
                                         <select class="form-control">
                                             <option>Select Other Account</option>
+                                            <option>555***4444</option>
+                                            <option>555***4444</option>
                                         </select>
                                     </div>
                                     <div>
@@ -114,6 +116,8 @@
                                 <img src="images/history-icon.png" class="card-header-icon"> Transaction History
                                 <select class="form-control float-right w-auto">
                                     <option>Filter</option>
+                                    <option>Quick View</option>
+                                    <option>Do Quert Transaction</option>
                                 </select>
                                 <div class="clearfix"></div>
                             </div>
@@ -167,59 +171,7 @@
         </div>
         <%- include('partials/scripts.html'); %>
         
-            <script>
-                var ctx = document.getElementById('myChart').getContext('2d');
-                var myLineChart = new Chart(ctx, {
-                    type: 'line',
-                    scaleFontColor: 'white',
-                    data: {
-                        labels: ["January", "February", "March", "April", "May", "June", "July"],
-                        datasets: [{
-                            label: "My First dataset",
-                            backgroundColor: 'transparent',
-                            lineTension: 0,
-                            data: [0, 10, 5, 2, 20, 30, 45],
-                            borderColor: 'white',
-                            backgroundColor: 'transparent',
-                            borderDash: [5, 5],
-                            pointBorderColor: 'blue',
-                            pointBackgroundColor: 'blue',
-                            pointRadius: 5,
-                            pointStyle: 'Rounded'
-                        }]
-                    },
-                    options: {
-                        legend: {
-                            display: false
-                        },
-                        bezierCurve: false,
-                        scaleShowHorizontalLines: false,
-                        scales: {
-                            yAxes: [{
-                                gridLines: {
-                                    display: false
-                                },
-                                ticks: {
-                                    beginAtZero: true,
-                                    fontColor: 'white'
-                                },
-                            }],
-                            xAxes: [{
-                                gridLines: {
-                                    color: 'white',
-                                },
-                                ticks: {
-                                    fontColor: 'white'
-                                },
-                            }]
-                        }
-                    }
-                });
-
-
-
-            </script>
-            
+           
             </body>
 
             </html>
