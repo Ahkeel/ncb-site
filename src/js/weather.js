@@ -19,7 +19,8 @@ $(document).ready(function()
       function get_http_request(base_url,latitude,longitude, api_key){
         var xhttp = new XMLHttpRequest();
         var url_request = base_url+'lat='+latitude+'&lon='+longitude+'&units=metric'+'&APPID='+api_key;
-        var base_icon_url="http://openweathermap.org/img/w/";
+        // var base_icon_url="http://openweathermap.org/img/w/";
+        var base_icon_url="/images/weather-icons/";
         xhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
             // document.getElementById("user_location").innerHTML = this.responseText;
