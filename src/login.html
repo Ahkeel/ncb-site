@@ -5,80 +5,74 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%- include('partials/links.html'); %>
-        <%- include('partials/favicon.html'); %>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
-
+    <%- include('partials/favicon.html'); %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
 </head>
 
-<body>
-    <div class="vertical-center fadeInDown">
-        <div class="container w-75">
+<body class="login">
+    <div class="vertical-center fadeInDown animated">
+        <div class="container w-60">
             <div class="row no-gutters">
-                <div class="col-sm-3 col-md-4 ">
-                    <div class="gradient-panel login-container-height p-4 border-radius">
-                        <div class="fadeInLeft animated">
-                            <img src="images/ncb-logo.png" class="w-100 align-middle" alt="ncb logo" />
-                            <h4 class="text-white font-weight-light">Welcome !</h3>
-                        </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="gradient-panel p-5 border-radius h-100 d-inline-block" style="position: relative;">
+                        <img src="images/ncb-logo.png" class="w-100 align-middle" alt="ncb logo" />
+                        <h4 class="text-white font-weight-light" style="position: absolute; bottom:10px;">Welcome !</h4>
                     </div>
                 </div>
-                <div class="col-sm-9 col-md-8 ">
-                    <div class="border-radius pattern-bg form-bg login-container-height login-padding material-textbox">
-                        <div class="fadeInDown animated">
-                            <h2 class="font-weight-light text-blue">Log In</h1>
-                                <div class="mt-4"></div>
-                                <input type="text" class="w-100" />
-                                <label class="text-sm text-muted">Username</label>
-                                <i class="fas fa-user float-right"></i>
-                                <input type="text" class="w-100" />
-                                <label class="text-sm text-muted">Password</label>
-
-                                <i class="fas fa-lock float-right"></i>
-                                <a class="text-blue text-sm font-weight-bold font-italic float-right">Forgot Password</a>
-                                <div class="clearfix"></div>
-                                <div class="mt-4">
-                                    <input type="checkbox" />
-                                    <span class="text-muted text-sm">Remember Me</span>
-                                    <button class="btn btn-primary btn-sm float-right">Login</button>
-                                </div>
-                                <div class="mt-4">
-                                    <ul class="nav text-sm text-blue nav-pipe">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">
-                                                <u>New Online banking</u>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">
-                                                <u>Username Locked</u>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                        </div>
+                <div class="col-sm-12 col-md-8">
+                    <div class="border-radius pattern-bg form-bg  h-100 d-inline-block login-padding material-textbox">
+                        <h2 class="font-weight-light text-blue mb-4">Log In</h1>
+                            <input type="text" class="w-100" />
+                            <label class="text-sm text-muted">Username</label>
+                            <i class="fas fa-user float-right"></i>
+                            <input type="text" class="w-100" />
+                            <label class="text-sm text-muted">Password</label>
+                            <i class="fas fa-lock float-right"></i>
+                            <a class="text-blue text-sm font-weight-bold font-italic float-right" href="#">Forgot Password</a>
+                            <div class="clearfix"></div>
+                            <div class="mt-4">
+                                <input type="checkbox" />
+                                <span class="text-muted text-sm">Remember Me</span>
+                                <button class="btn btn-primary btn-sm float-right pr-5 pl-5">Login</button>
+                            </div>
+                            <div class="mt-4">
+                                <ul class="nav text-sm text-blue nav-pipe">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <u>New Online banking</u>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <u>Username Locked</u>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                     </div>
                 </div>
             </div>
-            <div class="">
-                <ul class="nav justify-content-center text-sm text-white">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Online Security</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">FAQs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Internet Banking Demos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Privacy Policy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Terms & Conditions</a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="nav justify-content-center text-sm text-white nav-pipe">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Online Security</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Internet Banking Demos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Terms & Conditions</a>
+                </li>
+            </ul>
         </div>
+    </div>
+    <div class="container">
+        <div class="text-center text-xs p-4 font-weight-bold">For more details, call us toll free at 1-888-NCB-FIRST (1-888-622-3477) or message us at ncbinfo@jncb.com</div>
     </div>
     <%- include('partials/copy-right-footer.html'); %>
 </body>

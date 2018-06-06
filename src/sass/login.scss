@@ -1,21 +1,24 @@
 
-html,
-body {
+html,body {
     height: 100%;
     /* important to vertically align the container */
     margin: 0;
     padding: 0;
-    background-image: url('../images/login-bg.png');
+ 
 }
-.blurred-bg
+
+.login
 {
-   
-    width:100%;
-}
+    background: url('../images/login-bg.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} 
 
 .pattern-bg
 {
-    background-image: url('../images/newsbg.png');
+    background-image: url(../images/newsbg.png);
 }
 
 .login-container-height
@@ -40,16 +43,6 @@ body {
     padding:30px 80px;
 }
 
-  .text-blue
-  {
-      color:$prussian-blue !important;
-  }
-
-  .text-blue a
-  {
-      color:$prussian-blue !important;
-  }
-
   .nav-pipe a:after
   {
     padding-left:6px;
@@ -58,4 +51,15 @@ body {
 
   .nav-pipe li:last-child:after a {
     content: "";
+}
+
+@media only screen and (max-width: 1235px) {
+    .login-padding
+    {
+        padding:30px 25px;
+    }
+   .login .w-60
+   {
+       width:auto;
+   }
 }
