@@ -1,18 +1,28 @@
-<div class="card card-sm card-hover">
-    <div class="card-body text-brand text-right">
-        <div class="row">
-            <div class="col-sm">
-                <div class="text-extra-light text-xs"><%= account.type %> A/C Number</div><%= account.number %>
+
+  <div class="card card-sm card-hover">
+      <div class="card-body text-brand text-sm-right">
+          <div class="row">
+            <div class = "col-sm">
+              <div class = "row">
+                <div class="col">
+                    <div class="text-extra-light text-xs" id="a-c-number"><%= account.type %> A/C Number</div><%= account.number %>
+                </div>
+                <div class="col">
+                    <div class="text-extra-light text-xs" id="balance">Balance</div><%= account.balance %>
+                </div>
+              </div>
             </div>
-            <div class="col-sm">
-                <div class="text-extra-light text-xs">Balance</div><%= account.balance %>
+            <div class ="col-sm">
+              <div class = "row">
+                  <div class="col">
+                      <div class="text-extra-light text-xs" id="balance-at">Balance At</div><%= account.balanceAt %>
+                  </div>
+                  <div class="col text-right">
+                      <a href="<%= url %>" class="btn btn-outline-brand btn-border mt-1 pr-3 pl-3 btn-sm">Details</a>
+                  </div>
+              </div>
             </div>
-            <div class="col-sm">
-                <div class="text-extra-light text-xs">Balance At</div><%= account.balanceAt %>
-            </div>
-            <div class="col-sm">
-                <button class="btn btn-outline-brand btn-border">Details</button>
-            </div>
-        </div>
-    </div>
-</div>
+          </div>
+      </div>
+  </div>
+</a>

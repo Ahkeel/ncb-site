@@ -18,18 +18,18 @@
             balance: '$1,000,000',
             balanceAt: 'May 08, 2018'
         },
-]; 
+];
 %>
     <%- include('partials/header.html', {title: "Accounts", page_title: "Account Summary", page_icon: "images/dashboard.png"}) %>
 
         <div class="content">
             <div class="container">
                 <div class="row mb-3">
-                    <div class="col-lg-8">
+                    <div class="col-lg-8" id="dashboard-accounts">
                         <div id="accordion">
                             <div>
                                 <div class="card" data-toggle="collapse" data-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
-                                    <div class="card-header">
+                                    <div class="card-header card-header-hover">
                                         Bank Accounts
                                         <button class="card-header-button btn btn-primary">View Account(s)
                                             <i class="fa fa-chevron-down"></i>
@@ -39,14 +39,14 @@
 
                                 <div id="collapse-1" class="collapse show" data-parent="#accordion">
                                     <% bankAccounts.forEach(function(account){ %>
-                                        <%- include('components/accountCard.html', {account: account}); %>
+                                        <%- include('components/accountCard.html', {account: account, url: "#"}); %>
                                             <% }); %>
                                 </div>
                             </div>
 
                             <div>
                                 <div class="card" data-toggle="collapse" href="#collapse-2" role="button" aria-expanded="false" aria-controls="collapse-2">
-                                    <div class="card-header card-header-inverse">
+                                    <div class="card-header card-header-inverse card-header-hover">
                                         Credit Card Accounts
                                         <button class="card-header-button btn btn-primary">View Account(s)
                                             <i class="fa fa-chevron-down"></i>
@@ -56,14 +56,14 @@
 
                                 <div id="collapse-2" class="collapse" data-parent="#accordion">
                                     <% bankAccounts.forEach(function(account){ %>
-                                        <%- include('components/accountCard.html', {account: account}); %>
+                                        <%- include('components/accountCard.html', {account: account, url: "/credit-card-details.html"}); %>
                                             <% }); %>
                                 </div>
                             </div>
 
                             <div>
                                 <div class="card" data-toggle="collapse" href="#collapse-3" role="button" aria-expanded="false" aria-controls="collapse-3">
-                                    <div class="card-header card-header-inverse">
+                                    <div class="card-header card-header-inverse card-header-hover">
                                         NCB Insurance Accounts
                                         <button class="card-header-button btn btn-primary">View Account(s)
                                             <i class="fa fa-chevron-down"></i>
@@ -73,7 +73,7 @@
 
                                 <div id="collapse-3" class="collapse" data-parent="#accordion">
                                     <% bankAccounts.forEach(function(account){ %>
-                                        <%- include('components/accountCard.html', {account: account}); %>
+                                        <%- include('components/accountCard.html', {account: account, url: "#"}); %>
                                             <% }); %>
                                 </div>
                             </div>
@@ -83,10 +83,10 @@
                     <div class="col-lg-4">
                         <div class="greeting-widget mb-3">
                             <div class="greeting-widget-header">
-                                <img src="images/weather-icon.png" class="greeting-widget-header-icon">
-                                <div class="text-sm font-weight-bold text-uppercase">Jamaica</div>
-                                <div class="text-xl font-weight-light">30 C</div>
-                                <div class="text-sm">Thursday, 8:25 PM</div>
+                                <img src="" class="greeting-widget-header-icon" id="weather-icon">
+                                <div class="text-sm font-weight-bold text-uppercase" id="user_location">...</div>
+                                <div class="text-xl font-weight-light" id="temperature">0 C</div>
+                                <div class="text-sm" id="date_time">...</div>
                             </div>
                             <div class="greeting-widget-body text-lg text-brand">
                                 Good morning,
@@ -95,7 +95,7 @@
                             </div>
                         </div>
 
-                        <div class="card">
+                        <div class="card hide-mobile">
                             <div class="card-header">
                                 <img src="images/links-icon.png" class="card-header-icon"> Quick Links
                             </div>
@@ -164,7 +164,7 @@
                                     </table>
                                 </div>
                                 <div class="text-right">
-                                    <a href="#" class="btn btn-primary">Pay Bills</a>
+                                    <a href="/bill-payments.html" class="btn btn-primary btn-sm pr-3 pl-3">Pay Bills</a>
                                 </div>
                             </div>
                         </div>
@@ -218,7 +218,7 @@
                                     </table>
                                 </div>
                                 <div class="text-right">
-                                    <a href="#" class="btn btn-primary">See more FX Rates</a>
+                                    <a href="#" class="btn btn-primary btn-sm pr-3 pl-3">See more FX Rates</a>
                                 </div>
                             </div>
                         </div>
@@ -274,7 +274,6 @@
         </div>
 
         <%- include('partials/scripts.html') %>
-        
-        </body>
 
-        </html>
+        </body>
+  </html>

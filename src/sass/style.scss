@@ -2,8 +2,11 @@
 @import "mixins";
 @import "typography";
 @import "button";
+@import "checkbox";
 @import "components/card";
 @import "components/sideNavs";
+@import "components/sideNavs";
+@import "components/stickyNav";
 @import "components/greetingWidget";
 @import "components/tabBar";
 @import "login";
@@ -17,6 +20,10 @@ body {
 #logo {
   padding: 5px;
   width: 80%;
+}
+
+.test {
+  border: 1px solid red;
 }
 
 .bg-grey {
@@ -37,12 +44,13 @@ body {
   color:#fff;
 }
 
+
 .fas {
   margin-right: 5px;
 }
 .text-hightlight
 {
-  color:$yellow-highlight;
+  color:$yellow;
 }
 .border-radius {
   -webkit-border-radius: 4px;
@@ -56,12 +64,8 @@ body {
   box-shadow: 0px 1px 5px 1px $card-shadow;
 }
 
-.welcome-message {
-  font-size: 0.9rem;
-}
-
 .top-banner {
-  background-color: #fff;
+  background-color: $white;
   padding: 20px;
 }
 
@@ -91,8 +95,8 @@ body {
   height: 60px;
   background-color: rgba(0, 0, 0, 0.1);
   .nav-link {
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
+    color: $white;
+    font-family: $page-font;
     font-weight: 100;
   }
   .nav-item {
@@ -105,7 +109,7 @@ body {
 }
 
 .page-title-heading, .page-title-sub-heading {
-  color: #fff;
+  color:  $white;
   font-weight: lighter;
 }
 
@@ -113,23 +117,6 @@ body {
   padding-top: 40px;
 }
 
-.bank-cards {
-  background-color: #fff;
-  padding: 10px 20px 10px 20px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  width: 100%;
-  margin-bottom: 10px;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
-  &:hover {
-    box-shadow: 10px 10px 10px 2px $card-shadow;
-    position: relative; 
-  }
-}
 
 #accordion .card-header
 {
@@ -158,32 +145,9 @@ body {
   font-size: 1em;
 }
 
-
-.panel-body {
-  background: #fff;
-  padding: 16px;
-  margin-bottom: 20px;
-}
-
-.quick-links .nav-link {
-  color: #083161;
-  border-bottom: 1px solid #f1f1f1;
-  padding: 16px;
-  font-size: 0.9rem;
-}
-
-.nav-link .fas.fa-chevron-right {
+.nav-link .fa-chevron-right {
   float: right;
 }
-
-.weather {
-  background: #fff;
-  margin-bottom: 20px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-}
-
 
 .btn-primary {
   background: #00539b;
@@ -194,6 +158,10 @@ body {
   margin-bottom: 30px;
   background-image: url('../images/promo.png');
   padding: 40px 40px 20px 40px;
+}
+
+.promo-heading {
+  font-weight: 100;
 }
 
 .promo-caption {
@@ -230,8 +198,10 @@ body {
 }
 
 .contact-info {
-  background-color:#002b5c;
+  background-color:$midnight-blue;
+  width: 100%;
   padding: 18px;
+  color: #fff;
   font-size: 0.8rem;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -243,6 +213,13 @@ body {
   margin-top: -3px;
 }
 
+.contact-info-title {
+  font-weight: bold;
+}
+
+.contact-info-desc {
+  font-weight: 100;
+}
 
 .footer {
   background-color: #383737;
@@ -276,17 +253,6 @@ body {
   // }
 }
 
-.tab-bar {
-  background-color: #0a50a0;
-  background: linear-gradient(#00539B, #002A4E);
-  padding: 20px;
-  margin-top: 2px;
-  color: #fff;
-  .nav-tabs {
-    border: 0px;
-  }
-}
-
 .transfer {
   .nav-tabs .nav-item {
     margin-bottom: -3px;
@@ -305,7 +271,6 @@ body {
   .nav-item:first-child .nav-link {
     color: #6e6e6e;
     padding: 25px 10px 15px 50px;
-    background-image: url(../images/grey-tab.png);
     border: 0px;
     width: 244px;
     position: relative;
@@ -361,19 +326,18 @@ body {
   display: none;
 }
 
-.account-details
+.light-blue-gradient
 {
-  background-image: linear-gradient(#569FF0,#064895);
-  font-size: $account-info-font-size;
+  background-image: linear-gradient(to bottom, #569ff0, #458ada, #3475c5, #2261af, #0a4d9a);
 }
 
-.account-charts
+.left-border-white
 {
-  border-left:1px solid #fff;
+  border-left:1px solid $white;
 }
 
 @media (max-width: 992px) {
-  #mobile-drop-down { 
+  #mobile-drop-down {
     display: block;
   }
   .menu nav {
@@ -400,5 +364,15 @@ body {
         color: #003064;
       }
     }
+  }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+  #dashboard-accounts {
+    order:2;
+  }
+  .hide-mobile {
+    display: none;
   }
 }
