@@ -95,3 +95,23 @@ $greeting-widget-body-padding: 13px 50px;
 
 // Sticky nav
 $sticky-nav-fixed-max-width: 300px;
+
+// Tab navs
+$tab-navs-nav-link-font-size: 17px;
+$tab-navs-nav-link-padding: .8rem 2rem;
+$tab-navs-nav-link-border-top: 3px solid transparent;
+$tab-navs-nav-link-border-right: 1px solid $gray;
+$tab-navs-nav-link-text-color: $gray-extra-light;
+$tab-navs-nav-link-transition-delay: 0.2s;
+
+$tab-navs-nav-link-active-background-color: $gray;
+$tab-navs-nav-link-active-text-color: black;
+
+$tab-navs-nav-link-hover-text-color: $endeavour;
+$tab-navs-nav-link-hover-border-top-color: $endeavour;
+
+$tab-navs-nav-link-arrow-bottom: 0;
+$tab-navs-nav-link-arrow-left: 20px;
+$tab-navs-nav-link-arrow-height: 12px;
+$tab-navs-nav-link-arrow-width: 28px;
+$tab-navs-nav-link-arrow-background-color: $endeavour;

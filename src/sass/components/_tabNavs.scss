@@ -1,0 +1,40 @@
+// Tab bar
+.tab-navs {
+    .card {
+        box-shadow: none;
+    }
+    .card-header {
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+    }
+
+    .nav-link {
+        position: relative;
+        font-size: $tab-navs-nav-link-font-size;
+        padding: $tab-navs-nav-link-padding;
+        border-top: $tab-navs-nav-link-border-top;
+        border-right: $tab-navs-nav-link-border-right;
+        color: $tab-navs-nav-link-text-color;
+        @include transition($tab-navs-nav-link-transition-delay);
+        &.active,
+        &.active:hover {
+            background: $tab-navs-nav-link-active-background-color;
+            color: $tab-navs-nav-link-active-text-color;
+            border-right-color: transparent;
+        }
+        &:hover {
+            border-top-color: $tab-navs-nav-link-hover-border-top-color;
+            color: $tab-navs-nav-link-hover-text-color;
+        }
+        &.active:after {
+            content: " ";
+            position: absolute;
+            bottom: $tab-navs-nav-link-arrow-bottom;
+            left: $tab-navs-nav-link-arrow-left;
+            height: $tab-navs-nav-link-arrow-height;
+            width: $tab-navs-nav-link-arrow-width;
+            background: $tab-navs-nav-link-arrow-background-color;
+            @include skew(50% 0, 50% 0, 100% 100%, 0 100%);
+        }
+    }
+}
