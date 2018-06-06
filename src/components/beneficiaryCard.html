@@ -1,7 +1,7 @@
 <div class="card card-sm card-hover">
 	<div class="card-body">
 		<div class="row">
-			<div class="col-sm-6">
+			<div class="col-sm-7">
 				<div class="row">
 					<div class="col">
 						<div class="text-extra-light text-xs">Nickname</div>
@@ -11,9 +11,15 @@
 						<div class="text-extra-light text-xs">A/C Number</div>
 						<div><%= beneficiary.account_number %></div>
 					</div>
+					<% if (beneficiary.bank != null) { %>
+						<div class="col">
+							<div class="text-extra-light text-xs">Bank</div>
+							<div><%= beneficiary.bank %></div>
+						</div>
+					<% } %>
 				</div>
 			</div>
-			<div class="col-sm-6 text-right pt-1">
+			<div class="col-sm-5 text-right pt-1">
 				<a href="<%= history_url %>" class="btn btn-sm btn-outline-secondary btn-border pl-3 pr-3">Transfer History</a>
 				<a href="<%= details_url %>" class="btn btn-sm btn-outline-secondary btn-border ml-3 pl-3 pr-3">Details</a>
 			</div>

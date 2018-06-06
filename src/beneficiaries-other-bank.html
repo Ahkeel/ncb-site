@@ -1,0 +1,75 @@
+<%
+    let beneficiaries = [
+        {
+            name: 'John',
+            account_number: '345***132',
+            bank: "Scotia Bank"
+        },
+        {
+            name: 'John',
+            account_number: '345***132',
+            bank: "Scotia Bank"
+        },
+        {
+            name: 'John',
+            account_number: '345***132',
+            bank: "Scotia Bank"
+        },
+        {
+            name: 'John',
+            account_number: '345***132',
+            bank: "Scotia Bank"
+        },
+    ];
+%>
+
+<%- include('partials/header.html', {title: "Beneficiaries", page_title: "Manage Beneficiaries", page_icon: "images/beneficiaries-icon.png"}) %>
+
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+
+                    <%- include('components/beneficiaryTabs.html', {active: "other", title: "Beneficiaries from other Banks"}) %>
+
+                    <% beneficiaries.forEach(function(beneficiary){ %>
+                        <%- include('components/beneficiaryCard.html', {beneficiary: beneficiary, history_url: "#", details_url: "#"}); %>
+                    <% }); %>
+
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card hide-mobile mt-5">
+                        <div class="card-header">
+                            <img src="images/links-icon.png" class="card-header-icon">
+                            Quick Links
+                        </div>
+                        <div class="card-body">
+                            <nav class="nav flex-column nav-action-links">
+                                <a class="nav-link active" href="#">Transfer Money
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                                <a class="nav-link" href="#">Transfer Activity
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                                <a class="nav-link" href="#">Automatic Transfers
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                                <a class="nav-link" href="#">Add External Transfers
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <%- include('partials/contact.html') %>
+        </div>
+
+        <%- include('partials/footer.html') %>
+    </div>
+
+    <%- include('partials/scripts.html'); %>
+</body>
+</html>
