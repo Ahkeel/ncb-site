@@ -20,7 +20,7 @@
     user-select: $input;
 }
 
-@mixin flex( $ratio ) {
+@mixin flex($ratio) {
 	-webkit-box-flex: $ratio;      /* OLD - iOS 6-, Safari 3.1-6 */
 	-moz-box-flex: $ratio;         /* OLD - Firefox 19- */
 	-webkit-flex: $ratio;          /* Chrome */
@@ -35,4 +35,10 @@
 	shape-outside: polygon($top_left_xy, $top_right_xy, $bottom_right_xy, $bottom_left_xy);
 	-webkit-clip-path: polygon($top_left_xy, $top_right_xy, $bottom_right_xy, $bottom_left_xy);
 	clip-path: polygon($top_left_xy, $top_right_xy, $bottom_right_xy, $bottom_left_xy);
+}
+
+@mixin transform($deg) {
+    -webkit-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    transform: rotate($deg);
 }
