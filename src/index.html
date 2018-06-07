@@ -1,279 +1,95 @@
-<%
-    let bankAccounts = [
-        {
-            type: 'Savings',
-            number: '303***290',
-            balance: '$506,000',
-            balanceAt: 'May 08, 2018'
-        },
-        {
-            type: 'Savings',
-            number: '404***290',
-            balance: '$290,000,000',
-            balanceAt: 'May 08, 2018'
-        },
-        {
-            type: 'Chequing',
-            number: '303***290',
-            balance: '$1,000,000',
-            balanceAt: 'May 08, 2018'
-        },
-];
-%>
-    <%- include('partials/header.html', {title: "Accounts", page_title: "Account Summary", page_icon: "images/dashboard.png"}) %>
+<!DOCTYPE html>
+<html>
 
-        <div class="content">
-            <div class="container">
-                <div class="row mb-3">
-                    <div class="col-lg-8" id="dashboard-accounts">
-                        <div id="accordion">
-                            <div>
-                                <div class="card" data-toggle="collapse" data-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
-                                    <div class="card-header card-header-hover">
-                                        Bank Accounts
-                                        <button class="card-header-button btn btn-primary">View Account(s)
-                                            <i class="fa fa-chevron-down"></i>
-                                        </button>
-                                    </div>
-                                </div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%- include('partials/links.html'); %>
+        <%- include('partials/favicon.html'); %>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+</head>
 
-                                <div id="collapse-1" class="collapse show" data-parent="#accordion">
-                                    <% bankAccounts.forEach(function(account){ %>
-                                        <%- include('components/accountCard.html', {account: account, url: "#"}); %>
-                                            <% }); %>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="card" data-toggle="collapse" href="#collapse-2" role="button" aria-expanded="false" aria-controls="collapse-2">
-                                    <div class="card-header card-header-inverse card-header-hover">
-                                        Credit Card Accounts
-                                        <button class="card-header-button btn btn-primary">View Account(s)
-                                            <i class="fa fa-chevron-down"></i>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div id="collapse-2" class="collapse" data-parent="#accordion">
-                                    <% bankAccounts.forEach(function(account){ %>
-                                        <%- include('components/accountCard.html', {account: account, url: "/credit-card-details.html"}); %>
-                                            <% }); %>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="card" data-toggle="collapse" href="#collapse-3" role="button" aria-expanded="false" aria-controls="collapse-3">
-                                    <div class="card-header card-header-inverse card-header-hover">
-                                        NCB Insurance Accounts
-                                        <button class="card-header-button btn btn-primary">View Account(s)
-                                            <i class="fa fa-chevron-down"></i>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div id="collapse-3" class="collapse" data-parent="#accordion">
-                                    <% bankAccounts.forEach(function(account){ %>
-                                        <%- include('components/accountCard.html', {account: account, url: "#"}); %>
-                                            <% }); %>
-                                </div>
-                            </div>
-                        </div>
+<body class="login">
+    <div class="vertical-center fadeInDown animated">
+        <div class="container w-60 ">
+            <div class="row no-gutters">
+                <div class="col-sm-12 col-md-4">
+                    <div class="gradient-panel p-5 h-100 d-inline-block rounded-left w-100">
+                        <img src="images/logo-white-text.png" class="w-100 align-middle" alt="ncb logo" />
+                        <h4 class="text-white font-weight-light fix-to-bottom">Welcome !</h4>
                     </div>
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <div class="pattern-bg form-bg h-100 w-100 d-inline-block login-padding material-textbox rounded-right">
+                        <form>
+                            <h2 class="font-weight-light text-blue mb-4">Log In</h1>
+                                <div class="group">
+                                    <input type="text" required>
+                                    <i class="fas fa-user float-right"></i>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label class="text-sm text-muted">Username</label>
+                                </div>
+                                <div class="group">
+                                    <input type="text" required>
+                                    <i class="fas fa-lock float-right"></i>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label class="text-sm text-muted">Password</label>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="mt-4">
+                                    <input type="checkbox" class="w-auto d-inline" />
+                                    <span class="text-muted text-sm">Remember Me</span>
+                                    <a class="btn btn-primary btn-sm float-right pr-5 pl-5" href="account.html">Login</a>
+                                </div>
+                        </form>
 
-                    <div class="col-lg-4">
-                        <div class="greeting-widget mb-3">
-                            <div class="greeting-widget-header">
-                                <img src="" class="greeting-widget-header-icon" id="weather-icon">
-                                <div class="text-sm font-weight-bold text-uppercase" id="user_location">...</div>
-                                <div class="text-xl font-weight-light" id="temperature">0 C</div>
-                                <div class="text-sm" id="date_time">...</div>
-                            </div>
-                            <div class="greeting-widget-body text-lg text-brand">
-                                Good morning,
-                                <br>
-                                <span class="font-weight-bold">Kori!</span>
-                            </div>
-                        </div>
 
-                        <div class="card hide-mobile">
-                            <div class="card-header">
-                                <img src="images/links-icon.png" class="card-header-icon"> Quick Links
-                            </div>
-                            <div class="card-body">
-                                <nav class="nav flex-column nav-action-links">
-                                    <a class="nav-link active" href="#">Transfer Money
-                                        <i class="fa fa-chevron-right"></i>
+                        <div class="mt-4">
+                            <ul class="nav text-sm text-blue nav-pipe">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <u>New Online banking</u>
                                     </a>
-                                    <a class="nav-link" href="#">Transfer Activity
-                                        <i class="fa fa-chevron-right"></i>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <u>Username Locked</u>
                                     </a>
-                                    <a class="nav-link" href="#">Automatic Transfers
-                                        <i class="fa fa-chevron-right"></i>
-                                    </a>
-                                    <a class="nav-link" href="#">Add External Transfers
-                                        <i class="fa fa-chevron-right"></i>
-                                    </a>
-                                </nav>
-                            </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="card">
-                            <div class="card-header">
-                                <img src="images/history-icon.png" class="card-header-icon"> Recent Transaction History
-                            </div>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>Payee Name</th>
-                                                <th>Date</th>
-                                                <th>Amount Paid (JMD)</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-
-                                                <td>
-                                                    JPS Electrical Bill
-                                                </td>
-                                                <td>
-                                                    September 27,2018
-                                                </td>
-                                                <td>
-                                                    $000.00
-                                                </td>
-                                            </tr>
-                                            <tr>
-
-                                                <td>
-                                                    JPS Electrical Bill
-                                                </td>
-                                                <td>
-                                                    September 27,2018
-                                                </td>
-                                                <td>
-                                                    $000.00
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="text-right">
-                                    <a href="/bill-payments.html" class="btn btn-primary btn-sm pr-3 pl-3">Pay Bills</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <div class="card-header">
-                                <img src="images/foreign-exchange-icon.png" class="card-header-icon"> Foreign Exchange Rates
-                            </div>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-hover table-responsive">
-                                        <thead>
-                                            <tr>
-                                                <th>Currency</th>
-                                                <th>Sell</th>
-                                                <th>Buy</th>
-                                                <th>Buy</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <i class="fas fa-square-full"></i> USD
-                                                </td>
-                                                <td>
-                                                    000.00
-                                                </td>
-                                                <td>
-                                                    000.00
-                                                </td>
-                                                <td>
-                                                    000.00
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <i class="fas fa-square-full"></i> GBP
-                                                </td>
-                                                <td>
-                                                    000.00
-                                                </td>
-                                                <td>
-                                                    000.00
-                                                </td>
-                                                <td>
-                                                    000.00
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="text-right">
-                                    <a href="#" class="btn btn-primary btn-sm pr-3 pl-3">See more FX Rates</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card-header border-radius mt-5 p-5">
-                    <div class="row">
-                        <div class="col-lg-1">
-                            <img src="images/light.png" />
-                        </div>
-                        <div class="col-lg-7">
-                            <h3 class="color-white promo-heading">How Can We Help You?</h3>
-                            <div class="promo-caption color-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat.</div>
-                        </div>
-                    </div>
-
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <div class="custom-slide">
-                                <img src="images/slide.jpg" />
-                                <div class="slide-title">choose a credit card</div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="custom-slide">
-                                <img src="images/slide.jpg" />
-                                <div class="slide-title">buy a home</div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="custom-slide">
-                                <img src="images/slide.jpg" />
-                                <div class="slide-title">buy a home</div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="custom-slide">
-                                <img src="images/slide.jpg" />
-                                <div class="slide-title">buy a home</div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <%- include('partials/contact.html') %>
             </div>
-
-            <%- include('partials/footer.html') %>
+            <div class="row justify-content-center">
+                <ul class="nav text-sm text-white nav-pipe">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Online Security</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Internet Banking Demos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Terms & Conditions</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </div>
+    <div class="sticky-nav"></div>
+    <div class="container">
+        <div class="text-center text-xs p-4 font-weight-bold">For more details, call us toll free at 1-888-NCB-FIRST (1-888-622-3477) or message us at ncbinfo@jncb.com</div>
+    </div>
+    <%- include('partials/copy-right-footer.html'); %>
+    <%- include('partials/scripts.html'); %>
+</body>
 
-        <%- include('partials/scripts.html') %>
-
-        </body>
-  </html>
+</html>

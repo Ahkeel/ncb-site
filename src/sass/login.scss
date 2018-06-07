@@ -1,19 +1,29 @@
-//Login
 
-.blurred-bg
-{
-    background-image: url('../images/');
-    width:100%;
+html,body {
+    height: 100%;
+    /* important to vertically align the container */
+    margin: 0;
+    padding: 0;
+ 
 }
+
+.login
+{
+    background: url('../images/login-bg.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} 
 
 .pattern-bg
 {
-    background-image: url('../images/newsbg.png');
+    background-image: url(../images/newsbg.png);
 }
 
 .login-container-height
 {
-    height:350px;
+    min-height:350px;
 }
 
 .vertical-center {
@@ -21,4 +31,123 @@
     min-height: 100vh; /* These two lines are counted as one 🙂       */
     display: flex;
     align-items: center;
+  }
+
+  .form-bg
+  {
+     background-color: $gray-light;
+  }
+
+.login-padding
+{
+    padding:30px 80px;
+}
+
+  .nav-pipe a:after
+  {
+    padding-left:6px;
+    content: "|";
+  }
+
+  .nav-pipe li:last-child:after a {
+    content: "";
+}
+
+.fix-to-bottom
+{
+    position: absolute; 
+    bottom:10px;
+}
+
+@media only screen and (max-width: 1235px) {
+    .login-padding
+    {
+        padding:30px 25px;
+    }
+   .login .w-60
+   {
+       width:auto;
+   }
+}
+@media only screen and (max-width: 768px) {
+   .login img.w-100
+   {
+    width: 50% !important;
+   } 
+}
+
+
+.group        { 
+    position:relative; 
+    margin-bottom:26px; 
+  }
+  input         {
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    border:none;
+    border-bottom:1px solid #757575;
+  }
+  input:focus     { outline:none; }
+
+  /* LABEL ======================================= */
+.login label{
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+  }
+  
+  /* active state */
+  input:focus ~ label, input:valid ~ label     {
+    top:-20px;
+    font-size:14px;
+    color:#5264AE;
+  }
+
+  /* BOTTOM BARS ================================= */
+.bar  { position:relative; display:block; width:100%; }
+.bar:before, .bar:after   {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+    position:absolute;
+    height:60%; 
+    width:100px; 
+    top:25%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+  }
+  
+  /* active state */
+  input:focus ~ .highlight {
+    animation:inputHighlighter 0.3s ease;
+  }
+  
+  /* ANIMATIONS ================ */
+  @keyframes inputHighlighter {
+    from  { background:#5264AE; }
+    to    { width:0; background:transparent; }
   }
