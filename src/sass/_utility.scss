@@ -1,0 +1,14 @@
+.bg-blue-light {
+	background: $blue-light;
+}
+
+.bg-blue-extra-light {
+	background: $blue-extra-light;
+}
+
+$radius-class-slug: radius !default;
+@for $i from 1 through 10 {
+	.#{$radius-class-slug}-#{$i} {
+		border-radius: 1px + $i;
+	}
+}

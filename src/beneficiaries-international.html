@@ -30,7 +30,7 @@
             <div class="row">
                 <div class="col-lg-8">
 
-                    <%- include('components/beneficiaryTabs.html', {active: "international", title: "Beneficiaries from International Banks"}) %>
+                    <%- include('components/beneficiaryTabs.html', {active: "international", title: "Beneficiaries from International Banks", add_beneficiary_url: "/beneficiaries-international-add.html"}) %>
 
                     <% beneficiaries.forEach(function(beneficiary){ %>
                         <%- include('components/beneficiaryCard.html', {beneficiary: beneficiary, history_url: "#", details_url: "#"}); %>

@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="col-lg-8">
 
-                    <%- include('components/beneficiaryTabs.html', {active: "ncb", title: "Beneficiaries with NCB Accounts"}) %>
+                    <%- include('components/beneficiaryTabs.html', {active: "ncb", title: "Beneficiaries with NCB Accounts", add_beneficiary_url: "/beneficiaries-ncb-add.html"}) %>
 
                     <% beneficiaries.forEach(function(beneficiary){ %>
                         <%- include('components/beneficiaryCard.html', {beneficiary: beneficiary, history_url: "#", details_url: "#"}); %>

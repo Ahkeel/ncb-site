@@ -1,0 +1,121 @@
+<%- include('partials/header.html', {title: "Beneficiaries", page_title: "Add Beneficiaries", page_icon: "images/beneficiaries-icon.png"}) %>
+
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+
+                    <div class="card">
+                        <div class="card-header">
+                            Add Beneficiary - NCB Accounts
+                            <div class="text-sm">Fill in all required fields (*)</div>
+                        </div>
+                        <div class="card-body">
+                            <form>
+
+                                <p class="text-center p-1 radius-4 text-white bg-blue-extra-light">Beneficiary Details</p>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Beneficiary First Name*</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Beneficiary Last Name*</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Beneficiary Nickname*</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+
+                                <p class="text-center p-1 radius-4 text-white bg-blue-extra-light">Beneficiary Bank Account Details</p>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Beneficiary Bank*</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>National Commercial Bank</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Beneficiary Branch</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control" disabled>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Account Number*</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Account Currency*</label>
+                                    <div class="col-sm-4">
+                                        <select class="form-control">
+                                            <option>JMD</option>
+                                            <option>USD</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="text-right">
+                                    <a href="beneficiaries-ncb.html" class="btn pl-3 pr-3 btn-sm btn-secondary btn-border">Cancel</a>
+                                    <a href="beneficiaries-ncb.html" class="btn pl-3 pr-3 btn-sm btn-primary">Save</a>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card hide-mobile">
+                        <div class="card-header">
+                            <img src="images/links-icon.png" class="card-header-icon">
+                            Quick Links
+                        </div>
+                        <div class="card-body">
+                            <nav class="nav flex-column nav-action-links">
+                                <a class="nav-link active" href="#">Transfer Money
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                                <a class="nav-link" href="#">Transfer Activity
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                                <a class="nav-link" href="#">Automatic Transfers
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                                <a class="nav-link" href="#">Add External Transfers
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <%- include('partials/contact.html') %>
+        </div>
+
+        <%- include('partials/footer.html') %>
+    </div>
+
+    <%- include('partials/scripts.html'); %>
+</body>
+</html>
