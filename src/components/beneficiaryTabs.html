@@ -1,0 +1,17 @@
+<div class="tab-navs" id="beneficiary-tabs">
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link <% if (active == 'ncb') { %> active <% } %>" href="/beneficiaries-ncb.html#beneficiary-tabs">NCB Accounts</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link <% if (active == 'other') { %> active <% } %>" href="/beneficiaries-other-bank.html#beneficiary-tabs">Other Bank Accounts</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link <% if (active == 'international') { %> active <% } %>" href="/beneficiaries-international.html#beneficiary-tabs">International Accounts</a>
+        </li>
+    </ul>
+
+    <div class="card">
+        <div class="card-header"><%= title %></div>
+    </div>
+</div>
