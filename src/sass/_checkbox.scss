@@ -1,0 +1,59 @@
+/* The container */
+.checkbox {
+    display: block;
+    position: relative;
+    padding-left: $checkbox-padding-left;
+    margin-bottom: $checkbox-margin-bottom;
+    cursor: pointer;
+    @include user-select(none);
+}
+
+/* Hide the browser's default checkbox */
+.checkbox input {
+    position: absolute;
+    opacity: $checkbox-input-opacity;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkbox-checkmark {
+    position: absolute;
+    top: $checkbox-checkmark-top;
+    left: $checkbox-checkmark-left;
+    height: $checkbox-checkmark-height;
+    width: $checkbox-checkmark-width;
+    background-color: $checkbox-checkmark-background-color;
+    border-radius: $checkbox-checkmark-border-radius;
+}
+
+.checkbox:hover input ~ .checkbox-checkmark {
+    background-color: $checkbox-checkmark-input-hover-background-color;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox input:checked ~ .checkbox-checkmark {
+    background-color: $checkbox-checkmark-input-checked-background-color;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox input:checked ~ .checkbox-checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox .checkbox-checkmark:after {
+    left: $checkbox-checkmark-tick-left;
+    top: $checkbox-checkmark-tick-top;
+    width: $checkbox-checkmark-tick-width;
+    height: $checkbox-checkmark-tick-height;
+    border: $checkbox-checkmark-tick-border;
+    border-width: $checkbox-checkmark-tick-border-width;
+    @include transform($checkbox-checkmark-tick-rotate);
+}

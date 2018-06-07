@@ -1,119 +1,173 @@
-// Colors
-$mine-shaft: #333333;
-$congress-blue: #004785;
-$deep-saphire: #0a386e;
-$midnight-blue: #002b5c;
-$wild-sand: #F4F4F4;
-$white: #FFFFFF;
-$athens-gray: #E9ECEF;
-$chambray: #33558B;
-$endeavour:  #00539B;
-$prussian-blue: #002A4E;
-$gray-extra-light: #B7B7B7;
-$gray-light: #F1F1F1;
-$gray: #E3E3E3;
-$gray-dark: #6E6E6E;
-$yellow: #ffda19;
+/**
+*	COLORS
+*/
+$mine-shaft: 							#333333;
+$congress-blue: 						#004785;
+$blue-light:							#2196F3;
+$deep-saphire: 							#0a386e;
+$midnight-blue: 						#002b5c;
+$endeavour:  							#00539B;
+$prussian-blue: 						#002A4E;
+$chambray: 								#33558B;
+$wild-sand:								#F4F4F4;
+$white: 								#FFFFFF;
+$athens-gray: 							#E9ECEF;
+$gray-extra-light: 						#B7B7B7;
+$gray-light: 							#F1F1F1;
+$gray: 									#E3E3E3;
+$gray-dark: 							#6E6E6E;
+$silver:								#CCCCCC;
+$yellow: 								#ffda19;
 
-// Text
-$font-size-xs: 11px;
-$font-size-sm: 13px;
-$font-size-default: 15px;
-$font-size-md: 18px;
-$font-size-lg: 22px;
-$font-size-xl: 28px;
-$font-size-xxl: 35px;
+/**
+*	PAGE DEFAULT SETTINGS
+*/
+$brand-color: 							$congress-blue;
+$page-background-color: 				$wild-sand;
+$page-font: 							'Roboto', sans-serif;
 
-$primary-color: $mine-shaft;
-$secondary-color: $midnight-blue;
-$account-info-color: $deep-saphire;
-$account-info-font-size:0.8rem;
+$container-padding: 					20px;
+$container-margin-bottom-space: 		20px;
 
-// Color assignments
-$brand-color: $congress-blue;
-$text-primary-color: $mine-shaft;
-$text-secondary-color: $midnight-blue;
-$text-brand-color: $congress-blue;
-$text-extra-light-color: $gray-extra-light;
+/**
+*	TEXT 
+*	Config for texts (sizes, colors, etc.)
+*/
+$font-size-xs: 							11px;
+$font-size-sm: 							13px;
+$font-size-default: 					15px;
+$font-size-md: 							18px;
+$font-size-lg: 							22px;
+$font-size-xl: 							28px;
+$font-size-xxl: 						35px;
 
-// Page defaults
-$page-background-color: $wild-sand;
-$page-font: 'Roboto', sans-serif;
+$text-primary-color: 					$mine-shaft;
+$text-secondary-color: 					$midnight-blue;
+$text-brand-color: 						$congress-blue;
+$text-extra-light-color: 				$gray-extra-light;
 
-// Container
-$container-padding: 20px;
-$container-margin-bottom-space: 20px;
+/**
+*	BUTTON
+*/
+$btn-outline-brand-text-color:					$brand-color;
+$btn-outline-brand-background-color:			transparent;
+$btn-outline-brand-border-color:				$brand-color;
 
-// Card
-$card-border-width: 0px;
-$card-background-color: $white;
-$card-margin-bottom: 10px;
-$card-border-radius: 5px;
-$card-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1);
+$btn-outline-brand-active-text-color:			$white;
+$btn-outline-brand-active-background-color:		$brand-color;
+$btn-outline-brand-active-border-color:		$brand-color;
 
-$card-sm-card-body-padding: 0.6rem 1rem;
+// *********************************
+$primary-color: 						$mine-shaft;
+$secondary-color: 						$midnight-blue;
+$account-info-color: 					$deep-saphire;
+$account-info-font-size:				.8rem;
 
-$card-hover-transition: 0.4s;
-$card-hover-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.1);
+/** 
+*	CARD
+*/
+$card-background-color: 				$white;
+$card-margin-bottom: 					10px;
+$card-border-width: 					0px;
+$card-border-radius: 					5px;
+$card-shadow: 							0px 1px 5px 1px rgba(0, 0, 0, 0.1);
 
-$card-header-background-color: linear-gradient($endeavour, $prussian-blue);
-$card-header-text-color: $white;
-$card-header-link-color: $chambray;
-$card-header-font-weight: 100;
-$card-header-font-size: 22px;
-$card-header-padding: 1rem;
-$card-header-border-radius: 5px !important;
+$card-sm-card-body-padding: 			.6rem 1rem;
 
-$card-header-inv-font-weight: 400;
+$card-hover-transition-delay:			0.4s;
+$card-hover-shadow: 					5px 10px 10px 5px rgba(0, 0, 0, 0.1);
 
-$card-header-sm-padding: 7px 10px;
-$card-header-sm-font-size: 1em;
+$card-header-background-color: 			linear-gradient($endeavour, $prussian-blue);
+$card-header-text-color: 				$white;
+$card-header-link-color: 				$chambray;
+$card-header-font-weight: 				100;
+$card-header-font-size: 				22px;
+$card-header-padding: 					1rem;
+$card-header-border-radius: 			5px !important;
 
-$card-header-icon-height: 45px;
-$card-header-icon-margin: 0 7px 0 0;
+$card-header-inv-font-weight: 			400;
 
-$card-header-button-font-size: 13px;
-$card-header-button-padding: .6rem 1.5rem;
-$card-header-button-icon-margin: 0 0 0 10px;
+$card-header-sm-padding: 				7px 10px;
+$card-header-sm-font-size: 				1em;
 
-// Side navigation
-$nav-action-links-nav-link-padding: 16px 7px;
-$nav-action-links-nav-link-border-bottom: 1px solid $gray-light;
-$nav-action-links-nav-link-hover-background-color: $gray-light;
+$card-header-icon-height: 				45px;
+$card-header-icon-margin: 				0 7px 0 0;
 
-// Greeting widget
-$greeting-widget-border-radius: 15px;
-$greeting-widget-shadow: $card-shadow;
-$greeting-widget-background-color: $white;
+$card-header-button-font-size: 			13px;
+$card-header-button-padding: 			.6rem 1.5rem;
+$card-header-button-icon-margin: 		0 0 0 10px;
 
-$greeting-widget-header-background-color: $gray;
-$greeting-widget-header-border-radius: 15px 15px 0 0;
-$greeting-widget-header-padding: 13px 50px;
-$greeting-widget-header-icon-height: 80px;
+/**
+*	SIDE NAV
+*/
+$nav-action-links-nav-link-padding: 				16px 7px;
+$nav-action-links-nav-link-border-bottom: 			1px solid $gray-light;
+$nav-action-links-nav-link-hover-background-color: 	$gray-light;
 
-$greeting-widget-body-padding: 13px 50px;
+/**
+*	STICKY NAV
+*/
+$sticky-nav-fixed-max-width: 			300px;
 
-//login
-$form-bg-color:$gray-light;
-// Sticky nav
-$sticky-nav-fixed-max-width: 300px;
+/**
+*	GREETING WIDGET
+*/
+$greeting-widget-border-radius: 			15px;
+$greeting-widget-shadow: 					$card-shadow;
+$greeting-widget-background-color: 			$white;
 
-// Tab navs
-$tab-navs-nav-link-font-size: 17px;
-$tab-navs-nav-link-padding: .8rem 2rem;
-$tab-navs-nav-link-border-top: 3px solid transparent;
-$tab-navs-nav-link-border-right: 1px solid $gray;
-$tab-navs-nav-link-text-color: $gray-extra-light;
-$tab-navs-nav-link-transition-delay: 0.2s;
+$greeting-widget-header-background-color:	$gray;
+$greeting-widget-header-border-radius: 		15px 15px 0 0;
+$greeting-widget-header-padding: 			13px 50px;
+$greeting-widget-header-icon-height: 		80px;
 
-$tab-navs-nav-link-active-background-color: $gray;
-$tab-navs-nav-link-active-text-color: black;
+$greeting-widget-body-padding: 				13px 50px;
 
-$tab-navs-nav-link-hover-text-color: $endeavour;
-$tab-navs-nav-link-hover-border-top-color: $endeavour;
+/** 
+*	TAB NAV
+*/
+$tab-navs-nav-link-font-size: 					17px;
+$tab-navs-nav-link-padding: 					.8rem 2rem;
+$tab-navs-nav-link-border-top: 					3px solid transparent;
+$tab-navs-nav-link-border-right: 				1px solid $gray;
+$tab-navs-nav-link-text-color: 					$gray-extra-light;
+$tab-navs-nav-link-transition-delay: 			0.2s;
 
-$tab-navs-nav-link-arrow-bottom: 0;
-$tab-navs-nav-link-arrow-left: 20px;
-$tab-navs-nav-link-arrow-height: 12px;
-$tab-navs-nav-link-arrow-width: 28px;
-$tab-navs-nav-link-arrow-background-color: $endeavour;
+$tab-navs-nav-link-active-background-color: 	$gray;
+$tab-navs-nav-link-active-text-color: 			black;
+
+$tab-navs-nav-link-hover-text-color: 			$endeavour;
+$tab-navs-nav-link-hover-border-top-color: 		$endeavour;
+
+$tab-navs-nav-link-arrow-bottom: 				0;
+$tab-navs-nav-link-arrow-left: 					20px;
+$tab-navs-nav-link-arrow-height: 				12px;
+$tab-navs-nav-link-arrow-width:					28px;
+$tab-navs-nav-link-arrow-background-color: 		$endeavour;
+
+/**
+*	CHECKBOX
+*/
+$checkbox-padding-left: 				30px;
+$checkbox-margin-bottom:				0;
+
+$checkbox-input-opacity:				0;
+
+$checkbox-checkmark-top:				5px;
+$checkbox-checkmark-left:				0;
+$checkbox-checkmark-height:				15px;
+$checkbox-checkmark-width:				15px;
+$checkbox-checkmark-background-color:	$white;
+$checkbox-checkmark-border-radius:		2px;
+
+$checkbox-checkmark-input-hover-background-color:	$silver;
+
+$checkbox-checkmark-input-checked-background-color:	$blue-light;
+
+$checkbox-checkmark-tick-top:				2px;
+$checkbox-checkmark-tick-left:				6px;
+$checkbox-checkmark-tick-height:			9px;
+$checkbox-checkmark-tick-width:			5px;
+$checkbox-checkmark-tick-border:			solid white;
+$checkbox-checkmark-tick-border-width:		0 3px 3px 0;
+$checkbox-checkmark-tick-rotate:			45deg;

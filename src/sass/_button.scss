@@ -1,19 +1,18 @@
 .btn-outline-brand {
-	color: $brand-color;
-	background-color: transparent;
+	color: $btn-outline-brand-text-color;
+	background-color: $btn-outline-brand-background-color;
 	background-image: none;
-	border-color: $brand-color;
+	border-color: $btn-outline-brand-border-color;
 	&:hover,
 	&:active,
 	&:focus {
-		color: $white;
-		background-color: $brand-color;
-		border-color: $brand-color;
+		color: $btn-outline-brand-active-text-color;
+		background-color: $btn-outline-brand-active-background-color;
+		border-color: $btn-outline-brand-active-border-color;
 	}
 }
 
-.btn-no-fill-outline
-{
+.btn-no-fill-outline {
 	background-color: transparent;
-	border:0px;
+	border: 0px;
 }

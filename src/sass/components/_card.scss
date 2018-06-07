@@ -18,7 +18,7 @@
 }
 
 .card-hover {
-	@include transition($card-hover-transition);
+	@include transition($card-hover-transition-delay);
 	&:hover {
 		z-index: 10;
 		box-shadow: $card-hover-shadow;

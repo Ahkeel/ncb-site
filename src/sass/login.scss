@@ -35,7 +35,7 @@ html,body {
 
   .form-bg
   {
-     background-color: $form-bg-color;
+     background-color: $gray-light;
   }
 
 .login-padding
@@ -87,8 +87,6 @@ html,body {
 
   /* LABEL ======================================= */
 .login label{
-    color:#999; 
-    font-size:18px;
     font-weight:normal;
     position:absolute;
     pointer-events:none;
