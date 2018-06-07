@@ -69,6 +69,12 @@ html,body {
        width:auto;
    }
 }
+@media only screen and (max-width: 768px) {
+   .login img.w-100
+   {
+    width: 50% !important;
+   } 
+}
 
 
 .group        { 
@@ -79,7 +85,6 @@ html,body {
     font-size:18px;
     padding:10px 10px 10px 5px;
     display:block;
-    width:300px;
     border:none;
     border-bottom:1px solid #757575;
   }
@@ -103,7 +108,7 @@ html,body {
   }
 
   /* BOTTOM BARS ================================= */
-.bar  { position:relative; display:block; width:300px; }
+.bar  { position:relative; display:block; width:100%; }
 .bar:before, .bar:after   {
   content:'';
   height:2px; 
