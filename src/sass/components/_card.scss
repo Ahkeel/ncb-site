@@ -67,4 +67,9 @@
 	i {
 		margin: $card-header-button-icon-margin;
 	}
+	&.btn-no-fill {
+		font-size: $card-header-button-no-fill-font-size;
+		padding: $card-header-button-no-fill-padding;
+		font-weight: $card-header-button-no-fill-font-weight;
+	}
 }
