@@ -1,0 +1,96 @@
+<%
+    let loanAccounts = [
+        {
+            nickname: 'John Doe',
+            number: '303***290',
+            balance: '$506,000',
+            balanceAt: 'May 08, 2018'
+        },
+        {
+            nickname: 'John Doe',
+            number: '404***290',
+            balance: '$290,000,000',
+            balanceAt: 'May 08, 2018'
+        },
+        {
+            nickname: 'John Doe',
+            number: '303***290',
+            balance: '$1,000,000',
+            balanceAt: 'May 08, 2018'
+        },
+        {
+            nickname: 'John Doe',
+            number: '303***290',
+            balance: '$1,000,000',
+            balanceAt: 'May 08, 2018'
+        },
+        {
+            nickname: 'John Doe',
+            number: '303***290',
+            balance: '$1,000,000',
+            balanceAt: 'May 08, 2018'
+        },
+    ];
+%>
+
+        <%- include('partials/header.html', {title: "Accounts", page_title: "Loan Details", page_icon: "images/loan-icon.png"}) %>
+
+        <div class="content">
+            <div class="container">
+                <div class="row mb-3">
+                    <div class="col-lg-8">
+
+                        <div class="card">
+                            <div class="card-header card-header-hover">
+                                Loan Account Overview
+                            </div>
+                        </div>
+
+                        <% loanAccounts.forEach(function(account){ %>
+                            <%- include('components/loanAccountCard.html', {account: account}); %>
+                        <% }); %>
+
+                        <div class="text-right text-default m-3">
+                            <a href="#" class="text-brand">Print</a> |
+                            Download as
+                            <a href="#" class="text-brand">PDF</a>
+                            <a href="#" class="text-brand">CSV</a>
+                            <a href="#" class="text-brand">TXT</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card hide-mobile">
+                            <div class="card-header">
+                                <img src="images/links-icon.png" class="card-header-icon"> Quick Links
+                            </div>
+                            <div class="card-body">
+                                <nav class="nav flex-column nav-action-links">
+                                    <a class="nav-link active" href="#">Transfer Money
+                                        <i class="fa fa-chevron-right"></i>
+                                    </a>
+                                    <a class="nav-link" href="#">Transfer Activity
+                                        <i class="fa fa-chevron-right"></i>
+                                    </a>
+                                    <a class="nav-link" href="#">Automatic Transfers
+                                        <i class="fa fa-chevron-right"></i>
+                                    </a>
+                                    <a class="nav-link" href="#">Add External Transfers
+                                        <i class="fa fa-chevron-right"></i>
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <%- include('partials/contact.html') %>
+            </div>
+
+            <%- include('partials/footer.html') %>
+        </div>
+
+        <%- include('partials/scripts.html') %>
+
+        </body>
+  </html>
