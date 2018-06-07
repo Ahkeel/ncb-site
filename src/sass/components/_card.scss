@@ -25,6 +25,15 @@
 	}
 }
 
+.card-bordered {
+	border-radius: 0 !important;
+	.card-header,
+	.card-body {
+		border-radius: 0 !important;
+		border-bottom: $card-bordered-card-body-border-bottom;
+	}
+}
+
 .card-header {
 	flex: 1 1 auto;
     padding: $card-header-padding;
