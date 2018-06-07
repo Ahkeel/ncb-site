@@ -2,83 +2,96 @@
     
     <div class="content">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="transfer">
-                        <div id="mobile-drop-down" class="border-radius">
-                            <span class="float-left">Select Option</span>
-                            <i class="fas fa-chevron-down float-right"></i>
-                            <div class="clearfix"></div>
-                        </div>
+            
+            <div class="tab-navs" id="transfer-tabs">
 
-                        <%- include('components/transferTabs.html', {active: "self"}) %>
+                <%- include('components/transferTabs.html', {active: "self"}) %>
 
-                        <div class="shadow custom-tab-content">
-                            <div class="tab-bar">
-                                <h5>Step 1 of 3 Transfer Setup</h3>
-                                <h6>Transfer money to another NCB account or another bank within Jamaica</h6>
-                            </div>
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                    <div class="row">
-                                        <div class="col-sm-7">
-                                            <label>From</label>
-                                            <select class="custom-select">
-                                                <option selected="">Select Account</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-sm-5">
-                                            <label>Transfer Date</label>
-                                            <input type="text" class="form-control" placeholder="May 01,2018" aria-label="TRANSFER DATE" aria-describedby="basic-addon2">
-                                        </div>
+                <div class="card card-bordered">
+                    <div class="card-header">
+                        Step 1 of 3 - NCB Self Transfer
+                        <div class="text-sm">Transfer money to another personal NCB account</div>
+                    </div>
+                    <div class="card-body">
+
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-5">
+
+                                    <div class="form-group">
+                                        <label class="text-sm text-uppercase">From</label>
+                                        <select class="custom-select form-control">
+                                            <option selected="">Select Account</option>
+                                            <option>Savings 234***123 - $3500.00</option>
+                                            <option>Savings 234***123 - $3500.00</option>
+                                        </select>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-sm-7">
-                                            <label>To</label>
-                                            <select class="custom-select">
-                                                <option selected="">Select Account</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-sm-5">
-                                            <label>Notes (optional)</label>
-                                            <textarea></textarea>
-                                        </div>
+
+                                    <div class="form-group">
+                                        <label class="text-sm text-uppercase">To</label>
+                                        <select class="custom-select form-control">
+                                            <option selected="">Select Account</option>
+                                            <option>Savings 234***123 - $3500.00</option>
+                                            <option>Savings 234***123 - $3500.00</option>
+                                        </select>
                                     </div>
+
                                     <div class="row">
-                                        <div class="col-sm-7">
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <label>Currency</label>
-                                                    <select class="custom-select">
-                                                        <option selected="">JMD</option>
-                                                        <option value="1">USD</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <label>Amount</label>
-                                                    <select class="custom-select">
-                                                        <option selected="">$0.00</option>
-                                                    </select>
-                                                </div>
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label class="text-sm text-uppercase">Currency</label>
+                                                <select class="custom-select form-control">
+                                                    <option selected="">JMD</option>
+                                                    <option>USD</option>
+                                                </select>
                                             </div>
                                         </div>
-                                        <div class="col-sm-5">
-                                            <a href="transfers-self-step2.html" class="btn btn-primary btn-block">Pay Bills</a>
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label class="text-sm text-uppercase">Amount</label>
+                                                <input type="text" class="form-control">
+                                            </div>
                                         </div>
                                     </div>
-
                                 </div>
+
+                                <div class="col-sm-5 offset-sm-2">
+
+                                    <div class="form-group">
+                                        <label class="text-sm text-uppercase">Transfer Date</label>
+
+                                        <div class="mb-1">
+                                            <div>
+                                                <label class="text-default mb-0">
+                                                    <input class="mr-1" type="radio" name="transferDate" checked>
+                                                    Immediately
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <label class="text-default mb-0">
+                                                    <input class="mr-1" type="radio" name="transferDate">
+                                                    On the Following Date
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="text-sm text-uppercase">Transaction Remarks (optional)</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>  
+
+                            <div class="text-right">
+                                <a href="transfers-self-step2.html#transfer-tabs" class="btn pl-5 pr-5 btn-sm btn-primary">Next Step</a>
                             </div>
-                        </div>
+                        </form>
+
                     </div>
                 </div>
-
             </div>
 
             <%- include('partials/contact.html') %>
