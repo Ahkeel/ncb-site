@@ -4,11 +4,10 @@
 
 .sticky-nav {
     position: relative;
-    
-    &.sticky-nav-fixed {
-        position: fixed;
-        top: 0;
-        max-width: $sticky-nav-fixed-max-width;
-        z-index: 1;
-    }
+}
+
+.sticky-nav-fixed {
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
