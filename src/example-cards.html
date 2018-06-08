@@ -1,64 +1,84 @@
-    <%- include('partials/header.html', {title: "Template Examples", page_title: "Cards", page_icon: ""}) %>
+    <%- include('partials/header.html', {title: "Documentation", page_title: "Cards", page_icon: ""}) %>
 	
     <div class="content">
-        <div class="container">
+        <div class="container sticky-nav-wrapper">
 
-            <div class="mb-5">
-                <div class="card">
-                    <div class="card-body">
-                        This is a <code>.card</code> with <code>.card-body</code>
-                    </div>
+            <div class="row mb-5">
+                <div class="col-sm-3">
+                    <%- include('components/exampleNav.html') %>
                 </div>
 
-                <div class="card card-sm">
-                    <div class="card-body">
-                        This is a <code>.card</code> with the class <code>.card-sm</code>
-                    </div>
-                </div>
+                <div class="col-sm-9">
+                    <div>
+                        <div class="card mb-5">
+                            <div class="card-body">
+                                This is a <code>.card</code> with <code>.card-body</code>
+                            </div>
+                        </div>
 
-                <div class="card card-hover">
-                    <div class="card-body">
-                        This <code>.card</code> has <code>.card-hover</code>
-                    </div>
-                </div>
+                        <div class="card card-sm mb-5">
+                            <div class="card-body">
+                                This is a <code>.card</code> with the class <code>.card-sm</code>
+                            </div>
+                        </div>
 
-                <div class="card">
-                    <div class="card-header">
-                        Example Header
-                    </div>
-                    <div class="card-body">
-                        This <code>.card</code> has <code>.card-header</code>
-                    </div>
-                </div>
+                        <div class="card card-hover mb-5">
+                            <div class="card-body">
+                                This <code>.card</code> has <code>.card-hover</code>
+                            </div>
+                        </div>
 
-                <div class="card">
-                    <div class="card-header card-header-inverse">
-                        Example Header Inverse
-                    </div>
-                    <div class="card-body">
-                        This <code>.card-header</code> has the inverse class <code>.card-header-inverse</code>
-                    </div>
-                </div>
+                        <div class="card mb-5">
+                            <div class="card-header">
+                                Example Header
+                            </div>
+                            <div class="card-body">
+                                This <code>.card</code> has <code>.card-header</code>
+                            </div>
+                        </div>
 
-                <div class="card">
-                    <div class="card-header">
-                        <img src="images/history-icon.png" class="card-header-icon">
-                        Example Header
-                        <button class="card-header-button btn btn-primary">Button</button>
-                    </div>
-                    <div class="card-body">
-                        This <code>.card-header</code> has <code>img.card-header-icon</code> and <code>button.card-header-button</code>
-                    </div>
-                </div>
+                        <div class="card mb-5">
+                            <div class="card-header card-header-inverse">
+                                Example Header Inverse
+                            </div>
+                            <div class="card-body">
+                                This <code>.card-header</code> has the inverse class <code>.card-header-inverse</code>
+                            </div>
+                        </div>
 
-                <div class="card">
-                    <div class="card-body">
-                        <p>See the bootstrap document to see default card features.</p>
+                        <div class="card mb-5">
+                            <div class="card-header card-header-sm">
+                                Example Header Small
+                            </div>
+                            <div class="card-body">
+                                This <code>.card-header</code> has <code>.card-header-sm</code>
+                            </div>
+                        </div>
 
-                        <a href="https://getbootstrap.com/docs/4.0/components/card/">See Documentation</a>
+                        <div class="card mb-5">
+                            <div class="card-header">
+                                <img src="images/history-icon.png" class="card-header-icon">
+                                Example Header
+                                <a href="#" class="card-header-button btn btn-primary">Button <i class="fa fa-chevron-down"></i></a>
+                                <a href="#" class="card-header-button btn btn-no-fill text-white"><i class="fa fa-plus-circle"></i> Anchor</a>
+                            </div>
+                            <div class="card-body">
+                                This <code>.card-header</code> has <code>img.card-header-icon</code> and <code>button.card-header-button</code>
+                            </div>
+                        </div>
+
+                        <div class="card mb-5">
+                            <div class="card-body">
+                                <p>See the bootstrap document for default card features.</p>
+
+                                <a href="https://getbootstrap.com/docs/4.0/components/card/">See Documentation</a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
+
         </div>
 
         <%- include('partials/footer.html') %>
