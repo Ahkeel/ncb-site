@@ -74,5 +74,8 @@ $(document).ready(function()
         return(time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true }))
       }
     }
-  showPosition();
+
+    if ($(".greeting-widget").length) {
+      showPosition();
+    }
 });
