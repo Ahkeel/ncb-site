@@ -1,8 +1,5 @@
 // Tab bar
 .tab-navs {
-    .card {
-        box-shadow: none;
-    }
     .card-header {
         border-top-left-radius: 0 !important;
         border-top-right-radius: 0 !important;
@@ -33,6 +30,7 @@
             left: $tab-navs-nav-link-arrow-left;
             height: $tab-navs-nav-link-arrow-height;
             width: $tab-navs-nav-link-arrow-width;
+            z-index: 1;
             background: $tab-navs-nav-link-arrow-background-color;
             @include skew(50% 0, 50% 0, 100% 100%, 0 100%);
         }

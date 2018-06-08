@@ -1,0 +1,84 @@
+    <%- include('partials/header.html', {title: "Template Examples", page_title: "Tab Navs", page_icon: ""}) %>
+    
+    <div class="content">
+        <div class="container sticky-nav-wrapper">
+
+            <div class="row mb-5">
+
+                <div class="col-sm-3">
+                    <%- include('components/exampleNav.html') %>
+                </div>
+
+                <div class="col-sm-9">
+
+                    <div class="card mb-5">
+                        <div class="card-body">
+                            <p>Using the bootstrap horizontal nav, wrap the <code>.nav</code> with a <code>div.tab-navs</code>.</p>
+
+                            <p>Within the wrapper, include the card below the tabs that displays the tabbed information.</p>
+                        </div>
+                    </div>
+
+                    <div class="tab-navs mb-5" id="example-navs-1">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#example-navs-1">Active Tab</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#example-navs-1">Inactive Tab</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#example-navs-1">Inactive Tab</a>
+                            </li>
+                        </ul>
+
+                        <div class="card">
+                            <div class="card-header">
+                                Tab Header Example    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-navs mb-5" id="example-navs-2">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#example-navs-2">Active Tab</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#example-navs-2">Inactive Tab</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#example-navs-2">Inactive Tab</a>
+                            </li>
+                        </ul>
+
+                        <div class="card card-bordered">
+                            <div class="card-header">
+                                Tab Header Example    
+                            </div>
+                            <div class="card-body">
+                                Add <code>.card-bordered</code> to cards that include include content.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-5">
+                        <div class="card-body">
+                            <p>See bootstrap for default horizonatal nav features.</p>
+
+                            <a href="https://getbootstrap.com/docs/4.0/components/navs/">See Documentation</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div> 
+
+        </div>
+
+        <%- include('partials/footer.html') %>
+    </div>  
+
+    <%- include('partials/scripts.html'); %>
+</body>
+</html>
