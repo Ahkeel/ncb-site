@@ -27,11 +27,6 @@ $(document).ready(function() {
 		}
 	}
 
-    $(window).onDelayed('resize',100,function() {
-		height = $(".sticky-nav").parent().height();
-        resizeStickyNav();
-    });
-
 	var position = 0;
 	var stickyNav = $('.sticky-nav');
 	var wrapper = $('.sticky-nav-wrapper');
@@ -46,6 +41,12 @@ $(document).ready(function() {
 		resizeStickyNav();
 	}
 
-	getScroll();
-	$(window).scroll(getScroll);
+	if ($(".sticky-nav").length) {
+		getScroll();
+		$(window).scroll(getScroll);
+	    $(window).onDelayed('resize',100,function() {
+			height = $(".sticky-nav").parent().height();
+	        resizeStickyNav();
+    	});
+	}
 });
