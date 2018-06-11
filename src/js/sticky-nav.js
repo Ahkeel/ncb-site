@@ -13,16 +13,22 @@
 })(jQuery);
 
 $(document).ready(function() {
+
+	var height = $(".sticky-nav").parent().height();
+	
 	function resizeStickyNav() {
 		var width = $(".sticky-nav").parent().width();
 		if ($(".sticky-nav-fixed").length) {
+        	$(".sticky-nav").parent().css( "min-height", height + "px" );
         	$( ".sticky-nav-fixed" ).css( "width", width + "px" );
 		} else {
 			$( ".sticky-nav" ).css( "width", "100%" );
+        	$(".sticky-nav").parent().css( "height", "auto" );
 		}
 	}
 
-    $(window).onDelayed('resize',100,function(){
+    $(window).onDelayed('resize',100,function() {
+		height = $(".sticky-nav").parent().height();
         resizeStickyNav();
     });
 
@@ -40,7 +46,6 @@ $(document).ready(function() {
 		resizeStickyNav();
 	}
 
-	resizeStickyNav();
 	getScroll();
 	$(window).scroll(getScroll);
 });
