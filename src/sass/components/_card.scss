@@ -43,6 +43,10 @@
     font-weight: $card-header-font-weight;
     border-radius: $card-header-border-radius;
 }
+.card-header-secondary
+{
+	background: $card-header-secondary;
+}
 
 .card-header-inverse {
     color: $brand-color;

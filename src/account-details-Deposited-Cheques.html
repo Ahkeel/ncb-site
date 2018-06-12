@@ -1,0 +1,307 @@
+<%
+    let bankAccounts = [
+        {
+            type: 'Savings',
+            number: '303***290',
+            balance: '$506,000',
+            balanceAt: 'May 08, 2018'
+        },
+        {
+            type: 'Savings',
+            number: '404***290',
+            balance: '$290,000,000',
+            balanceAt: 'May 08, 2018'
+        },
+        {
+            type: 'Chequing',
+            number: '303***290',
+            balance: '$1,000,000',
+            balanceAt: 'May 08, 2018'
+        },
+]; 
+%>
+    <%- include('partials/header.html', {title: "Accounts", page_title: "Account Details", page_icon: "images/dashboard.png"}) %>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="light-blue-gradient text-brand text-sm border-radius mb-4 p-4">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="pl-4">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <h4 class="text-white font-weight-light">Account Details</h2>
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="card">
+                                                            <div class="card-body p-1 text-center">
+                                                                <i class="fas fa-caret-up fa-lg text-success"></i> Incoming
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-white">$000,000,000</div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="card">
+                                                            <div class="card-body p-1 text-center">
+                                                                <i class="fas fa-caret-down fa-lg text-danger"></i> Outcoming
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-white">$000,000,000</div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="card">
+                                                            <div class="card-body p-1 text-center">
+                                                                <i class="fas fa-caret-down fa-lg text-success"></i> Average
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-white">$000,000,000</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 mt-3">
+                                            <canvas id="myChart" height="80"></canvas>
+                                        </div>
+
+                                        <div class="row mb-4">
+                                            <div class="col-12">
+                                                <div class="mb-4 mt-2">
+                                                    <h3 class="text-white font-weight-light">$0000,000,00
+                                                        <span class="text-xs">JMD</span>
+                                                        </h5>
+                                                        <div class="text-white">Account Balance</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <h5 class="text-white font-weight-light">$0000,000,00
+                                                            <span class="text-xs">JMD</span>
+                                                        </h5>
+                                                        <div class="text-hightlight">Spent Today</div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <h5 class="text-white font-weight-light">$0000,000,00
+                                                            <span class="text-xs">JMD</span>
+                                                        </h5>
+                                                        <div class="text-hightlight mb-2">Spent This Month</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="card">
+                                                            <div class="card-body p-2">
+                                                                Quick Payments
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="card">
+                                                            <div class="card-body p-2">
+                                                                Credit Card Details
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="card">
+                                                            <div class="card-body p-2">
+                                                                Amount Stats
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </s>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <ul id="breadcrumb" class="p-0">
+                            <li>
+                                <a href="#" class="active">
+                                     Quick View</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Transaction View</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-control float-right w-auto">
+                            <option>Filter</option>
+                            <option>Quick View</option>
+                            <option>Do Query Transaction</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card mb-5">
+                            <div class="card-header card-header-secondary">
+                                Deposited Cheques
+                            </div>
+                            <div class="card-body">
+                                <table class="table-striped w-100 text-sm text-left">
+                                    <tr >
+                                        <td class="p-3" colspan="2">
+                                            Select an account to view deposited Cheques
+                                        </td>                                             
+                                    </tr>                                   
+                                    <tr>
+                                        <td class="p-3">
+                                            Date Range
+                                        </td>
+                                        <td>
+                                            From
+                                            <input type="text" class="form-control w-20 d-inline form-control-sm" />
+                                            <i class="far fa-calendar-alt fa-lg"></i>
+                                           To <input type="text" class="form-control w-20 d-inline form-control-sm" />
+                                           <i class="far fa-calendar-alt fa-lg"></i>
+                                        </td>                                      
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3">
+                                            With Transaction Status:
+                                        </td>
+                                        <td>
+                                            <select class="form-control w-auto form-control-sm">
+                                                <option>All Status</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="float-right mt-4">
+                                        <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-chevron-left"></i> Back</button>
+                                        <button class="btn btn-sm btn-primary"><i class="fas fa-search"></i> Retrieve</button>
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="images/history-icon.png" class="card-header-icon"> Transaction History
+                                <select class="form-control float-right w-auto">
+                                    <option>Filter</option>
+                                    <option>Quick View</option>
+                                    <option>Do Query Transaction</option>
+                                </select>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="card card-hover card-sm">
+                            <div class="card-body text-brand text-md-right">
+                                <div class="row">
+                                    <div class="col-sm-4 col-md mb-1">
+                                        <div class="text-extra-light text-xs">SI Nummber</div>
+                                        78
+                                    </div>
+
+                                    <div class="col-sm-4 col-md mb-1">
+                                        <div class="text-extra-light text-xs">Post Date</div>
+                                        May 12, 2018
+                                    </div>
+                                    <div class="col-sm-4 col-md mb-1">
+                                        <div class="text-extra-light text-xs">Transaction Date</div>
+                                        May 12, 2018
+                                    </div>
+
+                                    <div class="col-sm-4 col-md-2 mb-1">
+                                        <div class="text-extra-light text-xs">Description</div>
+                                        Play store purchase
+                                    </div>
+
+                                    <div class="col-sm-4 col-md mb-1">
+                                        <div class="text-extra-light text-xs">Debt</div>
+                                        1,000,000
+                                    </div>
+
+                                    <div class="col-sm-4 col-md mb-1">
+                                        <div class="text-extra-light text-xs">Credit</div>
+                                        1,00000
+                                    </div>
+                                    <div class=" col-sm-4 col-md mb-1">
+                                        <div class="text-extra-light text-xs">Balance</div>
+                                        1,00000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <%- include('partials/contact.html') %>
+            </div>
+            <%- include('partials/footer.html') %>
+        </div>
+        <%- include('partials/scripts.html'); %>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+            <script>
+                if ($("#myChart").length) {
+                    var ctx = $('#myChart')[0].getContext('2d');
+                    var myLineChart = new Chart(ctx, {
+                        type: 'line',
+                        scaleFontColor: 'white',
+                        data: {
+                            labels: ["January", "February", "March", "April", "May", "June", "July"],
+                            datasets: [{
+                                backgroundColor: 'transparent',
+                                lineTension: 0,
+                                data: [0, 10, 5, 2, 20, 30, 45],
+                                borderColor: 'white',
+                                backgroundColor: 'transparent',
+                                borderDash: [0, 0],
+                                pointBorderColor: 'white',
+                                pointBackgroundColor: 'blue',
+                                pointRadius: 10,
+                                pointStyle: 'Rounded'
+                            }]
+                        },
+                        options: {
+                            legend: {
+                                display: false
+                            },
+                            bezierCurve: false,
+                            scaleShowHorizontalLines: false,
+                            scales: {
+                                yAxes: [{
+                                    gridLines: {
+                                        display: false
+                                    },
+                                    ticks: {
+                                        beginAtZero: true,
+                                        fontColor: 'white'
+                                    },
+                                }],
+                                xAxes: [{
+                                    gridLines: {
+                                        color: 'white',
+                                    },
+                                    ticks: {
+                                        fontColor: 'white'
+                                    },
+                                }]
+                            }
+                        }
+                    });
+
+                }
+
+            </script>
+
+            </body>
+
+            </html>
