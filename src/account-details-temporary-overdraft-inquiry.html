@@ -25,7 +25,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="light-blue-gradient text-brand text-sm border-radius mb-5 p-4">
+                        <div class="light-blue-gradient text-brand text-sm border-radius mb-4 p-4">
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="pl-4">
@@ -126,19 +126,14 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <ul id="breadcrumb">
+                        <ul id="breadcrumb" class="p-0">
                             <li>
-                                <a href="#">
-                                    <span class="icon icon-home"> </span>
-                                </a>
+                                <a href="#" class="active">
+                                    Quick View</a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="icon icon-beaker"> </span> Quick View</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="icon icon-double-angle-right"></span> Transaction View</a>
+                                    Temporary Overdraft Inquiry</a>
                             </li>
                         </ul>
                     </div>
@@ -159,49 +154,34 @@
                             <div class="card-body">
                                 <table class="table-striped w-100 text-sm text-left">
                                     <tr>
-                                        <td>
-                                            1. View the last
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control w-auto d-inline form-control-sm" />
-                                        </td>
-
-                                        <td>
-                                            <button class="btn btn-warning btn-sm">
-                                                <i class="fas fa-search"></i> Search</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            2. View Transaction Between
+                                        <td class="p-3">
+                                            From Data
                                         </td>
                                         <td>
                                             <i class="far fa-calendar-alt fa-lg"></i>
-                                            <input type="text" class="form-control w-auto d-inline form-control-sm" />
-                                            <input type="text" class="form-control w-auto d-inline form-control-sm" />
+                                            <input type="text" class="form-control w-20 d-inline form-control-sm" />
+                                            <input type="text" class="form-control w-20 d-inline form-control-sm" />
                                             <i class="far fa-calendar-alt fa-lg"></i>
-                                        </td>
-
-                                        <td>
-                                            <button class="btn btn-warning btn-sm">
-                                                <i class="fas fa-search"></i> Search</button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            3. View Transaction Between JMD
+                                        <td class="p-3">
+                                            Date Range
                                         </td>
                                         <td>
-                                            <input type="text" class="form-control w-auto d-inline form-control-sm" /> and JMD
                                             <input type="text" class="form-control w-auto d-inline form-control-sm" />
                                         </td>
-
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3">
+                                            With Transaction Status
+                                        </td>
                                         <td>
-                                            <button class="btn btn-warning btn-sm">
-                                                <i class="fas fa-search"></i> Search</button>
+                                            <input type="text" class="form-control w-auto d-inline form-control-sm" />
                                         </td>
                                     </tr>
                                 </table>
+                                <button class="btn btn-sm btn-primary float-right mt-4">Retrieve</button>
                             </div>
                         </div>
                     </div>
@@ -210,7 +190,7 @@
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-header">
-                                <img src="images/history-icon.png" class="card-header-icon"> Transaction History
+                                <img src="images/history-icon.png" class="card-header-icon">Recent Transaction History
                                 <select class="form-control float-right w-auto">
                                     <option>Filter</option>
                                     <option>Quick View</option>

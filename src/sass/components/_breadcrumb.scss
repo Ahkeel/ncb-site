@@ -7,9 +7,9 @@
     li {
       float: left;
       a {
-        color: #fff;
+        color:$midnight-blue;
         display: block;
-        background: #3498db;
+        background: #d4d4d4;
         text-decoration: none;
         position: relative;
         height: 40px;
@@ -18,16 +18,7 @@
         text-align: center;
         margin-right: 23px;
       }
-      &:nth-child(even) a {
-        background-color: #2980b9;
-        &:before {
-          border-color: #2980b9;
-          border-left-color: transparent;
-        }
-        &:after {
-          border-left-color: #2980b9;
-        }
-      }
+      
       &:first-child a {
         padding-left: 15px;
         -moz-border-radius: 4px 0 0 4px;
@@ -51,7 +42,7 @@
           content: "";
           position: absolute;
           top: 0;
-          border: 0 solid #3498db;
+          border: 0 solid #d4d4d4;
           border-width: 20px 10px;
           width: 0;
           height: 0;
@@ -63,26 +54,27 @@
         &:after {
           left: 100%;
           border-color: transparent;
-          border-left-color: #3498db;
+          border-left-color: #d4d4d4;
         }
         &:hover {
-          background-color: #1abc9c;
+          background-color:$midnight-blue;
+          color:#fff;
           &:before {
-            border-color: #1abc9c;
+            border-color:$midnight-blue;
             border-left-color: transparent;
           }
           &:after {
-            border-left-color: #1abc9c;
+            border-left-color:$midnight-blue;
           }
         }
         &:active {
-          background-color: #16a085;
+          background-color: $midnight-blue;
           &:before {
-            border-color: #16a085;
+            border-color:$midnight-blue;
             border-left-color: transparent;
           }
           &:after {
-            border-left-color: #16a085;
+            border-left-color: $midnight-blue;
           }
         }
       }
