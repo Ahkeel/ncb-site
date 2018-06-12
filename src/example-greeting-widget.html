@@ -1,0 +1,85 @@
+    <%- include('partials/header.html', {title: "Template Examples", page_title: "Greeting Widget", page_icon: ""}) %>
+	
+    <div class="content">
+        <div class="container sticky-nav-wrapper">
+
+            <div class="row mb-5">
+
+                <div class="col-sm-3">
+                    <%- include('components/exampleNav.html') %>
+                </div>
+
+                <div class="col-sm-9">
+                    <div class="row">
+
+                        <div class="col-sm mb-3">
+                            <div class="greeting-widget mb-3">
+                                <div class="greeting-widget-header" hidden>
+                                    <img src="" class="greeting-widget-header-icon" id="weather-icon">
+                                    <div class="text-sm font-weight-bold text-uppercase" id="user_location"></div>
+                                    <div class="text-xl font-weight-light" id="user_temperature"></div>
+                                    <div class="text-sm">
+                                        <span id="user_day"></span>,
+                                        <span id="user_time"></span>
+                                    </div>
+                                </div>
+                                <div class="greeting-widget-body text-lg text-brand">
+                                    Hi,
+                                    <span class="font-weight-bold">User!</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm mb-5">
+                            <div class="greeting-widget mb-3">
+                                <div class="greeting-widget-body text-lg text-brand">
+                                    Hi,
+                                    <span class="font-weight-bold">User!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-5">
+                        <div class="card-body">
+                            <p>The greeting widget is made up of the main wrapper <code>.greeting-widget</code> as well as the head and body within this wrapper, <code>.greeting-widget-header</code> and <code>.greeting-widget-body</code>.</p>
+
+                            <p>The content within each section can be styled with the text utilties for font size, weight, etc.</p>
+
+                            <p>By default the weather, location and time only shows if the user allows the browser to capture their location.</p>
+
+
+
+                            <div class="bg-grey pl-3 pr-3 pb-1 radius-3">
+<pre><code>
+&lt;div class="greeting-widget"&gt;
+    &lt;div class="greeting-widget-header" hidden&gt;
+        &lt;img src="" class="greeting-widget-header-icon" id="weather-icon"&gt;
+        &lt;div class="text-sm font-weight-bold text-uppercase" id="user_location"&gt;&lt;/div&gt;
+        &lt;div class="text-xl font-weight-light" id="user_temperature"&gt;&lt;/div&gt;
+        &lt;div class="text-sm"&gt;
+            &lt;span id="user_day"&gt;&lt;/span&gt;,
+            &lt;span id="user_time"&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="greeting-widget-body"&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+
+        </div>
+
+        <%- include('partials/footer.html') %>
+    </div>	
+
+	<%- include('partials/scripts.html'); %>
+    <script src="js/weather.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+    <%- include('partials/header.html', {title: "Template Examples", page_title: "Sticky Nav", page_icon: ""}) %>
+    
+    <div class="content">
+        <div class="container sticky-nav-wrapper">
+
+            <div class="row mb-5">
+
+                <div class="col-sm-3">
+                    <%- include('components/exampleNav.html') %>
+                </div>
+
+                <div class="col-sm-9">
+
+                    <div class="card mb-5">
+                        <div class="card-body">
+                            <p class="font-weight-bold text-sm">This example uses the Content navigation to the left as reference.</p>
+
+                            <p>Any content can become sticky, and in this case it is usually a card.</p>
+
+                            <p>To make a card sticky add the class <code>.sticky-nav</code> to the <code>.card</code>. However, to have a smooth functioning sticky nav it is required to wrap the card in a <code>&lt;div&gt;</code> tag.</p>
+
+                            <p>The sticky nav activates when the <code>window</code> makes contact with a trigger. The recommended trigger is a wrapper for the sticky nav using the class <code>.sticky-nav-wrapper</code>.</p>
+
+                            <div class="bg-grey pl-3 pr-3 pb-1 radius-3">
+<pre><code>
+&lt;div class="sticky-nav-wrapper"&gt;
+    &lt;div&gt;
+        &lt;div class="card sticky-nav"&gt;
+            ...
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div> 
+
+        </div>
+
+        <%- include('partials/footer.html') %>
+    </div>  
+
+    <%- include('partials/scripts.html'); %>
+</body>
+</html>
