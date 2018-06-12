@@ -20,7 +20,7 @@
         },
 ];
 %>
-    <%- include('partials/header.html', {title: "Accounts", page_title: "Account Summary", page_icon: "images/dashboard.png"}) %>
+    <%- include('partials/header.html', {title: "Accounts", page_title: "Accounts Overview", page_icon: "images/dashboard.png"}) %>
 
     <div class="content">
         <div class="container">
@@ -39,7 +39,7 @@
 
                             <div id="collapse-1" class="collapse show" data-parent="#accordion">
                                 <% bankAccounts.forEach(function(account){ %>
-                                    <%- include('components/accountCard.html', {account: account, url: "#"}); %>
+                                    <%- include('components/accountCard.html', {account: account, url: "account-details-transaction-query.html"}); %>
                                         <% }); %>
                             </div>
                         </div>

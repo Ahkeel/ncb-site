@@ -124,7 +124,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" id="quick-view">
                     <div class="col-6">
                         <ul id="breadcrumb" class="p-0">
                             <li class="active">
@@ -138,10 +138,11 @@
                         </ul>
                     </div>
                     <div class="col-6">
-                        <select class="form-control float-right w-auto">
-                            <option>Filter</option>
-                            <option>Quick View</option>
-                            <option>Do Query Transaction</option>
+                        <select class="form-control float-right w-auto" onchange="location=this.value">
+                            <option value="">Filter</option>
+                            <option value="/account-details-transaction-query.html#quick-view">Do Query Transaction</option>
+                            <option value="/account-details-temporary-overdraft-inquiry.html#quick-view">Temporary Overdraft Inquiry</option>
+                            <option value="/account-details-deposited-cheques.html#quick-view">View Deposited Checks</option>
                         </select>
                     </div>
                 </div>
@@ -149,7 +150,7 @@
                     <div class="col-sm-12">
                         <div class="card mb-5">
                             <div class="card-header card-header-secondary">
-                                Do a Transaction Query
+                                Do a Temporary Overdraft Inquiry
                             </div>
                             <div class="card-body">
                                 <table class="table-striped w-100 text-sm text-left">
