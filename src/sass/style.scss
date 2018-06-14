@@ -12,6 +12,8 @@
 @import "components/tabNavs";
 @import "components/breadcrumb";
 @import "components/material";
+@import "components/modal";
+@import "components/courasel";
 @import "login";
 @import "form";
 
@@ -275,6 +277,12 @@ body {
 .left-border-white
 {
   border-left:1px solid $white;
+}
+
+.has-tip::after
+{
+  font-family: FontAwesome;
+    content: "\f163";
 }
 
 @media (max-width: 992px) {
