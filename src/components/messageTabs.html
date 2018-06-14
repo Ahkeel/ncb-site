@@ -1,0 +1,24 @@
+<div class="tab-navs">
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link <% if (active == 'inbox') { %> active <% } %>" href="messages-inbox.html">Inbox</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link <% if (active == 'sent') { %> active <% } %>" href="messages-sent.html">Sent</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link <% if (active == 'trash') { %> active <% } %>" href="messages-trash.html">Trash</a>
+        </li>
+    </ul>
+
+    <div class="card">
+        <div class="card-header">
+            <i class="card-header-icon fa fa-envelope"></i>
+            <%= title %>
+            <a href="#" class="card-header-button btn  btn-no-fill text-white">
+                <i class="fa fa-plus-circle"></i>
+                Compose
+            </a>
+        </div>
+    </div>
+</div>
