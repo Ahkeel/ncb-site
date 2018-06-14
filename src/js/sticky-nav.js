@@ -2,7 +2,7 @@
     $.fn.onDelayed = function(eventName,delayInMs,callback){
         var _timeout;
         this.on(eventName,function(e){
-          if(!!_timeout){ 
+          if(!!_timeout){
               clearTimeout(_timeout);
           }
           _timeout = setTimeout(function(){
@@ -15,7 +15,7 @@
 $(document).ready(function() {
 
 	var height = $(".sticky-nav").parent().height();
-	
+
 	function resizeStickyNav() {
 		var width = $(".sticky-nav").parent().width();
 		if ($(".sticky-nav-fixed").length) {
@@ -50,3 +50,12 @@ $(document).ready(function() {
     	});
 	}
 });
+
+function myFunction() {
+    var x = document.getElementById("testing");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
