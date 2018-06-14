@@ -1,0 +1,93 @@
+    <%
+        let notifications = [
+            {
+                title: "Password Reset",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla elementum maximus. Etiam lectus nunc, aliquam sit amet leo id, condimentum porta erat.",
+                date: "Jun 6 2018 - 9:00am"
+            },
+            {
+                title: "Password Reset",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla elementum maximus. Etiam lectus nunc, aliquam sit amet leo id, condimentum porta erat.",
+                date: "Jun 6 2018 - 9:00am"
+            },
+            {
+                title: "Password Reset",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla elementum maximus. Etiam lectus nunc, aliquam sit amet leo id, condimentum porta erat.",
+                date: "Jun 6 2018 - 9:00am"
+            },
+        ];
+    %>
+
+    <%- include('partials/header.html', {title: "Messages", page_title: "Notifications", page_icon: "images/dashboard.png"}) %>
+    
+    <div class="content">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <div class="card card-no-shadow">
+                        <div class="card-header">
+                            <i class="card-header-icon fa fa-bell"></i>
+                            Notifications
+                        </div>
+                    </div>
+
+                    <input type="search" class="form-control mb-2" placeholder="Search notifications">
+
+                    <div class="card card-no-shadow">
+                        <div class="card-body">
+                            <div class="pl-3 pr-3">
+                                <% notifications.forEach(function(notification) { %>
+                                    <%- include('components/notification.html', {notification: notification}); %>
+                                <% }); %>
+                            </div>
+                            <div class="text-right mt-3">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-sm btn-secondary">«</button>
+                                    <button type="button" class="btn btn-sm btn-secondary">1</button>
+                                    <button type="button" class="btn btn-sm btn-secondary">2</button>
+                                    <button type="button" class="btn btn-sm btn-secondary">...</button>
+                                    <button type="button" class="btn btn-sm btn-secondary">40</button>
+                                    <button type="button" class="btn btn-sm btn-secondary">»</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card card-no-shadow">
+                        <div class="card-header card-header-inverse">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="images/favicon/favicon-128.png" class="notification-img mr-3">
+                                </div>
+                                <div class="col">
+                                    National Commercial Bank
+                                    <div class="text-secondary text-default">Subject: Password Reset</div>
+                                    <div class="text-secondary text-sm">Jun 6 2018 - 9:00am</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+
+                            <div class="message-window">
+                                <div class="message">
+                                    Lorem ipsum dolor sit amet,<br><br> consectetur adipiscing elit. Aenean fringilla elementum maximus. Etiam lectus nunc, aliquam sit amet leo id, condimentum porta erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br> Aenean fringilla elementum maximus. Etiam lectus nunc, aliquam sit amet leo id, condimentum porta erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla elementum maximus. Etiam lectus nunc, aliquam sit amet leo id, condimentum porta erat. 
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <%- include('partials/contact.html') %>
+        </div>
+
+        <%- include('partials/footer.html') %>
+    </div>
+
+    <%- include('partials/scripts.html'); %>
+</body>
+</html>

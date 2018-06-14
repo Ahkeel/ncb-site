@@ -13,6 +13,14 @@ $radius-class-slug: radius !default;
 	}
 }
 
+.border-bottom-secondary {
+	border-bottom: 1px solid #ced4da;
+}
+
+.border-top-secondary {
+	border-top: 1px solid #ced4da;
+}
+
 .w-20
 {
 	width:20% !important;

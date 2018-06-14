@@ -1,0 +1,31 @@
+.message-window {
+	max-height: 500px;
+	padding: 0 10px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.message {
+	border: 1px solid lighten(#ced4da, 7%);
+	padding: 10px;
+	border-radius: 6px;
+	margin: 10px 0;
+	@extend .text-default;
+}
+
+.message-incoming {
+	background: rgba(242, 253, 255, 1);
+}
+
+.message-date {
+	@extend .text-md;
+	color: $gray-extra-light;
+	text-align: center;
+}
+
+.message-timestamp {
+	float: right;
+	// text-align: right;
+	@extend .text-xs;
+	color: $gray-dark;
+}
