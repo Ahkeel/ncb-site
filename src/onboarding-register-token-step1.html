@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%- include('partials/links.html'); %>
         <%- include('partials/favicon.html'); %>
-        <title>Forget Password Step 1</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+            <title>Onboarding- Device Type</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
 </head>
 
 <body class="material login">
@@ -21,30 +21,21 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-8">
-                    <div class="pattern-bg form-bg h-100 w-100 d-inline-block login-padding material-textbox rounded-right">                   
-                        <form>
-                            <h2 class="font-weight-light text-blue mb-4">Forget Password</h1>
-                                <div class="text-blue font-weight-bold text-sm">Step 1 of 4 - Forget Password</div>
-                                <div class="font-weight-light text-sm mt-2 mb-4">Please enter your username and your NCB Midas card number. A one time code will be sent to your email address for verification.</div>
-                                <div class="group">
-                                    <input type="text" required>
-                                    <i class="fas fa-user float-right"></i>
-                                    <span class="highlight"></span>
-                                    <span class="bar"></span>
-                                    <label class="text-sm text-muted">UserId</label>
+                    <div class="pattern-bg form-bg h-100 w-100 d-inline-block login-padding material-textbox rounded-right">
+                        <form class="font-weight-light text-sm">
+                            <h2 class="text-blue mb-4 font-weight-light">Register for Security token on Mobile App - Step 1</h1>
+                                <div class="mt-2 mb-4">
+                                    <select class="custom-select w-100">
+                                        <option>Type of Device</option>
+                                    </select>
                                 </div>
-                                <div class="group">
-                                    <input type="text" required>
-                                    <i class="fas fa-lock float-right"></i>
-                                    <span class="highlight"></span>
-                                    <span class="bar"></span>
-                                    <label class="text-sm text-muted">MasterCard #</label>
+                                
+                                <hr>
+                                <p>[It is 24 characters, identified as Device Id or Binding # in the RSA App. It can also be seen when the information button is selected]</p>
+                                <div class="mt-4 float-right">
+                                    <a class="btn btn-primary btn-sm  pr-5 pl-5" href="onboarding-register-token-step2.html">Continue</a>
                                 </div>
-                                <div class="clearfix"></div>
-                                <div class="mt-4">                                
-                                    <a class="btn btn-primary btn-sm float-right pr-5 pl-5" href="forget-password-step2.html">Next Step</a>
-                                </div>
-                            </form>                       
+                        </form>
                     </div>
                 </div>
             </div>
@@ -73,8 +64,9 @@
     <div class="container">
         <div class="text-center text-xs p-4 font-weight-bold">For more details, call us toll free at 1-888-NCB-FIRST (1-888-622-3477) or message us at ncbinfo@jncb.com</div>
     </div>
+
     <%- include('partials/copy-right-footer.html'); %>
-    <%- include('partials/scripts.html'); %>
+        <%- include('partials/scripts.html'); %>
 </body>
 
 </html>
