@@ -93,8 +93,10 @@ $card-header-inv-font-weight: 			400;
 $card-header-sm-padding: 				7px 10px;
 $card-header-sm-font-size: 				1em;
 
-$card-header-icon-height: 				45px;
-$card-header-icon-margin: 				0 7px 0 0;
+$card-header-icon-img-height: 			45px;
+$card-header-icon-img-margin: 			0 7px 0 0;
+$card-header-icon-i-margin: 			0 10px 0 0;
+$card-header-icon-i-font-size:			30px;
 
 $card-header-button-font-size: 			13px;
 $card-header-button-padding: 			.6rem 1.5rem;
@@ -164,15 +166,16 @@ $checkbox-checkmark-height:				15px;
 $checkbox-checkmark-width:				15px;
 $checkbox-checkmark-background-color:	$white;
 $checkbox-checkmark-border-radius:		2px;
+$checkbox-checkmark-border:				1px solid rgba(0,0,0,0.3);
 
 $checkbox-checkmark-input-hover-background-color:	$silver;
 
 $checkbox-checkmark-input-checked-background-color:	$blue-light;
 
 $checkbox-checkmark-tick-top:				2px;
-$checkbox-checkmark-tick-left:				6px;
+$checkbox-checkmark-tick-left:				4px;
 $checkbox-checkmark-tick-height:			9px;
-$checkbox-checkmark-tick-width:			5px;
+$checkbox-checkmark-tick-width:				5px;
 $checkbox-checkmark-tick-border:			solid white;
 $checkbox-checkmark-tick-border-width:		0 3px 3px 0;
 $checkbox-checkmark-tick-rotate:			45deg;
