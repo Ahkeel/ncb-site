@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%- include('partials/links.html'); %>
         <%- include('partials/favicon.html'); %>
-        <title>Login</title>
+            <title>Onboarding- Device Type</title>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
 </head>
 
@@ -22,46 +22,20 @@
                 </div>
                 <div class="col-sm-12 col-md-8">
                     <div class="pattern-bg form-bg h-100 w-100 d-inline-block login-padding material-textbox rounded-right">
-                        <form>
-                            <h2 class="font-weight-light text-blue mb-4">Log In</h1>
-                                <div class="group">
-                                    <input type="text" required>
-                                    <i class="fas fa-user float-right"></i>
-                                    <span class="highlight"></span>
-                                    <span class="bar"></span>
-                                    <label class="text-sm text-muted">Username</label>
+                        <form class="font-weight-light text-sm">
+                            <h2 class="text-blue mb-4 font-weight-light">Register for Security token on Mobile App - Step 1</h1>
+                                <div class="mt-2 mb-4">
+                                    <select class="custom-select w-100">
+                                        <option>Type of Device</option>
+                                    </select>
                                 </div>
-                                <div class="group">
-                                    <input type="text" required>
-                                    <i class="fas fa-lock float-right"></i>
-                                    <span class="highlight"></span>
-                                    <span class="bar"></span>
-                                    <label class="text-sm text-muted">Password</label>
-                                    <a href="forget-password-intro.html" class="text-sm float-right font-italic mt-1 mb-1">Forget Password</a>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="mt-4">
-                                    <input type="checkbox" class="w-auto d-inline" />
-                                    <span class="text-muted text-sm">Remember Me</span>
-                                    <a class="btn btn-primary btn-sm float-right pr-5 pl-5" href="accounts.html">Login</a>
+                                
+                                <hr>
+                                <p>[It is 24 characters, identified as Device Id or Binding # in the RSA App. It can also be seen when the information button is selected]</p>
+                                <div class="mt-4 float-right">
+                                    <a class="btn btn-primary btn-sm  pr-5 pl-5" href="onboarding-register-token-step2.html">Continue</a>
                                 </div>
                         </form>
-
-
-                        <div class="mt-4">
-                            <ul class="nav text-sm text-blue nav-pipe">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <u>New to Online banking</u>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <u>Username Locked</u>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -90,8 +64,9 @@
     <div class="container">
         <div class="text-center text-xs p-4 font-weight-bold">For more details, call us toll free at 1-888-NCB-FIRST (1-888-622-3477) or message us at ncbinfo@jncb.com</div>
     </div>
+
     <%- include('partials/copy-right-footer.html'); %>
-    <%- include('partials/scripts.html'); %>
+        <%- include('partials/scripts.html'); %>
 </body>
 
 </html>
