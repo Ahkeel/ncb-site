@@ -24,6 +24,7 @@
     width: $checkbox-checkmark-width;
     background-color: $checkbox-checkmark-background-color;
     border-radius: $checkbox-checkmark-border-radius;
+    border: $checkbox-checkmark-border;
 }
 
 .checkbox:hover input ~ .checkbox-checkmark {

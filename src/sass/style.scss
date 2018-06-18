@@ -11,6 +11,11 @@
 @import "components/greetingWidget";
 @import "components/tabNavs";
 @import "components/breadcrumb";
+@import "components/message";
+@import "components/notifications";
+@import "components/material";
+@import "components/modal";
+@import "components/courasel";
 @import "login";
 @import "form";
 
@@ -22,10 +27,6 @@ body {
 #logo {
   padding: 5px;
   width: 80%;
-}
-
-.test {
-  border: 1px solid red;
 }
 
 .bg-grey {
@@ -112,7 +113,7 @@ body {
 
 .page-title-heading, .page-title-sub-heading {
   color:  $white;
-  font-weight: lighter;
+  font-weight: 100;
 }
 
 .content {
@@ -255,69 +256,11 @@ body {
   // }
 }
 
-.transfer {
-  .nav-tabs .nav-item {
-    margin-bottom: -3px;
-  }
-  .nav-link {
-    color: #6e6e6e;
-    padding: 25px 10px 15px 50px;
-    background-image: url(../images/grey-tab.png);
-    border: 0px;
-    width: 244px;
-    position: relative;
-    margin-left: -50px;
-    text-align: left;
-    z-index: 1;
-  }
-  .nav-item:first-child .nav-link {
-    color: #6e6e6e;
-    padding: 25px 10px 15px 50px;
-    border: 0px;
-    width: 244px;
-    position: relative;
-    margin-left: -50px;
-    text-align: left;
-    z-index: 1;
-    background-image: url(../images/grey-first.png);
-  }
-  .nav-link.active {
-    color: #fff;
-    border: 0px;
-    background-image: url('../images/blue-tab.png');
-    background-color: transparent;
-    color: #ffda19;
-  }
-  .nav-item:first-child .nav-link {
-    &.active {
-      background-image: url(../images/blue-first-active.png);
-      color: #ffda19;
-    }
-    margin-left: 0px;
-  }
-}
 
-.custom-tab-content {
-  background-color: #fff;
-  border-bottom: 2px solid $secondary-color;
-  .tab-content {
-    padding: 20px;
-  }
-  select, textarea , input:not([type=radio]) {
-    width: 100%;
-  }
-  label {
-    font-size: 0.9rem;
-  }
-}
 
 .navbar-toggler-icon {
   color: #fff;
   margin-top: 6px;
-}
-
-.transfer #myTab {
-  display: flex;
 }
 
 #mobile-drop-down {
@@ -336,6 +279,12 @@ body {
 .left-border-white
 {
   border-left:1px solid $white;
+}
+
+.has-tip::after
+{
+  font-family: FontAwesome;
+    content: "\f163";
 }
 
 @media (max-width: 992px) {

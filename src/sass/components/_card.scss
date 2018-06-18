@@ -34,6 +34,11 @@
 	}
 }
 
+.card-no-shadow {
+	box-shadow: none;
+	border: 1px solid #ced4da;
+}
+
 .card-header {
 	flex: 1 1 auto;
     padding: $card-header-padding;
@@ -59,9 +64,14 @@
     font-size: $card-header-sm-font-size;
 }
 
-.card-header-icon {
-	height: $card-header-icon-height;
-	margin: $card-header-icon-margin;
+img.card-header-icon {
+	height: $card-header-icon-img-height;
+	margin: $card-header-icon-img-margin;
+}
+
+i.card-header-icon {
+	margin: $card-header-icon-i-margin;
+	font-size: $card-header-icon-i-font-size;
 }
 
 .card-header-button {
