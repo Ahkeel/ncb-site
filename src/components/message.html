@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-1 pt-4">
+        <label class="checkbox">
+            <input type="checkbox">
+            <span class="checkbox-checkmark"></span>
+        </label>
+    </div>
+    <div class="col text-truncate pt-3 pb-3 border-bottom-secondary">
+        <span class="float-right text-xs text-secondary"><%= message.date %></span>
+        <a href="#" class="text-default text-dark">
+            <span class="text-md font-weight-bold"><%= message.sender %></span><br>
+            <%= message.message %>
+        </a>
+    </div>
+</div>

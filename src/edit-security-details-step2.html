@@ -1,0 +1,103 @@
+    <%- include('partials/header.html', {title: "Messages", page_title: "My Profile", page_icon: "images/transfers-icon.png"}) %>
+
+    <div class="content">
+        <div class="container">
+
+            <div class="tab-navs" id="transfer-tabs">
+
+                <%- include('components/profile-tabs.html', {active: "edit-security-details"}) %>
+
+                <div class="card card-bordered">
+                    <div class="card-header">
+                        Edit RSA User Image & User Phrase
+                    </div>
+                    <div class="card-body">
+
+                                <form>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label text-sm">Image Categories</label>
+                                            <div class="col-sm-4">
+                                                    <select class="form-control">
+                                                            <option>All Categories</option>
+                                                            <option>Something</option>
+                                                            <option>Something</option>
+                                                            <option>Something</option>
+                                                            <option>Something</option>
+                                                            <option>Something</option>
+                                                        </select>
+                                            </div>
+                                        </div>
+                                        </form>
+
+                        <div class="container-fluid">
+                            <div class="row port-page">
+                                <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter hdpe">
+                                    <img src="images/RSA-user-image/RSA-user-image-2.PNG" class="img-responsive center-block port-image card-hover pointer card">
+                                </div>
+                                <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter sprinkle">
+                                    <img src="images/RSA-user-image/RSA-user-image-2.PNG" class="img-responsive center-block port-image card-hover pointer card">
+                                </div>
+                                <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter hdpe">
+                                    <img src="images/RSA-user-image/RSA-user-image-2.PNG" class="img-responsive center-block port-image card-hover pointer card">
+                                </div>
+                                <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter irrigation">
+                                    <img src="images/RSA-user-image/RSA-user-image-2.PNG" class="img-responsive center-block port-image card-hover pointer card">
+                                </div>
+                                <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter spray">
+                                    <img src="images/RSA-user-image/RSA-user-image-2.PNG" class="img-responsive center-block port-image card-hover pointer card">
+                                </div>
+                                <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter irrigation">
+                                    <img src="images/RSA-user-image/RSA-user-image-2.PNG" class="img-responsive center-block port-image card-hover pointer card">
+                                </div> 
+                                 <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter spray">
+                                    <img src="images/RSA-user-image/RSA-user-image-2.PNG" class="img-responsive center-block port-image card-hover pointer card">
+                                </div>
+                                <div class="gallery_product col-lg-3 col-md-3 col-sm-4 col-xs-6 filter irrigation">
+                                    <img src="images/RSA-user-image/RSA-user-image-2.PNG" class="img-responsive center-block port-image card-hover pointer card">
+                                </div>
+                                
+                      </div>
+                      
+                            </div>
+                          
+                          
+
+                            
+                       
+
+                            <form>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label text-sm">Enter Phrase Here</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    </form>
+
+
+                        <div class="text-right">
+                            <a href="change-password-step2.html" class="btn pl-3 pr-3 btn-sm btn-secondary btn-border">Back</a>
+                            <a href="#" class="btn pl-3 pr-3 btn-sm btn-primary">Save Profile</a>
+                        </div>
+                        
+
+                        <span class="checkmark">
+                                <div class="checkmark_circle"></div>
+                                <div class="checkmark_stem"></div>
+                                <di class="checkmark_kick"></div>
+                            </span>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <%- include('partials/contact.html') %>
+        </div>
+
+        <%- include('partials/footer.html') %>
+    </div>
+
+    <%- include('partials/scripts.html'); %>
+</body>
+</html>

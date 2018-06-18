@@ -11,6 +11,11 @@
 @import "components/greetingWidget";
 @import "components/tabNavs";
 @import "components/breadcrumb";
+@import "components/message";
+@import "components/notifications";
+@import "components/material";
+@import "components/modal";
+@import "components/courasel";
 @import "login";
 @import "form";
 
@@ -22,10 +27,6 @@ body {
 #logo {
   padding: 5px;
   width: 80%;
-}
-
-.test {
-  border: 1px solid red;
 }
 
 .bg-grey {
@@ -112,7 +113,7 @@ body {
 
 .page-title-heading, .page-title-sub-heading {
   color:  $white;
-  font-weight: lighter;
+  font-weight: 100;
 }
 
 .content {
@@ -255,69 +256,11 @@ body {
   // }
 }
 
-.transfer {
-  .nav-tabs .nav-item {
-    margin-bottom: -3px;
-  }
-  .nav-link {
-    color: #6e6e6e;
-    padding: 25px 10px 15px 50px;
-    background-image: url(../images/grey-tab.png);
-    border: 0px;
-    width: 244px;
-    position: relative;
-    margin-left: -50px;
-    text-align: left;
-    z-index: 1;
-  }
-  .nav-item:first-child .nav-link {
-    color: #6e6e6e;
-    padding: 25px 10px 15px 50px;
-    border: 0px;
-    width: 244px;
-    position: relative;
-    margin-left: -50px;
-    text-align: left;
-    z-index: 1;
-    background-image: url(../images/grey-first.png);
-  }
-  .nav-link.active {
-    color: #fff;
-    border: 0px;
-    background-image: url('../images/blue-tab.png');
-    background-color: transparent;
-    color: #ffda19;
-  }
-  .nav-item:first-child .nav-link {
-    &.active {
-      background-image: url(../images/blue-first-active.png);
-      color: #ffda19;
-    }
-    margin-left: 0px;
-  }
-}
 
-.custom-tab-content {
-  background-color: #fff;
-  border-bottom: 2px solid $secondary-color;
-  .tab-content {
-    padding: 20px;
-  }
-  select, textarea , input:not([type=radio]) {
-    width: 100%;
-  }
-  label {
-    font-size: 0.9rem;
-  }
-}
 
 .navbar-toggler-icon {
   color: #fff;
   margin-top: 6px;
-}
-
-.transfer #myTab {
-  display: flex;
 }
 
 #mobile-drop-down {
@@ -336,6 +279,12 @@ body {
 .left-border-white
 {
   border-left:1px solid $white;
+}
+
+.has-tip::after
+{
+  font-family: FontAwesome;
+    content: "\f163";
 }
 
 @media (max-width: 992px) {
@@ -383,6 +332,7 @@ body {
     color: $deep-saphire;
   }
 }
+
 #profile-img{
   height: 171px;
   width: 171px;
@@ -392,30 +342,90 @@ body {
   margin-bottom: 5%;
 }
 .RSA-container {
-      margin-top: 3%;
-      margin-left: 5%;
-      border-radius: 5px;
-      background-color: #B7B7B7;
-      border: 15px solid #B7B7B7;
-      width: 510.17px;
-      height: 68.56px;
-  }
+    margin-top: 3%;
+    margin-left: 5%;
+    border-radius: 5px;
+    background-color: #B7B7B7;
+    border: 15px solid #B7B7B7;
+    width: 510.17px;
+    height: 68.56px;
+}
 
-  #RSA-input{
-     width: 96%;
-  }
+#RSA-input{
+   width: 96%;
+}
 
-  #RSA-img{
-      width: 68.5px;
-      height: 38px;
-      margin-left: 4.5%;
-  }
-  .RSA-line{
-      border-left: 3px solid black;
-      height: 38px;
-      margin-left: 3%;
-  }
+#RSA-img{
+    width: 68.5px;
+    height: 38px;
+    margin-left: 4.5%;
+}
+.RSA-line{
+    border-left: 3px solid black;
+    height: 38px;
+    margin-left: 3%;
+}
 
-  .input-group-prepend{
-      width: 180%;
+.input-group-prepend{
+    width: 180%;
+}
+
+.bullet-list{
+  font-size: 0.3em;
+}
+
+.color-change{
+  color:#0a386e;
+  span{
+    color: black;
   }
+}
+
+.port-image {
+  width: 100%;
+}
+
+.gallery_product {
+  margin-bottom: 10px;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.checkmark {
+  display:inline-block;
+  width: 22px;
+  height:22px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+}
+
+.checkmark_circle {
+  position: absolute;
+  width:22px;
+  height:22px;
+  background-color: #004785;
+  border-radius:11px;
+  left:0;
+  top:0;
+}
+
+.checkmark_stem {
+  position: absolute;
+  width:3px;
+  height:9px;
+  background-color:#fff;
+  left:11px;
+  top:6px;
+}
+
+.checkmark_kick {
+  position: absolute;
+  width:3px;
+  height:3px;
+  background-color:#fff;
+  left:8px;
+  top:12px;
+}
