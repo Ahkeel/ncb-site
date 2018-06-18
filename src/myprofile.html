@@ -3,94 +3,270 @@
     <div class="content">
         <div class="container">
 
-            <div class="tab-navs" id="transfer-tabs">
+            <div class="tab-navs" id="">
 
                 <%- include('components/profile-tabs.html', {active: "profile"}) %>
 
-                <div class="card card-bordered">
-                    <div class="card-header">
-                        View/Edit Profile
+              </div>
+
+              <div class="row">
+                <br>
+                  <div class="col-lg-8">
+                      <div class="card card-bordered">
+                        <div class="card-header">
+                            View/Edit Profile
+                        </div>
+                        <div class="card-body">
+                          <form>
+                            <p class="text-center p-1 radius-4 text-white bg-blue-extra-light">Personal Details</p>
+                                <div class="row">
+                                  <div class = "col">
+                                    <div class = "row">
+                                      <div class="col">
+                                        <div class="text-extra-light text-xs text-left">First Name</div><div class="text-left">Kori</div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="text-extra-light text-xs text-left">Middle Name</div><div class="text-left">Roy</div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="text-extra-light text-xs text-left">Last Name</div><div class="text-left">Solomon</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                  <div class = "col-sm">
+                                    <div class = "row">
+                                      <div class="col">
+                                        <div class="text-extra-light text-xs text-left">Mobile Number</div><div class="text-left">876-416-8646</div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="text-extra-light text-xs text-left">Occupation</div><div class="text-left">UI/UX Designer</div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="text-extra-light text-xs text-left">Email</div><div class="text-left"><input type="text" class="form-control" placeholder="KoriSoloman@jncb.com"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <br>
+                                <p class="text-center p-1 radius-4 text-white bg-blue-extra-light">Address Information</p>
+                                <div class="row">
+                                  <div class = "col-sm">
+                                    <div class = "row">
+                                      <div class="col">
+                                        <div class="text-extra-light text-xs text-left">Address 1</div><div class="text-left">20 Bloomsbury DR</div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="text-extra-light text-xs text-left">Address 2</div><div class="text-left">APT 3G</div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="text-extra-light text-xs text-left">Address 3</div><div class="text-left">SOME OTHER CODE</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                    <br>
+                                    <div class="row">
+                                      <div class = "col-sm">
+                                        <div class = "row">
+                                          <div class="col">
+                                            <div class="text-extra-light text-xs text-left">City</div><div class="text-left">Montego-Bay</div>
+                                          </div>
+                                          <div class="col">
+                                            <div class="text-extra-light text-xs text-left">State/Parish</div><div class="text-left">St. James</div>
+                                          </div>
+                                          <div class="col">
+                                            <div class="text-extra-light text-xs text-left">Country of Residence</div><div class="text-left">Jamaica</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                      <div class = "col-sm">
+                                        <div class = "row">
+                                          <div class="col">
+                                            <div class="text-extra-light text-xs text-left">Phone Number</div><div class="text-left"><input type="text" class="form-control" placeholder="876-416-8646"></div>
+                                          </div>
+                                          <div class="col">
+                                            <div class="text-extra-light text-xs text-left">Fax Number</div><div class="text-left">876-000-0000</div>
+                                          </div>
+                                          <div class="col">
+                                            <div class="text-extra-light text-xs text-left"></div><div class="text-left"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <p class="text-center p-1 radius-4 text-white bg-blue-extra-light">Preferences</p>
+
+                                    <div class="row">
+                                      <div class = "col-sm">
+                                        <div class = "row">
+                                          <div class="col">
+                                            <div class="text-extra-light text-xs text-left">Preferred Date Format</div>
+                                            <div class="text-left">
+                                              <div class="form-group">
+                                                  <select class="custom-select form-control">
+                                                      <option selected="">Long Date Format</option>
+                                                      <option>Some Options</option>
+                                                      <option>Some Options</option>
+                                                  </select>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col">
+                                            <div class="text-extra-light text-xs text-left">Preferred Date Format</div>
+                                            <div class="text-left">
+                                              <div class="form-group">
+                                                  <select class="custom-select form-control">
+                                                      <option selected="">Preferred Amount Format</option>
+                                                      <option>Some Options</option>
+                                                      <option>Some Options</option>
+                                                  </select>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                      <div class = "col-sm">
+                                        <div class = "row">
+                                          <div class="col">
+                                            <div class="text-extra-light text-xs text-left">Language Preference</div>
+                                            <div class="text-left">
+                                              <div class="form-group">
+                                                  <select class="custom-select form-control">
+                                                      <option selected="">US English</option>
+                                                      <option>Some Options</option>
+                                                      <option>Some Options</option>
+                                                  </select>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col">
+                                            <div class="text-extra-light text-xs text-left">Primary Account Format</div>
+                                            <div class="text-left">
+                                              <div class="form-group">
+                                                  <select class="custom-select form-control">
+                                                      <option selected="">Please select a primary A/C</option>
+                                                      <option>Some Options</option>
+                                                      <option>Some Options</option>
+                                                  </select>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                      <div class = "col-sm">
+                                        <div class = "row">
+                                          <div class="col">
+                                            <div class="text-extra-light text-xs text-left">EXT Alert</div>
+                                            <div class="text-left">
+                                              <div class="form-group">
+                                                  <select class="custom-select form-control">
+                                                      <option selected="">No</option>
+                                                      <option>Yes</option>
+                                                  </select>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col">
+                                            <div class="text-extra-light text-xs text-left">Favourites</div>
+                                            <div class="text-left">
+                                              <div class="form-group">
+                                                  <select class="custom-select form-control">
+                                                      <option selected="">Music</option>
+                                                      <option>Some Options</option>
+                                                      <option>Some Options</option>
+                                                  </select>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                      <div class = "col-sm">
+                                        <div class = "row">
+                                          <div class="col">
+                                            <div class="text-extra-light text-xs text-left">Income Range (Gross Monthly)</div>
+                                            <div class="text-left">
+                                              <div class="form-group">
+                                                  <select class="custom-select form-control">
+                                                      <option selected="">0-10000</option>
+                                                      <option>Some other option</option>
+                                                  </select>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col">
+                                            <div class="text-extra-light text-xs text-left">Do Not Disturb Time</div>
+                                            <div class="text-left">
+                                              <div class="form-group">
+                                                  <select class="custom-select form-control">
+                                                      <option selected="">DO NOT DISTURB TIME</option>
+                                                      <option>Some Options</option>
+                                                      <option>Some Options</option>
+                                                  </select>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <div class="text-right">
+                                        <a href="" class="btn pl-5 pr-5 btn-sm btn-primary">Save Profile</a>
+                                    </div>
+                          </form>
+                        </div>
+                      </div>
                     </div>
-                    <div class="card-body">
-                        <form>
-                          <p class="text-center p-1 radius-4 text-white bg-blue-extra-light">Personal Details</p>
-
-
-                
-
-
-                          <div class="form-group row">
-                              <label class="col-sm-4 col-form-label">First Name</label>
-                              <label class="col-sm-4 col-form-label">Middle Name</label>
-                              <label class="col-sm-4 col-form-label">Last Name</label>
+                    <div class="col-lg-4">
+                        <div class="card">
+                          <div class="card-header">
+                              <div class="text-center text-down">Profile</div>
+                              <img src="images/kori.jpg" class="card-header-icon img-fluid d-block mx-auto rounded-circle text-down" id="profile-img"/>
+                              <div class="text-center text-md text-down">Kori Roy Soloman</div>
+                              <div class="text-center text-sm text-down">UI/UX Designer</div>
+                              <div class="text-center text-sm">498 Wood Dr.</div>
+                              <div class="text-center text-sm">Tonawanda, NY 14150</div>
                           </div>
-                          <div class="form-group row">
-                              <label class="col-sm-4 col-form-label">Kori</label>
-                              <label class="col-sm-4 col-form-label">Roy</label>
-                              <label class="col-sm-4 col-form-label">Solomon</label>
+                        </div>
+                        <div class="card">
+                          <div class="card-header">
+                              <img src="images/links-icon.png" class="card-header-icon"> Quick Links
                           </div>
-                          <div class="form-group row">
-                              <label class="col-sm-4 col-form-label">Mobile Number</label>
-                              <label class="col-sm-4 col-form-label">Occupation</label>
-                              <label class="col-sm-4 col-form-label">Email</label>
+                          <div class="card-body">
+                              <nav class="nav flex-column nav-action-links">
+                                  <a class="nav-link active" href="#">Transfer Money
+                                      <i class="fa fa-chevron-right"></i>
+                                  </a>
+                                  <a class="nav-link" href="#">Transfer Activity
+                                      <i class="fa fa-chevron-right"></i>
+                                  </a>
+                                  <a class="nav-link" href="#">Automatic Transfers
+                                      <i class="fa fa-chevron-right"></i>
+                                  </a>
+                                  <a class="nav-link" href="#">Add External Transfers
+                                      <i class="fa fa-chevron-right"></i>
+                                  </a>
+                              </nav>
                           </div>
-                          <div class="form-group row">
-                              <label class="col-sm-4 col-form-label">876-416-8646</label>
-                              <label class="col-sm-4 col-form-label">UI/UX Designer</label>
-                              <label class="col-sm-4 col-form-label">KoriSoloman@jncb.com</label>
-                          </div>
-                          <p class="text-center p-1 radius-4 text-white bg-blue-extra-light">Address Information</p>
-                          <div class="form-group row">
-                              <label class="col-sm-4 col-form-label">876-416-8646</label>
-                          </div>
-                          <div class="form-group row">
-                              <label class="col-sm-4 col-form-label">Address 1</label>
-                          </div>
-                          <div class="form-group row">
-                              <label class="col-sm-4 col-form-label">20 Bloomsbury DR</label>
-                          </div>
-                          <div class="form-group row">
-                              <label class="col-sm-4 col-form-label">Address 2</label>
-                          </div>
-                          <div class="form-group row">
-                              <label class="col-sm-4 col-form-label">20 Bloomsbury DR</label>
-                          </div>
-                          <div class="form-group row">
-                              <label class="col-sm-4 col-form-label">Address 3</label>
-                          </div>
-                          <div class="form-group row">
-                              <label class="col-sm-4 col-form-label">20 Bloomsbury DR</label>
-                          </div>
-                          <div class="form-group row">
-                              <label class="col-sm-4 col-form-label">City</label>
-                              <label class="col-sm-4 col-form-label">Parish</label>
-                              <label class="col-sm-4 col-form-label">Country of Residence</label>
-                          </div>
-                          <div class="form-group row">
-                              <label class="col-sm-4 col-form-label">Montego Bay</label>
-                              <label class="col-sm-4 col-form-label">St. James</label>
-                              <label class="col-sm-4 col-form-label">Jamaica</label>
-                          </div>
-                          <div class="form-group row">
-                              <label class="col-sm-4 col-form-label">Phone Number(Home)</label>
-                              <label class="col-sm-4 col-form-label"></label>
-                              <label class="col-sm-4 col-form-label">Fax Number</label>
-                          </div>
-                          <div class="form-group row">
-                              <label class="col-sm-4 col-form-label">876-416-8646</label>
-                              <label class="col-sm-4 col-form-label"></label>
-                              <label class="col-sm-4 col-form-label">876-000-0000</label>
-                          </div>
-                          <p class="text-center p-1 radius-4 text-white bg-blue-extra-light">Preferences</p>
-                          <div class="text-right">
-                              <a href="#" class="btn pl-5 pr-5 btn-sm btn-primary">Save Profile</a>
-                          </div>
-                        </form>
-
+                        </div>
                     </div>
                 </div>
             </div>
-
+        </div>
             <%- include('partials/contact.html') %>
         </div>
 

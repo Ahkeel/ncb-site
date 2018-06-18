@@ -333,6 +333,43 @@ body {
   }
 }
 
+#profile-img{
+  height: 171px;
+  width: 171px;
+  border: 3px solid white;
+}
+.text-down{
+  margin-bottom: 5%;
+}
+.RSA-container {
+    margin-top: 3%;
+    margin-left: 5%;
+    border-radius: 5px;
+    background-color: #B7B7B7;
+    border: 15px solid #B7B7B7;
+    width: 510.17px;
+    height: 68.56px;
+}
+
+#RSA-input{
+   width: 96%;
+}
+
+#RSA-img{
+    width: 68.5px;
+    height: 38px;
+    margin-left: 4.5%;
+}
+.RSA-line{
+    border-left: 3px solid black;
+    height: 38px;
+    margin-left: 3%;
+}
+
+.input-group-prepend{
+    width: 180%;
+}
+
 .bullet-list{
   font-size: 0.3em;
 }
@@ -355,13 +392,6 @@ body {
 .pointer{
   cursor: pointer;
 }
-
-
-
-
-
-
-
 
 .checkmark {
   display:inline-block;

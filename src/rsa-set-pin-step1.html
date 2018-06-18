@@ -1,0 +1,39 @@
+<%- include('partials/header.html', {title: "Messages", page_title: "My Profile", page_icon: "images/transfers-icon.png"}) %>
+
+<div class="content">
+    <div class="container">
+
+        <div class="tab-navs" id="">
+
+            <%- include('components/profile-tabs.html', {active: "RSA"}) %>
+
+          </div>
+
+            <div class="card card-bordered">
+                <div class="card-header">
+                    Rest Pin Authentication
+                </div>
+
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-5">
+                          <%- include('components/rsa-input.html') %>
+                    </div>
+                  </div>
+                  <div class="row text-right">
+                    <div class="col">
+                      <a href="rsa-set-pin-step2.html" class="btn pl-5 pr-5 btn-sm btn-primary" id="rsa-buttons">continue</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <%- include('partials/contact.html') %>
+    </div>
+
+    <%- include('partials/footer.html') %>
+</div>
+
+<%- include('partials/scripts.html'); %>
+</body>
+</html>
