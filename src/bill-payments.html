@@ -12,11 +12,12 @@
             name: 'Phone bill',
             account_number: '303546564290',
         },
-    ]; 
+
+    ];
 %>
 
     <%- include('partials/header.html', {title: "Bill Payments", page_title: "Pay Bills", page_icon: "images/bill-payments-icon.png"}) %>
-    
+
     <div class="content">
         <div class="container">
             <div class="row sticky-nav-wrapper">
@@ -41,17 +42,19 @@
                 <div class="col-lg-4">
                     <div>
                         <div class="card sticky-nav">
-                            <div class="card-header">Bill Summary</div>
-                            <div class="card-body">
+                          <div class="card-header bill-summary">Bill Summary</div>
+                            <div class="card-body" id="wukless">
                                 <div class="table-responsive">
+                                  <div  onclick="myFunction()"><i class="fas fa-sort-up"  id="up-arrow"></i></div>
                                     <table class="table table-striped table-sm">
-                                        <thead>
+
+                                        <thead class="inner-table">
                                             <tr class="text-brand text-md">
                                                 <th>Utility Bill</th>
                                                 <th class="text-right">Payment</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
+                                        <tbody class="inner-table">
                                             <tr>
                                                 <td class="font-weight-bold">Electricity bill</td>
                                                 <td class="text-right">$ 12,000.00</td>
@@ -65,7 +68,7 @@
                                                 <td class="text-right">$ 6,000.00</td>
                                             </tr>
                                         </tbody>
-                                        <table class="table table-sm">
+                                        <table class="table table-sm" id="outer">
                                             <tr>
                                                 <th class="text-brand">Total Payment</th>
                                                 <td class="text-right bg-dark text-white">$ 33,000.00 JMD</td>
