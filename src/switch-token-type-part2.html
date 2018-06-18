@@ -1,0 +1,32 @@
+<%- include('partials/header.html', {title: "Messages", page_title: "My Profile", page_icon: "images/transfers-icon.png"}) %>
+
+<div class="content">
+    <div class="container">
+
+        <div class="tab-navs" id="transfer-tabs">
+
+            <%- include('components/profile-tabs.html', {active: "switch-token-type"}) %>
+
+            <div class="card card-bordered">
+                <div class="card-header">
+                    Switch Token Type Confirmation
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-primary">
+                    <span class="text-sm">Dear Customer, you are about to switch your token type. Please confirm if you would like to continue</span><br>
+                    </div>
+            
+                </div>
+            
+            </div>
+        </div>
+
+        <%- include('partials/contact.html') %>
+    </div>
+
+    <%- include('partials/footer.html') %>
+</div>
+
+<%- include('partials/scripts.html'); %>
+</body>
+</html>
