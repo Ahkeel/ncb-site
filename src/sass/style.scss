@@ -327,10 +327,6 @@ body {
 
   }
 
-<<<<<<< HEAD
-  .inner-table,.bill-summary{
-    display: none !important;
-=======
 }
 #up-arrow{
   display: none;
@@ -358,7 +354,7 @@ body {
 
   #hide {
     max-height: 400px;
-    overflow: auto;  
+    overflow: auto;
   }
 
 .arrow-down {
@@ -408,16 +404,14 @@ body {
 
   #hide{
     display: none;
-    
-  
->>>>>>> e943a19b2fff1faec0e8c5151a0443f838457f66
+
+
   }
   #up-arrow{
     display: block;
     text-align: center;
     color: $deep-saphire;
   }
-<<<<<<< HEAD
   .switch-token{
     font-size: 50px !important;
   }
@@ -430,9 +424,6 @@ body {
   .second-thing, #dashboard-accounts{
     order:2;
   }
-=======
-
->>>>>>> e943a19b2fff1faec0e8c5151a0443f838457f66
 
 }
 
@@ -450,24 +441,6 @@ body {
       border-radius: 5px !important;
       background-color: #B7B7B7;
       border: 15px solid #B7B7B7;
-<<<<<<< HEAD
-      width: 100% !important;
-      height: 70% !important;
-      #RSA-img{
-          width: 68.5px !important;
-          height: 38px !important;
-          //margin-left: -4.5%;
-      }
-      .RSA-line{
-          border-left: 3px solid black !important;
-          height: 38px !important;
-          //margin-left: -65%;
-      }
-      #RSA-input{
-        width: 72% !important;
-        //margin-left: -32%;
-      }
-=======
       width: 50%;
       height: 47.56px;
   }
@@ -477,7 +450,13 @@ body {
     //  width: 100%;
      height: 30.21px;
   }
-
+.color{
+  background-color:  #B7B7B7;
+  border-radius: 5px;
+}
+input::placeholder{
+  font-size: 12px;
+}
   #RSA-img{
     margin-left: 10px;
     margin-top: 8px;
@@ -493,30 +472,11 @@ body {
       border-left: 2px solid black;
       height: 30.21px;
       // margin-left: 3%;
->>>>>>> e943a19b2fff1faec0e8c5151a0443f838457f66
   }
   // .input-group-prepend{
   //     width: 100%;
   // }
 
-<<<<<<< HEAD
-=======
-  .input-group-prepend{
-      width: 180%;
-  }
-  .color{
-    background-color: #B7B7B7;
-    // width: 100%;
-    border-radius: 5px;
-  }
-
-  input::placeholder{
-font-size: 12px;
-  }
- 
-  
-
->>>>>>> e943a19b2fff1faec0e8c5151a0443f838457f66
 
 .bullet-list{
   font-size: 0.3em;
@@ -541,11 +501,8 @@ font-size: 12px;
   cursor: pointer;
 }
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> e943a19b2fff1faec0e8c5151a0443f838457f66
 .img-size{
   width: 250px;
   height: 220px;
@@ -578,11 +535,5 @@ font-size: 12px;
   text-align: center;
   border: 1px solid #004785;
   border-radius: 50%;
-<<<<<<< HEAD
-=======
 
->>>>>>> e943a19b2fff1faec0e8c5151a0443f838457f66
 }
-
-
-
