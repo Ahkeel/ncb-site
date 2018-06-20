@@ -1,0 +1,38 @@
+<%- include('partials/header.html', {title: "My Profile", page_title: "RSA Set Pin", page_icon: "images/transfers-icon.png"}) %>
+
+<div class="content">
+    <div class="container">
+
+        <div class="tab-navs" id="">
+
+            <%- include('components/profile-tabs.html', {active: "RSA"}) %>
+
+          </div>
+
+            <div class="card card-bordered">
+                <div class="card-header">
+                    RSA SET Pin
+                </div>
+
+                <div class="card-body">
+                  <div class="alert alert-success">
+                      New PIN is set Successfully.
+                  </div>
+
+                    <div class="row text-right">
+                      <div class="col">
+                        <a href="accounts.html" class="btn pl-5 pr-5 btn-sm btn-primary">Back to Dashboard</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <%- include('partials/contact.html') %>
+        </div>
+    </div>
+
+    <%- include('partials/footer.html') %>
+</div>
+
+<%- include('partials/scripts.html'); %>
+</body>
+</html>

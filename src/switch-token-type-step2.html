@@ -1,0 +1,59 @@
+<%- include('partials/header.html', {title: "My Profile", page_title: "Switch Token", page_icon: "images/transfers-icon.png"}) %>
+
+<div class="content">
+    <div class="container">
+
+        <div class="tab-navs" id="">
+
+            <%- include('components/profile-tabs.html', {active: "switch-token-type"}) %>
+
+          </div>
+
+            <div class="card card-bordered">
+                <div class="card-header">
+                    Switch Token Type Cofirmation
+                </div>
+
+                <div class="card-body">
+                  <div class="alert alert-primary">
+                      <span class="text-sm font-weight-bold">We detect you currently have a software token assigned. To switch to hardware token click continue.(or) if you need to get a software token for
+                                                              another phone please navigate to option 'My Profile - switch Software Token'.
+                                                              Please note that once your click continue you will not be able to gain access to online banking until you have registered your physical token.</span>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm">
+                        <div class="text-right"><i class="fas fa-mobile-alt fa-7x"></i></div>
+                    </div>
+                    <div class="col-sm-4 ">
+                        <div class="text-center"><i class="fas fa-arrow-circle-right fa-4x"></i></div>
+                    </div>
+                    <div class="col">
+                        <i class="fas fas fa-hdd fa-7x"></i>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                        <div class="text-right">SOFTWARE</div>
+
+                    </div>
+                    <div class="col-sm-4">
+
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="text-left">HARDWARE</div>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="switch-token-type-step2.html" class="btn pl-5 pr-5 btn-sm btn-primary text-right">Submit</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+              <%- include('partials/contact.html') %>
+        </div>
+    </div>
+    <%- include('partials/footer.html') %>
+</div>
+
+<%- include('partials/scripts.html'); %>
+</body>
+</html>

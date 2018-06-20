@@ -1,4 +1,4 @@
-    <%- include('partials/header.html', {title: "Messages", page_title: "My Profile", page_icon: "images/transfers-icon.png"}) %>
+    <%- include('partials/header.html', {title: "My Profile", page_title: "Edit Security Details", page_icon: "images/transfers-icon.png"}) %>
 
     <div class="content">
         <div class="container">
@@ -27,6 +27,7 @@
                                                         </select>
                                             </div>
                                         </div>
+
                                     </form>
 
                             <div class="imageandtext image_grid">
@@ -111,10 +112,8 @@
                                 
                                
                                 
-                          
+                                        </form>
 
-                            
-                       
 
                             <form>
                                     <div class="form-group row">
@@ -130,16 +129,15 @@
                             <a href="change-password-step2.html" class="btn pl-3 pr-3 btn-sm btn-secondary btn-border">Back</a>
                             <a href="#" class="btn pl-3 pr-3 btn-sm btn-primary">Save Profile</a>
                         </div>
+
                     </div>
                 </div>
+                <%- include('partials/contact.html') %>
             </div>
 
-            <%- include('partials/contact.html') %>
+            <%- include('partials/footer.html') %>
         </div>
 
-        <%- include('partials/footer.html') %>
-    </div>
-
-    <%- include('partials/scripts.html'); %>
-</body>
-</html>
+        <%- include('partials/scripts.html'); %>
+    </body>
+    </html>
