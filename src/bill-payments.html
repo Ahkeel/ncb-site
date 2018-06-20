@@ -1,13 +1,14 @@
-    <%
+<%
     let utilityBills = [
         {
             name: 'Electricity bill',
-            account_number: '30300234',
+            account_number: '40421321312290',
         },
         {
             name: 'Water bill',
             account_number: '40421321312290',
         },
+
         {
             name: 'Phone bill',
             account_number: '303546564290',
@@ -64,6 +65,7 @@
     ];
 %>
 
+
     <%- include('partials/header.html', {title: "Bill Payments", page_title: "Pay Bills", page_icon: "images/bill-payments-icon.png"}) %>
 
     <div class="content">
@@ -87,32 +89,41 @@
                     <% }); %>
                 </div>
 
+
                 <div class="col-lg-4">
-                    <div>
+
+                    <div id="fixed">
                         <div class="card sticky-nav">
                           <div class="card-header bill-summary">Bill Summary</div>
                             <div class="card-body">
+                                <div class="table-responsive" >
                                 <div class="table-responsive">
-                                  <div  onclick="myFunction()"><i class="fas fa-sort-up"  id="up-arrow"></i></div>
-                                    <table class="table table-striped table-sm fixed ">
-                                        <div class="hide">
-                                        <thead class="inner-table">
+                                  <div  class="arrow-down" onclick="this.classList.toggle('active');myFunction()"></div>
+                                 <div id="hide">
+                                    <table class="table table-striped table-sm">
+
+                                        <thead>
                                             <tr class="text-brand text-md">
                                                 <th>Utility Bill</th>
                                                 <th class="text-right">Payment</th>
                                             </tr>
                                         </thead>
-                                        <tbody class="inner-table">
+                                        <tbody>
                                             <tr>
-                                                <td class="font-weight-bold">Electricity bill</td>
+                                                <td class="font-weight-bold"><i id="close" class="fas fa-times"></i>Electricity bill</td>
                                                 <td class="text-right">$ 12,000.00</td>
                                             </tr>
+
                                             <tr>
-                                                <th>Water bill</th>
-                                                <td class="text-right">$ 15,000.00</td>
+                                                <th><i id="close" class="fas fa-times"></i>Phone bill</th>
+                                                <td class="text-right">$ 6,000.00</td>
                                             </tr>
                                             <tr>
-                                                <th>Phone bill</th>
+                                                <th><i id="close" class="fas fa-times"></i>Phone bill</th>
+                                                <td class="text-right">$ 6,000.00</td>
+                                            </tr>
+                                            <tr>
+                                                <th><i id="close" class="fas fa-times"></i>Phone bill</th>
                                                 <td class="text-right">$ 6,000.00</td>
                                             </tr>
                                             <tr>
@@ -202,6 +213,7 @@
 
 
                                         </tbody>
+                                        </table>
                                     </div>
                                         <table class="table table-sm" id="outer">
                                             <tr>
@@ -214,9 +226,10 @@
 
                                 <a href="#" class="btn btn-warning btn-block font-weight-bold">Go to next Step</a>
                             </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+
             </div>
 
             <%- include('partials/contact.html') %>
