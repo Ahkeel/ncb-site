@@ -16,6 +16,7 @@
 @import "components/material";
 @import "components/modal";
 @import "components/courasel";
+@import "components/navbar";
 @import "login";
 @import "form";
 
@@ -318,6 +319,7 @@ body {
   }
 
 }
+
 #up-arrow{
   display: none;
 }
