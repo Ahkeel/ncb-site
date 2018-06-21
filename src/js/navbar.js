@@ -1,26 +1,25 @@
 $(document).ready(function() {
 	$(".navbar-toggler").click(function() {
-		$("#navbar-nav-responsive").addClass("active");
+		$(".navbar-nav-responsive").addClass("active");
 	});
 
 	$(".navbar-nav-close").click(function() {
-		$("#navbar-nav-responsive").removeClass("active");
+		$(".navbar-nav-responsive").removeClass("active");
 	});
 
 	function cloneNavbar() {
+		var profile = $(".navbar-profile");
 		var navbar = $(".navbar-nav");
-		var action_content = $(".navbar-action-content");
-		navbar.clone().appendTo("#navbar-nav-responsive");
+		var action_links = $(".navbar-action-links");
 
-		$("#navbar-nav-responsive .navbar-nav").removeClass("navbar-nav").addClass("nav");
+		profile.clone().appendTo(".navbar-nav-responsive");
+		$(".navbar-nav-responsive .navbar-profile").removeClass("col-6").addClass("py-2");
 
-		action_content.clone().appendTo("#navbar-nav-responsive");
+		navbar.clone().appendTo(".navbar-nav-responsive");
+		$(".navbar-nav-responsive .navbar-nav").removeClass("navbar-nav").addClass("nav");
 
-		$("#navbar-nav-responsive .navbar-action-content").removeClass("row").addClass("my-2");
-
-		$("#navbar-nav-responsive .navbar-action-content").children().each(function() {
-			$(this).removeClass("col col-6").addClass("p-2");
-		});
+		action_links.clone().appendTo(".navbar-nav-responsive");
+		$(".navbar-nav-responsive .navbar-action-links").removeClass("col-6").addClass("py-4 px-3");
 	}
 
 	cloneNavbar();

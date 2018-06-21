@@ -72,6 +72,12 @@ $account-info-font-size:				.8rem;
 $navbar-top-background-color:			$white;
 $navbar-top-padding:					20px;
 
+// navbar bottom
+$navbar-bottom-background-image:		url('../images/newsbg.png');
+$navbar-bottom-min-height:				200px;
+$navbar-bottom-background-color:		#00539b;
+$navbar-bottom-width:					100%;
+
 // navbar logo
 $navbar-logo-max-height:				40px;
 $navbar-logo-height:					100%;
@@ -94,20 +100,20 @@ $navbar-notification-last-margin-left:			30px;
 $navbar-notification-alert-height:				10px;
 $navbar-notification-alert-width:				10px;
 $navbar-notification-alert-border-radius:		50%;
-$navbar-notification-alert-background-color:	red;
+$navbar-notification-alert-background-color:	#ffc107;
 $navbar-notification-alert-border:				1px solid $white;
 $navbar-notification-alert-top:					5px;
 $navbar-notification-alert-right:				-3px;
 
 // navbar profile
-$navbar-profile-height:					35px;
-$navbar-profile-width:					35px;
-$navbar-profile-border-radius:			50%;
-$navbar-profile-margin-left:			10px;
+$navbar-profile-img-height:					35px;
+$navbar-profile-img-width:					35px;
+$navbar-profile-img-border-radius:			50%;
+$navbar-profile-img-margin-left:			10px;
 
 // navbar nav container
-$navbar-nav-container-height:				auto;
-$navbar-nav-container-background-color:		rgba(0,0,0,0.1);
+$navbar-nav-container-height:					auto;
+$navbar-nav-container-background-color:			rgba(0,0,0,0.1);
 
 $navbar-nav-container-nav-link-text-color:		white;
 $navbar-nav-container-nav-link-font-weight:		100;
@@ -115,19 +121,42 @@ $navbar-nav-container-nav-link-padding:			15px 20px 15px 20px;
 
 $navbar-nav-container-nav-item-margin:			0 30px 0 0;
 
+$navbar-nav-container-dropdown-menu-border-radius: 		0;
+$navbar-nav-container-dropdown-menu-margin: 			0;
+
+$navbar-nav-container-dropdown-menu-arrow-top:					-10px;
+$navbar-nav-container-dropdown-menu-arrow-left:					20px;
+$navbar-nav-container-dropdown-menu-arrow-height:				12px;
+$navbar-nav-container-dropdown-menu-arrow-width:				28px;
+$navbar-nav-container-dropdown-menu-arrow-background-color:		white;
+
+$navbar-nav-container-dropdown-item-border-left:		5px solid transparent;
+
+$navbar-nav-container-dropdown-item-hover-border-color:		$yellow;
+
+
 // navbar nav responsive
 $navbar-nav-responsive-height:				100%;
 $navbar-nav-responsive-z-index:				2;
 $navbar-nav-responsive-top:					0;
 $navbar-nav-responsive-left:				0;
-$navbar-nav-responsive-background-color:	#111;
+$navbar-nav-responsive-background-color:	#00324D;
 $navbar-nav-responsive-transition-delay:	0.5s;
 $navbar-nav-responsive-padding-top:			60px;
 
 $navbar-nav-responsive-active-width:		250px;
 
 $navbar-nav-responsive-nav-item-width:			100%;
-$navbar-nav-responsive-nav-item-border-bottom:	1px solid lighten(#111, 25%);
+$navbar-nav-responsive-nav-item-border-bottom:	1px solid rgba(255,255,255,0.1);
+
+$navbar-nav-responsive-dropdown-toggle-chevron-top:		25px;
+$navbar-nav-responsive-dropdown-toggle-chevron-right:	10px;
+
+$navbar-nav-responsive-dropdown-menu-min-width:			$navbar-nav-responsive-active-width;
+
+$navbar-nav-responsive-navbar-profile-width:			$navbar-nav-responsive-active-width;
+
+$navbar-nav-responsive-navbar-profile-text-color:			$gray-extra-light !important;
 
 // navbar nav close
 $navbar-nav-close-top:						0;
@@ -139,6 +168,13 @@ $navbar-nav-close-transition-delay:			0.3s;
 
 $navbar-nav-close-hover-text-color:			#f1f1f1;
 
+// navbar page heading
+$navbar-page-heading-padding:				40px 0 20px 0;
+$navbar-page-heading-text-color:			white;
+
+// navbar page icon
+$navbar-page-icon-height:					80px;
+$navbar-page-icon-width:					auto;
 
 /** 
 *	CARD
