@@ -100,8 +100,12 @@
     	width: $navbar-nav-responsive-nav-item-width;
     }
 
-    .navbar-action-content .text-dark {
-    	color: $gray-extra-light !important;
+    .navbar-action-content {
+    	width: $navbar-nav-responsive-active-width;
+
+    	.text-dark {
+	    	color: $gray-extra-light !important;
+	    }
     }
 
     &.active {
