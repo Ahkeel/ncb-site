@@ -64,7 +64,7 @@
                         <div>
                             <div class="card" data-toggle="collapse" href="#collapse-3" role="button" aria-expanded="false" aria-controls="collapse-3">
                                 <div class="card-header card-header-inverse card-header-hover">
-                                    NCB Insurance Accounts
+                                    Insurance Accounts
                                     <button class="card-header-button btn btn-primary">View Account(s)
                                         <i class="fa fa-chevron-down"></i>
                                     </button>
@@ -72,6 +72,23 @@
                             </div>
 
                             <div id="collapse-3" class="collapse" data-parent="#accordion">
+                                <% bankAccounts.forEach(function(account){ %>
+                                    <%- include('components/accountCard.html', {account: account, url: "#"}); %>
+                                        <% }); %>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="card" data-toggle="collapse" href="#collapse-4" role="button" aria-expanded="false" aria-controls="collapse-4">
+                                <div class="card-header card-header-inverse card-header-hover">
+                                    Investment Accounts
+                                    <button class="card-header-button btn btn-primary">View Account(s)
+                                        <i class="fa fa-chevron-down"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div id="collapse-4" class="collapse" data-parent="#accordion">
                                 <% bankAccounts.forEach(function(account){ %>
                                     <%- include('components/accountCard.html', {account: account, url: "#"}); %>
                                         <% }); %>
