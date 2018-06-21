@@ -25,3 +25,27 @@ $radius-class-slug: radius !default;
 {
 	width:20% !important;
 }
+
+@media only screen and (max-width: 575px) {
+	.hide-xs {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.hide-sm {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.hide-md {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.hide-lg {
+		display: none;
+	}
+}

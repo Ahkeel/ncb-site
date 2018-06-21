@@ -1,0 +1,115 @@
+<div class="navbar-top">
+    <div class="container">
+        <div class="row">
+
+            <div class="col">
+                <a href="/"><img src="/images/ncb-logo.png" class="navbar-logo"  alt="ncb logo"/></a>
+            </div>
+
+            <div class="col-md">
+                <div class="navbar-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="pl-5" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="col col-md-6 hide-md">
+                <div class="row navbar-action-content">
+
+                    <div class="col-6 text-center text-sm font-weight-bold">
+                        <span class="text-muted">Hello,</span> <a href="#" class="text-dark font-weight-bold">Kori Solomon</a>
+                        <a href="#"><img src="images/sample-profile.jpg" class="navbar-profile"></a>
+                    </div>
+
+                    <div class="col text-center">
+                        <a href="messages-inbox.html" class="navbar-notification text-dark">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                        <a href="notifications.html" class="navbar-notification active text-dark">
+                            <i class="fa fa-bell"></i>
+                        </a>
+                    </div>
+
+                    <div class="col text-center">
+                        <a href="/" class="btn btn-no-fill text-dark font-weight-bold">
+                            <i class="fa fa-sign-out-alt"></i>
+                            Log Out
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+        
+<div class="navbar-bottom">
+
+    <div class="navbar-nav-container">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg p-0">
+
+                <button class="navbar-toggler" type="button">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Accounts
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="accounts.html">Accounts Overview</a>
+                                <a class="dropdown-item" href="account-details-transaction-query.html">Account Details</a>
+                                <a class="dropdown-item" href="credit-card-details.html">Credit Card Details</a>
+                                <a class="dropdown-item" href="loan-details.html">Loan Details</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Transfers
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="transfers-self-step1.html">Transfer Funds</a>
+                                <a class="dropdown-item" href="beneficiaries-ncb.html">Manage Beneficiaries</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="/bill-payments.html">Bill Payment</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Messages
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="messages-inbox.html">Inbox</a>
+                                <a class="dropdown-item" href="notifications.html">Notifications</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="/example-cards.html">Documentation</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="navbar-nav-responsive" class="navbar-nav-responsive">
+                    <a href="#" class="navbar-nav-close">&times;</a>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="navbar-page-heading">
+            <img src="<%= page_icon %>" class="navbar-page-icon d-inline-block align-middle" />
+            <div class="d-inline-block p-1 align-middle font-weight-light">
+                <div class="text-sm text-uppercase"><%= title %></div>
+                <div class="text-xl"><%= page_title %></div>
+            </div>
+        </div>
+    </div>
+
+</div>
