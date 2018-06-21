@@ -1,4 +1,4 @@
-    <%- include('partials/header.html', {title: "Messages", page_title: "My Profile", page_icon: "images/transfers-icon.png"}) %>
+    <%- include('partials/header.html', {title: "My Profile", page_title: "View/Edit Profile", page_icon: "images/transfers-icon.png"}) %>
 
     <div class="content">
         <div class="container">
@@ -7,12 +7,20 @@
 
                 <%- include('components/profile-tabs.html', {active: "profile"}) %>
 
-              </div>
+
+                <div class="card card">
+                    <div class="card-header">
+                        View/Edit Profile
+                    </div>
+                    <div class="card-body">
+                        <form>
+                          <p class="text-center p-1 radius-4 text-white bg-blue-extra-light">Profile Details</p>
+                  
 
               <div class="row">
                 <br>
                   <div class="col-lg-8">
-                      <div class="card card-bordered">
+                      <div class="card">
                         <div class="card-header">
                             View/Edit Profile
                         </div>
@@ -236,7 +244,7 @@
                           <div class="card-header">
                               <div class="text-center text-down">Profile</div>
                               <img src="images/kori.jpg" class="card-header-icon img-fluid d-block mx-auto rounded-circle text-down" id="profile-img"/>
-                              <div class="text-center text-md text-down">Kori Roy Soloman</div>
+                              <div class="text-center text-md text-down">Kori O. Solomon</div>
                               <div class="text-center text-sm text-down">UI/UX Designer</div>
                               <div class="text-center text-sm">498 Wood Dr.</div>
                               <div class="text-center text-sm">Tonawanda, NY 14150</div>
