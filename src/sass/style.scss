@@ -352,6 +352,7 @@ body {
 }
 @media only screen and (min-width: 320px) and (max-width: 992px)
 {
+
   #close{
     color: red;
     margin-right: 5%;
@@ -555,4 +556,8 @@ input::placeholder{
 .numbers2-input-field{
   width: 10% !important;
   width: 35% !important;
+}
+.numbers1-input-field{
+  width: 40% !important;
+  // width: 35% !important;
 }
