@@ -295,9 +295,18 @@ body {
 .switch-label{
   font-size: 15px !important;
 }
-
+// .hidden-span{
+//   display: none;
+// }
 @media only screen and (min-width: 320px) and (max-width: 992px)
 {
+  .hidden-span{
+    display: block;
+  }
+  .between-input{
+    width: 70% !important;
+  }
+
   #mobile-drop-down {
     display: block;
   }
@@ -350,6 +359,7 @@ body {
 .left-col{
   margin-right: -200% !important
 }
+
 @media only screen and (min-width: 320px) and (max-width: 992px)
 {
 
@@ -450,6 +460,9 @@ body {
 }
 .text-down{
   margin-bottom: 5%;
+}
+.gray-rows{
+  background-color: #d4d4d4;
 }
 
 .RSA-container {
