@@ -18,7 +18,7 @@
             balance: '$1,000,000',
             balanceAt: 'May 08, 2018'
         },
-]; 
+];
 %>
     <%- include('partials/header.html', {title: "Accounts", page_title: "Account Details", page_icon: "images/dashboard.png"}) %>
         <div class="content">
@@ -146,15 +146,18 @@
                         </select>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row table-rows">
                     <div class="col-sm-12">
                         <div class="card mb-5">
                             <div class="card-header card-header-secondary">
                                 Do a Transaction Query
                             </div>
                             <div class="card-body">
-                                <table class="table-striped w-100 text-sm text-left">
-                                    <tr >
+                              <div ="row">
+                                <div="">
+                              </div>
+                                <!-- <table class="table-striped w-100 text-sm text-left">
+                                    <tr scope ="col table-rows">
                                         <td class="p-3">
                                             1. View the last
                                         </td>
@@ -167,7 +170,7 @@
                                                 <i class="fas fa-search"></i> Search</button>
                                         </td>
                                     </tr>
-                                    <tr>
+                                    <tr scope="col table-rows">
                                         <td class="p-3">
                                             2. View Transaction Between
                                         </td>
@@ -183,7 +186,7 @@
                                                 <i class="fas fa-search"></i> Search</button>
                                         </td>
                                     </tr>
-                                    <tr>
+                                    <tr scope="col table-rows">
                                         <td class="p-3">
                                             3. View Transaction Between JMD
                                         </td>
@@ -197,7 +200,7 @@
                                                 <i class="fas fa-search"></i> Search</button>
                                         </td>
                                     </tr>
-                                </table>
+                                </table> -->
                             </div>
                         </div>
                     </div>
@@ -285,7 +288,7 @@
                         },
                         options: {
                             legend: {
-                                display: false
+                                display: 'false'
                             },
                             bezierCurve: false,
                             scaleShowHorizontalLines: false,

@@ -327,7 +327,14 @@ body {
     }
 
   }
-
+  .table-rows{
+    margin:0px !important;
+    table-layout:fixed;
+  }
+  .table-rows td{
+    padding-bottom: 0px !important;
+    overflow:hidden;
+  }
 }
 
 #up-arrow{
@@ -339,6 +346,9 @@ body {
 }
 #close{
   display: none;
+}
+.left-col{
+  margin-right: -200% !important
 }
 @media only screen and (min-width: 320px) and (max-width: 992px)
 {
@@ -426,6 +436,9 @@ body {
   .second-thing, #dashboard-accounts{
     order:2;
   }
+  // .left-col{
+  //   margin-left: 70% !important
+  // }
 
 }
 
@@ -538,4 +551,8 @@ input::placeholder{
   border: 1px solid #004785;
   border-radius: 50%;
 
+}
+
+.push-over{
+  margin-left: 70px;
 }
