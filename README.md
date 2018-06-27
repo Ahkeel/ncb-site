@@ -54,4 +54,4 @@ All updates should be made in either `feat`, `hotfix` or `bug` branches and merg
 5. `$ git push origin feat/<branch-name>` - Push updates to remote `feat`, `hotfix` or `bug` branch.
 6. Log in to gitlab repository.
 7. Create merge request for `master` branch and `feat/<branch-name>` branch.
-8. Feedback from peer review will either merge updates or request changes to code.
+8. Feedback from peer review will either merge updates or request changes to code.please install gulp to run, after installing gulp, run command 'gulp to run'
